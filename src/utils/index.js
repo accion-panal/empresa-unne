@@ -15,6 +15,12 @@ export const clpToUf = (clpValue, ufValue) => {
   return (Math.round((clpValue / ufValue) * 100) / 100000).toFixed(2);
 };
 
+/** Parse UF to CLP */
+export const ufToClp = (priceUF, ufValue) => priceUF * ufValue;
+
+export const parseToDecimal = (number) =>
+  number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
 /** Generate random numbers (4) */
 export const generateValidationCode = () =>
   String(Math.floor(1000 + Math.random() * 9000));
@@ -25,14 +31,13 @@ export const truncateStringSmall = (str, limit = 30) =>
 
 export const parseRealtorDate = (currentTime) => {
   const date = new Date(currentTime);
-  
+
   const day = date.getDate().toString().padStart(2, '0');
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
   const year = date.getFullYear().toString();
   const hours = date.getHours().toString().padStart(2, '0');
   const mins = date.getMinutes().toString().padStart(2, '0');
-  
+
   const parsedDate = `${day}/${month}/${year} ${hours}:${mins}`;
   return parsedDate;
 };
-  

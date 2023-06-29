@@ -54,7 +54,7 @@ const PropertyComponent = ({ property }) => {
       {loadingOnStart && <Spinner />}
 
       {Object.keys(property).length > 0 && (
-        <div className="my-10 px-4 xl:px-32">
+        <div className="my-10 px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto bg-red md:grid-cols-reverse">
             <div className="sm:col-span-6 col-span-3 xl:col-span-3 bg-gray-50 max-h-auto order-2 xl:order-1">
               <div className="flex justify-between items-center py-2.5 px-5 text-xs xl:text-sm text-gray-500">

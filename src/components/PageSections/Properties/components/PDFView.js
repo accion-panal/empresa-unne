@@ -8,7 +8,12 @@ import {
   StyleSheet,
 } from '@react-pdf/renderer';
 import ExchangeRateServices from '../../../../services/ExchangeRateServices';
-import { parseToCLPCurrency, clpToUf } from '../../../../utils';
+import {
+  parseToCLPCurrency,
+  clpToUf,
+  ufToClp,
+  parseToDecimal,
+} from '../../../../utils';
 import { company } from '../../../../constants/consts/company';
 
 const styles = StyleSheet.create({
@@ -231,10 +236,24 @@ const PDFView = ({ property }) => {
                 <Text style={styles.darkFont2Xl}>
                   {property?.title || 'Sin titulo registrado'}
                 </Text>
-                <Text style={styles.darkFont2Xl}>
-                  UF: {clpToUf(property?.price || 0, ufCurrentValue)} / CLP:{' '}
-                  {parseToCLPCurrency(property?.price || 0)}
-                </Text>
+
+                {property?.currency?.name === 'UF' &&
+                  property?.currency?.isoCode === 'UF' && (
+                    <Text style={styles.darkFont2Xl}>
+                      UF {parseToDecimal(property?.price)} / CLP:{' '}
+                      {parseToCLPCurrency(
+                        ufToClp(property?.price, ufCurrentValue)
+                      )}
+                    </Text>
+                  )}
+
+                {property?.currency?.name === 'Peso Chileno' &&
+                  property?.currency?.isoCode === 'CLP' && (
+                    <Text style={styles.darkFont2Xl}>
+                      UF {clpToUf(property?.price, ufCurrentValue)} / CLP: CLP:
+                      {''} {parseToCLPCurrency(property?.price || 0)}
+                    </Text>
+                  )}
               </View>
 
               <View style={styles.containerPropertiesInfo}>

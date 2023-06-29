@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { parseToCLPCurrency, clpToUf } from '../../../../utils';
+import {
+  parseToCLPCurrency,
+  clpToUf,
+  ufToClp,
+  parseToDecimal,
+} from '../../../../utils';
 import ExchangeRateServices from '../../../../services/ExchangeRateServices';
 import { iconsList } from '../../../Icons';
 
@@ -37,12 +42,31 @@ const Details = ({ property }) => {
 
       <div className="text-sm text-gray-400 my-3">
         <p className="text-gray-400">Desde</p>
-        <h4 className="text-xl text-gray-700 font-semibold">
-          UF {clpToUf(price || 0, ufCurrentValue)}
-        </h4>
-        <h4 className="text-sm text-gray-500">
-          {parseToCLPCurrency(price || 0)}
-        </h4>
+
+        {property?.currency?.name === 'UF' &&
+          property?.currency?.isoCode === 'UF' && (
+            <>
+              <h4 className="text-xl text-gray-700 font-semibold">
+                UF {parseToDecimal(property?.price)}
+              </h4>
+              <p>
+                CLP:{' '}
+                {parseToCLPCurrency(ufToClp(property?.price, ufCurrentValue))}
+              </p>
+            </>
+          )}
+
+        {property?.currency?.name === 'Peso Chileno' &&
+          property?.currency?.isoCode === 'CLP' && (
+            <>
+              <h4 className="text-xl text-gray-700 font-semibold">
+                UF {clpToUf(property?.price, ufCurrentValue)}
+              </h4>
+              <p>
+                CLP:{''} {parseToCLPCurrency(property?.price || 0)}
+              </p>
+            </>
+          )}
       </div>
 
       <div className="my-5 text-sm text-gray-500">
