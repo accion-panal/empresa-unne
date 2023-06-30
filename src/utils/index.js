@@ -19,7 +19,7 @@ export const clpToUf = (clpValue, ufValue) => {
 export const ufToClp = (priceUF, ufValue) => priceUF * ufValue;
 
 export const parseToDecimal = (number) =>
-  number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
 /** Generate random numbers (4) */
 export const generateValidationCode = () =>

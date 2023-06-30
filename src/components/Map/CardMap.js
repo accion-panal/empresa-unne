@@ -37,11 +37,6 @@ const CardMap = ({ property }) => {
           {commune ?? 'Comuna no registrada'} , {city ?? 'Ciudad no registrada'}
         </p>
 
-        {/* <div>
-          <span>Desde xd:</span>{' '}
-          <strong>{parseToCLPCurrency(price || 0) ?? ''}</strong>
-        </div> */}
-
         {property?.currency?.name === 'UF' &&
           property?.currency?.isoCode === 'UF' && (
             <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
