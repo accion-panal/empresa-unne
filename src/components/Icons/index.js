@@ -35,7 +35,7 @@ import {
 import { BsFillTelephoneFill, BsSearch } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import { BsFillHouseAddFill, BsFillGridFill } from 'react-icons/bs';
-import { BiBookOpen, BiErrorCircle } from 'react-icons/bi';
+import { BiBookOpen, BiErrorCircle, BiMap } from 'react-icons/bi';
 import {
   AiOutlineShareAlt,
   AiFillPrinter,
@@ -108,4 +108,5 @@ export const iconsList = {
   RiArrowDownSLine,
   MdOutlineFilterList,
   MdOutlineFilterListOff,
+  BiMap,
 };

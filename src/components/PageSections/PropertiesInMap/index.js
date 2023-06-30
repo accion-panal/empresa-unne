@@ -10,7 +10,7 @@ import Map, {
 import { PropertiesContext } from '../../../context/properties/PropertiesContext';
 import Section from '../../Section/Section';
 import MarkerIcon from '../../../assets/img/map/marker.png';
-import { parseToCLPCurrency } from '../../../utils';
+import { parseToCLPCurrency, parseToDecimal } from '../../../utils';
 
 const PropertiesInMapComponent = () => {
   const { contextData } = useContext(PropertiesContext);
@@ -146,13 +146,24 @@ const PropertiesInMapComponent = () => {
                                   , {property?.city ?? 'Ciudad no registrada'}
                                 </p>
 
-                                <div>
-                                  <span>Desde:</span>{' '}
-                                  <strong>
-                                    {parseToCLPCurrency(property?.price || 0) ??
-                                      ''}
-                                  </strong>
-                                </div>
+                                {property?.currency?.name === 'UF' &&
+                                  property?.currency?.isoCode === 'UF' && (
+                                    <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
+                                      <span className="mr-1">Desde:</span>
+                                      {parseToDecimal(property?.price ?? 0)} UF
+                                    </p>
+                                  )}
+
+                                {property?.currency?.name === 'Peso Chileno' &&
+                                  property?.currency?.isoCode === 'CLP' && (
+                                    <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
+                                      <span className="mr-1">Desde:</span>
+                                      {parseToCLPCurrency(
+                                        property?.price ?? 0
+                                      )}{' '}
+                                      CLP
+                                    </p>
+                                  )}
 
                                 <div>
                                   <span>

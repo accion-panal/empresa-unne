@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { truncateString, parseToCLPCurrency } from '../../../../utils';
+import {
+  truncateString,
+  parseToCLPCurrency,
+  parseToDecimal,
+} from '../../../../utils';
 import { company } from '../../../../constants/consts/company';
+import { iconsList } from '../../../Icons';
 
 const PropertyCard = ({ data, isList }) => {
   const { id, title, image, address, commune, city, price, types } = data;
+  const { BiMap } = iconsList;
 
   return (
     <div
@@ -27,17 +33,28 @@ const PropertyCard = ({ data, isList }) => {
 
       <div className="p-5">
         <span className="uppercase text-orange-500">Cod: {id}</span>
-        <h5 className="mb-2 h-20 text-md xl:text-md font-normal text-gray-800">
+        <h5 className="mb-2 h-18 text-md font-light xl:text-md text-gray-700">
           {truncateString(title ?? 'Titulo de propiedad no registrado', 70)}
         </h5>
-
-        <p className="mb-3 font-normal text-sm text-gray-400">
+        <p className="mb-3 font-normal text-sm text-gray-400 flex items-start justify-start">
+          <BiMap className="text-xl mr-1" />
           {truncateString(`${address} ${commune} ${city}`, 60)}
         </p>
 
-        <p className="mb-3 font-normal text-orange-500 text-end">
-          {types?.[0]}: {parseToCLPCurrency(price)}
-        </p>
+        {data?.currency?.name === 'UF' && data?.currency?.isoCode === 'UF' && (
+          <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
+            <span className="mr-1">{types?.[0]}: </span> {parseToDecimal(price)}{' '}
+            UF
+          </p>
+        )}
+
+        {data?.currency?.name === 'Peso Chileno' &&
+          data?.currency?.isoCode === 'CLP' && (
+            <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
+              <span className="mr-1">{types?.[0]}:</span>
+              {parseToCLPCurrency(price)} CLP
+            </p>
+          )}
 
         <Link
           to={`/propiedades/${id}?statusId=${company.statusId}&companyId=${company.companyId}`}
