@@ -26,7 +26,7 @@ const SimilarPropertyCard = ({ property }) => {
         />
 
         <div className={styles.info}>
-          <h3 className="uppercase rounded-sm text-orange-500">
+          <h3 className="uppercase rounded-sm text-primary">
             Cod: {property?.id}
           </h3>
           <p className="text-white uppercase text-sm font-bold">
@@ -37,7 +37,7 @@ const SimilarPropertyCard = ({ property }) => {
             onClick={() => {
               handleIdChange(property?.id);
             }}
-            className="bg-orange-500 w-100 px-3 my-1 py-1 hover:bg-orange-600"
+            className="bg-primary w-100 px-3 my-1 py-1 hover:bg-primary-opacity"
           >
             Ver detalles
           </Button>

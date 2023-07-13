@@ -7,7 +7,7 @@ const Capacitation = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 pb-20">
         <div className="flex flex-col">
           <div className="pt-12 pb-10">
-            <h2 className="text-4xl text-orange-500 font-bold pt-5">
+            <h2 className="text-4xl text-primary font-bold pt-5">
               Capacítate junto a Unne
             </h2>
             <h2 className="text-3xl text-black font-bold  pt-20 ">
@@ -38,7 +38,7 @@ const Capacitation = () => {
           >
             <div className={`${styles.flipCardInner}`}>
               <div className={`${styles.flipCardFront}`}>
-                <h2 className="text-3xl text-orange-500 font-bold pt-16 ">
+                <h2 className="text-3xl text-primary font-bold pt-16 ">
                   Sistemas
                 </h2>
               </div>
@@ -57,7 +57,7 @@ const Capacitation = () => {
           >
             <div className={`${styles.flipCardInner}`}>
               <div className={`${styles.flipCardFront}`}>
-                <h2 className="text-3xl text-orange-500 font-bold pt-16">
+                <h2 className="text-3xl text-primary font-bold pt-16">
                   Área Comercial
                 </h2>
               </div>
@@ -76,7 +76,7 @@ const Capacitation = () => {
           >
             <div className={`${styles.flipCardInner}`}>
               <div className={`${styles.flipCardFront}`}>
-                <h2 className="text-3xl text-orange-500 font-bold pt-16 ">
+                <h2 className="text-3xl text-primary font-bold pt-16 ">
                   Área Legal
                 </h2>
               </div>

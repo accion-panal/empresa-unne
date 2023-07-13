@@ -4,7 +4,7 @@ const Info = ({ data, titleFont, listFont, spanFont }) => {
   const { title, children } = data;
   return (
     <div>
-      <h2 className={`pb-3 text-orange-500 ${titleFont} font-bold`}>{title}</h2>
+      <h2 className={`pb-3 text-primary ${titleFont} font-bold`}>{title}</h2>
 
       <ul className="">
         {children?.map(({ id, name, status }) => (
@@ -16,7 +16,7 @@ const Info = ({ data, titleFont, listFont, spanFont }) => {
             {status && (
               <span
                 className={`animate-heart text-white ${spanFont}
-                         bg-orange-500 rounded-full mx-1 px-2 uppercase inline-block`}
+                         bg-primary rounded-full mx-1 px-2 uppercase inline-block`}
               >
                 {' '}
                 {status}

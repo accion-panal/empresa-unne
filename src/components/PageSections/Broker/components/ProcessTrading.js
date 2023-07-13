@@ -21,7 +21,7 @@ const ProcessTrading = ({ data }) => {
               process.map((process, idx) => (
                 <li
                   key={idx}
-                  className={`before:content-[""] before:w-2 before:h-4 before:border-r-2 before:border-b-2 before:border-orange-400
+                  className={`before:content-[""] before:w-2 before:h-4 before:border-r-2 before:border-b-2 before:border-primary-400
                                 before:-left-4 before:relative before:inline-block before:rotate-45
                                 flex pb-1 ml-7 text-gray-600 ${listFont}`}
                 >
@@ -31,7 +31,7 @@ const ProcessTrading = ({ data }) => {
           </ul>
         </div>
         <div className="">
-          <h2 className={`${ufFont} font-bold text-orange-500`}>UF. {uf}</h2>
+          <h2 className={`${ufFont} font-bold text-primary`}>UF. {uf}</h2>
         </div>
       </div>
     </div>

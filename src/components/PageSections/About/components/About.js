@@ -24,7 +24,7 @@ const About = () => {
         </div>
 
         <div className="col-span-2 flex flex-col justify-center mx-4 xl:ml-24">
-          <h2 className="text-2xl xl:text-5xl text-center xl:text-start text-orange-500 font-bold">
+          <h2 className="text-2xl xl:text-5xl text-center xl:text-start text-primary font-bold">
             ¿Quiénes somos?
           </h2>
           <p className="text-lg xl:text-xl text-gray-700 mt-8 ml-0 xl:ml-5 md:text-center xl:text-left">
@@ -57,7 +57,7 @@ const About = () => {
 
           <div className="w-full">
             <div className="mt-8 ml-8 mr-8 mb-8 hover:scale-110 transition duration-500">
-              <div className="w-full xl:w-5/6 h-50 sm:h-auto bg-orange-400 rounded-[50px] overflow-hidden shadow-md">
+              <div className="w-full xl:w-5/6 h-50 sm:h-auto bg-primary-400 rounded-[50px] overflow-hidden shadow-md">
                 <div className="p-14 pl-10">
                   <h2 className="text-xl xl:text-2xl text-white font-bold">
                     ¡Los números nos avalan!

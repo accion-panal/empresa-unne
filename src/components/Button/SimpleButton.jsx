@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SimpleButton = () => {
-    return (
-        <div className='flex justify-center mt-5'>
-            <button className="btn text-white px-10 bg-orange-600 border-none rounded-full hover:bg-orange-700">Comienza aqui</button>
-        </div>
-    )
-}
+  return (
+    <Link to="/quienes-somos">
+      <div className="flex justify-center mt-5">
+        <button className="btn text-white px-10 bg-primary border-none rounded-full hover:bg-primary-opacity">
+          Comienza aquí
+        </button>
+      </div>
+    </Link>
+  );
+};
 
-export default SimpleButton
+export default SimpleButton;

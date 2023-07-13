@@ -29,7 +29,7 @@ const CardMap = ({ property }) => {
       </a>
 
       <div>
-        <span className="bg-orange-500 text-white px-2 py-.5 mt-1 rounded-full">
+        <span className="bg-primary text-white px-2 py-.5 mt-1 rounded-full">
           {types?.[0] ?? 'Propiedad'}
         </span>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -39,7 +39,7 @@ const CardMap = ({ property }) => {
 
         {property?.currency?.name === 'UF' &&
           property?.currency?.isoCode === 'UF' && (
-            <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
+            <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-primary-400 p-1 rounded-sm text-primary">
               <span className="mr-1">Desde:</span>
               {parseToDecimal(property?.price ?? 0)} UF
             </p>
@@ -47,7 +47,7 @@ const CardMap = ({ property }) => {
 
         {property?.currency?.name === 'Peso Chileno' &&
           property?.currency?.isoCode === 'CLP' && (
-            <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
+            <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-primary-400 p-1 rounded-sm text-primary">
               <span className="mr-1">Desde:</span>
               {parseToCLPCurrency(property?.price ?? 0)} CLP
             </p>

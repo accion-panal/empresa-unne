@@ -114,7 +114,7 @@ const PersonalData = ({
           allFieldRequierd: '',
           serverEmailError: '',
         });
-        showToastSuccessMsg('Se enviara un código de validación a su email')
+        showToastSuccessMsg('Se enviara un código de validación a su email');
         setSendCodeStatus(true);
         setTimeout(() => {
           setSuccessMsg('');
@@ -226,7 +226,7 @@ const PersonalData = ({
           <div className="mt-8 flex justify-center">
             <Button
               type="submit"
-              className="block w-[200px] p-4 my-1 uppercase font-semibold text-md rounded-full hover:shadow-sm transition ease-in-out duration-300 text-white bg-orange-500 hover:bg-orange-600"
+              className="block w-[200px] p-4 my-1 uppercase font-semibold text-md rounded-full hover:shadow-sm transition ease-in-out duration-300 text-white bg-primary hover:bg-primary-opacity"
             >
               <span className="max-h-10">
                 {loading ? (

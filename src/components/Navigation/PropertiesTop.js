@@ -60,9 +60,7 @@ const PropertiesTop = ({
                 setIsList(false);
               }}
               className={`${
-                isGrid
-                  ? 'bg-orange-500 text-white'
-                  : 'bg-gray-100 text-gray-500'
+                isGrid ? 'bg-primary text-white' : 'bg-gray-100 text-gray-500'
               } mx-1 p-2.5 cursor-pointer `}
             >
               <BsFillGridFill />
@@ -74,7 +72,7 @@ const PropertiesTop = ({
               }}
               className={`${
                 isList
-                  ? 'bg-orange-500 text-white'
+                  ? 'bg-primary text-white'
                   : 'bg-gray-100 cursor-pointer text-gray-500'
               } mx-1 p-2.5 cursor-pointer`}
             >

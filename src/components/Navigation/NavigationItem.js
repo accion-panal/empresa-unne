@@ -34,7 +34,7 @@ const NavigationItem = ({ menuItem }) => {
                       to={href}
                       className={`${
                         pathname === href
-                          ? 'bg-amber-500 text-white flex items-center rounded-lg transition duration-150 ease-in-out hover:bg-amber-600 focus:outline-none focus-visible:ring'
+                          ? 'bg-secondary text-white flex items-center rounded-lg transition duration-150 ease-in-out hover:bg-secondary focus:outline-none focus-visible:ring'
                           : 'flex items-center rounded-lg transition duration-150 ease-in-out hover:bg-slate-100 focus:outline-none focus-visible:ring'
                       }`}
                     >
@@ -56,9 +56,9 @@ const NavigationItem = ({ menuItem }) => {
       target={href === 'http://190.114.255.247:195/' ? '_blank' : ''}
       className={`${
         pathname === href
-          ? 'bg-amber-500 text-white inline-flex items-center text-sm xl:text-base font-normal py-2 px-4 xl:px-5 rounded-full'
+          ? 'bg-secondary text-white inline-flex items-center text-sm xl:text-base font-normal py-2 px-4 xl:px-5 rounded-full'
           : name === 'Mi cuenta'
-          ? 'bg-orange-600 inline-flex items-center text-sm xl:text-base font-normal py-2 px-4 xl:px-5 rounded-full text-white hover:bg-orange-500 hover:text-white'
+          ? 'bg-primary inline-flex items-center text-sm xl:text-base font-normal py-2 px-4 xl:px-5 rounded-full text-white hover:bg-primary hover:text-white'
           : 'inline-flex items-center text-sm xl:text-base font-normal py-2 px-4 xl:px-5 rounded-full text-slate-800 hover:bg-slate-100 hover:text-slate-900'
       }`}
     >

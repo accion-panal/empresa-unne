@@ -380,7 +380,7 @@ const AdvancedSearch = ({ setProperties }) => {
 
       <Button
         type="submit"
-        className="block w-full p-2 my-1 uppercase font-semibold text-sm rounded-full hover:shadow-sm transition ease-in-out duration-300 text-white bg-orange-500 hover:bg-orange-600"
+        className="block w-full p-2 my-1 uppercase font-semibold text-sm rounded-full hover:shadow-sm transition ease-in-out duration-300 text-white bg-primary hover:bg-primary-opacity"
       >
         {isLoading ? 'Buscando...' : 'Buscar'}
       </Button>

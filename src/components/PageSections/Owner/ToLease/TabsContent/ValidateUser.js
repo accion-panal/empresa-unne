@@ -208,7 +208,7 @@ function ValidateUser({
             <Button
               type="submit"
               id="submit-button"
-              className="bg-orange-500 hover:bg-orange-600 text-white w-4/6 text-2xl text-center rounded-full py-1 pb-2 px-4"
+              className="bg-primary hover:bg-primary-opacity text-white w-4/6 text-2xl text-center rounded-full py-1 pb-2 px-4"
             >
               Validar código
             </Button>
@@ -223,7 +223,7 @@ function ValidateUser({
             <Button
               type="submit"
               id="submit-button"
-              className="mx-auto flex justify-center my-10 bg-orange-500 w-4/6 text-white text-2xl text-center rounded-full py-1 pb-2 px-4 hover:bg-orange-600"
+              className="mx-auto flex justify-center my-10 bg-primary w-4/6 text-white text-2xl text-center rounded-full py-1 pb-2 px-4 hover:bg-primary-opacity"
             >
               {loading ? (
                 <div role="status">

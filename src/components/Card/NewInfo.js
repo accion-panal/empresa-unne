@@ -33,7 +33,7 @@ const NewInfo = ({ data }) => {
     >
       <div className="overflow-hidden flex justify-center items-center flex-col text-center mt-24">
         <div className="w-20 h-20 text-white">{renderIcon()}</div>
-        <h2 className="text-2xl text-orange-500 font-bold">{title}</h2>
+        <h2 className="text-2xl text-primary font-bold">{title}</h2>
       </div>
 
       <div
@@ -62,7 +62,7 @@ const NewInfo = ({ data }) => {
         <div>
           {href && (
             <div className="flex justify-center">
-              <button className="py-1 px-7 text-white bg-orange-400 hover:bg-orange-500 border-none rounded-full ">
+              <button className="py-1 px-7 text-white bg-primary-400 hover:bg-primary border-none rounded-full ">
                 Mas Informacion
               </button>
             </div>

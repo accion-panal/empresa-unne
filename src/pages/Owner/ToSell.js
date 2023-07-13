@@ -42,8 +42,8 @@ const ToSell = () => {
             ubicationData={CircleVenderData}
             ColorBorder="border-[#FBB916]"
             ColorBg="bg-[#FBB916]"
-            ColorNumberBG="bg-[#fb923c]"
-            ColorTextBG="bg-[#e5e7eb]"
+            ColorNumberBG="bg-primary-400"
+            ColorTextBG="bg-primary"
             ColorText="text-black"
           />
         </Fade>

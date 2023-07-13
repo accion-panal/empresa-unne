@@ -28,7 +28,6 @@ const WhyServicesUnne = () => {
           Consulta por tu asesoría gratuita
         </h2>
         <div className="flex justify-center pb-1 pt-5 xl:pt-0">
-          {/* <button className="text-white px-16 py-3 bg-orange-600 border-none rounded-full hover:bg-orange-700">Aqui</button> */}
           <ButtonProps
             rounded
             title="Aqui"

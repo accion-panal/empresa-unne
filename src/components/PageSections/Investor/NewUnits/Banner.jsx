@@ -29,7 +29,7 @@ const banner = () => {
               Dejanos tus datos y trabajaremos juntos para encontrar la mejor
               alternativa para ti
             </p>
-            <button className="peer bg-orange-400 w-max mt-5 text-white py-2 px-6 rounded-full hover:cursor-pointer hover:bg-orange-300 hover:shadow-xl trasition duration-300 ease-in-out">
+            <button className="peer bg-primary w-max mt-5 text-white py-2 px-6 rounded-full hover:cursor-pointer hover:bg-primary-300 hover:shadow-xl trasition duration-300 ease-in-out">
               Agenda un reunion
             </button>
           </div>

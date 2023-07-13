@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import CircleSteps from './CircleSteps';
 import SimpleButton from '../../../../components/Button/SimpleButton';
 import ButtonProps from '../../../../components/Button/ButtonProps';
@@ -23,10 +24,12 @@ const CircleSection = ({
           <h2
             className={`${MarginTitle} text-center ${titleFont} text-gray-800 font-bold`}
           >
-            ¿Como funciona?
+            ¿Cómo funciona?
           </h2>
           <div className="flex justify-center mt-5">
-            <ButtonProps rounded></ButtonProps>
+            <Link to="/quienes-somos">
+              <ButtonProps rounded>Comienza aquí</ButtonProps>
+            </Link>
           </div>
         </div>
       </div>
@@ -47,7 +50,7 @@ const CircleSection = ({
                 className={`w-60 h-60 ${ColorBg} rounded-full text-center flex justify-center items-center`}
               >
                 <h3 className={`font-medium ${titleFontCircle} text-white`}>
-                  ¿Como Funciona?
+                  ¿Cómo funciona?
                 </h3>
               </div>
             </div>

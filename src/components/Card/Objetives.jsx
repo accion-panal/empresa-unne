@@ -13,7 +13,7 @@ export const Objetives = ({ data }) => {
   return (
     <div className="flex pt-14 flex-nowrap h-30 md:flex-col hover:scale-110 transition duration-500">
       <div className="h-auto">
-        <span className="rounded-full py-2 px-5 relative text-3xl font-bold bg-orange-500 text-white">
+        <span className="rounded-full py-2 px-5 relative text-3xl font-bold bg-primary-500 text-white">
           {icon}
         </span>
       </div>

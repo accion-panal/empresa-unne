@@ -64,13 +64,13 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             key={index}
             className={`${
               currentPage === pageNumber || pageNumber === '...'
-                ? 'bg-orange-500 text-white active'
+                ? 'bg-primary hover:bg-primary-opacity text-white active'
                 : 'bg-white text-black'
             } p-3 border`}
             disabled={currentPage === pageNumber || pageNumber === '...'}
             style={{
               backgroundColor:
-                pageNumber === currentPage ? 'bg-orange-500' : '',
+                pageNumber === currentPage ? 'bg-primary' : '',
             }}
             onClick={() =>
               typeof pageNumber === 'number' && onPageChange(pageNumber)

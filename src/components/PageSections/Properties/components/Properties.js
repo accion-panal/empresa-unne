@@ -149,7 +149,7 @@ const Properties = ({ isGrid, isList, setIsGrid, setIsList }) => {
                         propiedad.title || 'Propiedad sin titulo registrado'
                       ) || ''}
                     </p>
-                    <span className="bg-orange-500 mt-[40px] absolute p-[1.5px] px-3 -top-[25px] w-auto rounded-full">
+                    <span className="bg-primary mt-[40px] absolute p-[1.5px] px-3 -top-[25px] w-auto rounded-full">
                       Cod: {propiedad.id}
                     </span>
                   </Link>
@@ -160,14 +160,14 @@ const Properties = ({ isGrid, isList, setIsGrid, setIsList }) => {
                 <div className="flex-1 border-b bg-white border-gray-200"></div>
                 <button onClick={showMoreProperties} className="relative">
                   {showMore && (
-                    <div className="h-11 w-11 rounded-full bg-white border border-gray-200 text-gray-400 hover:text-white hover:bg-orange-500 cursor-pointer flex items-center justify-center">
+                    <div className="h-11 w-11 rounded-full bg-white border border-gray-200 text-gray-400 hover:text-white hover:bg-primary cursor-pointer flex items-center justify-center">
                       <RiArrowDownSLine className="text-2xl" />
                     </div>
                   )}
                 </button>
                 <button onClick={seeLessProperties} className="relative">
                   {!showMore && propertiesToShow.length >= 10 && (
-                    <div className="h-11 w-11 rounded-full bg-bg-transparent border border-gray-200 text-gray-400 hover:text-white hover:bg-orange-500 cursor-pointer flex items-center justify-center">
+                    <div className="h-11 w-11 rounded-full bg-bg-transparent border border-gray-200 text-gray-400 hover:text-white hover:bg-primary cursor-pointer flex items-center justify-center">
                       <RiArrowDownSLine className="text-2xl rotate-180" />
                     </div>
                   )}

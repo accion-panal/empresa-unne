@@ -128,9 +128,9 @@ const SearchPropertiesSection = () => {
                       key={tab}
                       className={`${
                         activeTab === tab
-                          ? 'bg-amber-400 text-white p-2'
+                          ? 'bg-secondary text-white p-2'
                           : 'border border-gray-300 bg-gray-400 text-white hover:text-white hover:border-gray-300 ring-1'
-                      }  w-full text-md my-1 font-medium leading-5 rounded-[100px] py-3 focus:ring-1 focus:ring-offset-1 focus:ring-offset-gray-100 focus:ring-amber-400 ring-opacity-60 ring-offset-2 focus:outline-none focus:bg-amber-400 text-black p-2`}
+                      }  w-full text-md my-1 font-medium leading-5 rounded-[100px] py-3 focus:ring-1 focus:ring-offset-1 focus:ring-offset-gray-100 focus:ring-secondary ring-opacity-60 ring-offset-2 focus:outline-none focus:bg-secondary text-black p-2`}
                       onClick={(ev) => {
                         ev.preventDefault();
                         setActiveTab(tab);
@@ -196,7 +196,7 @@ const SearchPropertiesSection = () => {
             <div className="mx-1 flex justify-center items-center my-2">
               <ButtonPrimary
                 type="submit"
-                className="block w-full p-[.7rem] text-center rounded-full border bg-amber-400 text-white border-amber-300 hover:bg-amber-500"
+                className="block w-full p-[.7rem] text-center rounded-full border bg-secondary-400 text-white border-secondary-300 hover:bg-secondary"
               >
                 {isSearching ? 'Buscando...' : 'Buscar'}
               </ButtonPrimary>
@@ -208,7 +208,7 @@ const SearchPropertiesSection = () => {
               Buscar por{' '}
               <button
                 onClick={handleOpenSearchCode}
-                className="text-orange-500 hover:text-orange-600"
+                className="text-primary hover:text-primary-opacity"
               >
                 código de propiedad
               </button>

@@ -22,7 +22,7 @@ const MoreServices = () => {
     <div>
       <div className="flex justify-center pb-1 pt-5 mb-10">
         <button
-          className="text-white text-xl py-3 px-6 bg-orange-600 border-none rounded-full hover:bg-orange-700"
+          className="text-white text-xl py-3 px-6 bg-primary border-none rounded-full hover:bg-primary-opacity"
           onClick={ShowSection}
         >
           Ver más servicios

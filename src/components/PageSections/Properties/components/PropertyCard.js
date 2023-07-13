@@ -32,25 +32,30 @@ const PropertyCard = ({ data, isList }) => {
       />
 
       <div className="p-5">
-        <span className="uppercase text-orange-500">Cod: {id}</span>
+        <span className="uppercase text-primary">Cod: {id}</span>
         <h5 className="mb-2 h-18 text-md font-light xl:text-md text-gray-700">
           {truncateString(title ?? 'Titulo de propiedad no registrado', 70)}
         </h5>
         <p className="mb-3 font-normal text-sm text-gray-400 flex items-start justify-start">
           <BiMap className="text-xl mr-1" />
-          {truncateString(`${address} ${commune} ${city}`, 60)}
+          {truncateString(
+            `${address || 'Dirección no registrada'} ${
+              commune || 'Comuna no registrada'
+            } ${city || 'Ciudad no registrada'}`,
+            60
+          )}
         </p>
 
         {data?.currency?.name === 'UF' && data?.currency?.isoCode === 'UF' && (
-          <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
-            <span className="mr-1">{types?.[0]}: </span> {parseToDecimal(price)}{' '}
-            UF
+          <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-primary-400 p-1 rounded-sm text-primary">
+            <span className="mr-1">{types?.[0]}: </span>{' '}
+            {parseToDecimal(price || 0)} UF
           </p>
         )}
 
         {data?.currency?.name === 'Peso Chileno' &&
           data?.currency?.isoCode === 'CLP' && (
-            <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-orange-400 p-1 rounded-sm text-orange-500">
+            <p className="flex justify-end items-center mb-3 font-normal bg-slate-50 border-l-2 border-primary-400 p-1 rounded-sm text-primary">
               <span className="mr-1">{types?.[0]}:</span>
               {parseToCLPCurrency(price)} CLP
             </p>
@@ -58,7 +63,7 @@ const PropertyCard = ({ data, isList }) => {
 
         <Link
           to={`/propiedades/${id}?statusId=${company.statusId}&companyId=${company.companyId}`}
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300"
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-primary-opacity focus:ring-4 focus:outline-none focus:ring-primary-300"
         >
           Ver Detalles
           <svg

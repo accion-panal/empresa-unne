@@ -18,7 +18,7 @@ const Fab = () => {
   return (
     <div className="select-none">
       <div
-        className={`fixed bottom-8 right-8 rounded-full w-[60px] h-[60px] bg-[#F57914] drop-shadow-lg shadow-black z-30 flex justify-center items-center hover:cursor-pointer transition-all ${hoverEffect} ${buttonAnimate}`}
+        className={`fixed bottom-8 right-8 rounded-full w-[60px] h-[60px] bg-primary drop-shadow-lg shadow-black z-30 flex justify-center items-center hover:cursor-pointer transition-all ${hoverEffect} ${buttonAnimate}`}
         onClick={handleClick}
       >
         <div

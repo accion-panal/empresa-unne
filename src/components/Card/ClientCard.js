@@ -3,7 +3,12 @@ import React from 'react';
 const ClientCard = ({ item }) => {
   const { first_name, avatar, last_name, email } = item;
 
-  const bgColors = ['bg-orange-50', 'bg-yellow-50', 'bg-gray-50', 'bg-pink-50'];
+  const bgColors = [
+    'bg-primary-ligth',
+    'bg-yellow-50',
+    'bg-gray-50',
+    'bg-pink-50',
+  ];
   const getRadmonColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
   return (

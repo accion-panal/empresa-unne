@@ -8,7 +8,7 @@ const Footer = () => (
         <div className="w-5/6">
           <Button
             href="/"
-            className="w-96 py-2 px-3 text-xl text-center my-6 bg-orange-500 hover:bg-orange-600 hover:shadow-md"
+            className="w-96 py-2 px-3 text-xl text-center my-6 bg-primary hover:bg-primary-opacity hover:shadow-md"
           >
             ¿Quiénes somos?
           </Button>
@@ -25,7 +25,7 @@ const Footer = () => (
         <div className="w-5/6">
           <Button
             href="/"
-            className="w-96 py-2 px-3 text-xl text-center my-6 bg-orange-500 hover:bg-orange-600 hover:shadow-md"
+            className="w-96 py-2 px-3 text-xl text-center my-6 bg-primary hover:bg-primary-opacity hover:shadow-md"
           >
             Contacto
           </Button>
@@ -49,7 +49,7 @@ const Footer = () => (
               <div className="flex justify-start items-center my-3">
                 <a
                   href="/"
-                  className="text-dark bg-orange-400 text-white hover:bg-orange-600 hover:border-orange-600 mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  className="text-dark bg-primary-400 text-white hover:bg-primary-opacity hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
                     width="8"
@@ -62,7 +62,7 @@ const Footer = () => (
                 </a>
                 <a
                   href="/"
-                  className="text-dark bg-orange-400 text-white hover:bg-orange-600 hover:border-orange-600 mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  className="text-dark bg-primary-400 text-white hover:bg-primary-opacity hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
                     width="16"
@@ -75,7 +75,7 @@ const Footer = () => (
                 </a>
                 <a
                   href="/"
-                  className="text-dark bg-orange-400 text-white hover:bg-orange-600 hover:border-orange-600 mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  className="text-dark bg-primary-400 text-white hover:bg-primary-opacity hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
                     width="16"
@@ -96,7 +96,7 @@ const Footer = () => (
         <div className="w-5/6">
           <Button
             href="/"
-            className="w-96 py-2 px-3 text-xl text-center my-6 bg-orange-500 hover:bg-orange-600 hover:shadow-md"
+            className="w-96 py-2 px-3 text-xl text-center my-6 bg-primary hover:bg-primary-opacity hover:shadow-md"
           >
             Menú
           </Button>
@@ -105,7 +105,7 @@ const Footer = () => (
               <li>
                 <a
                   href="#"
-                  className="hover:underline underline-offset-4 decoration-orange-500"
+                  className="hover:underline underline-offset-4 decoration-primary"
                 >
                   Soy propietario
                 </a>
@@ -113,7 +113,7 @@ const Footer = () => (
               <li>
                 <a
                   href="#"
-                  className="hover:underline underline-offset-4 decoration-orange-500"
+                  className="hover:underline underline-offset-4 decoration-primary"
                 >
                   ¿Eres corredor?
                 </a>
@@ -121,7 +121,7 @@ const Footer = () => (
               <li>
                 <a
                   href="#"
-                  className="hover:underline underline-offset-4 decoration-orange-500"
+                  className="hover:underline underline-offset-4 decoration-primary"
                 >
                   Quiero invertir
                 </a>
@@ -129,7 +129,7 @@ const Footer = () => (
               <li>
                 <a
                   href="#"
-                  className="hover:underline underline-offset-4 decoration-orange-500"
+                  className="hover:underline underline-offset-4 decoration-primary"
                 >
                   Intranet
                 </a>
@@ -137,7 +137,7 @@ const Footer = () => (
             </ul>
             <p className="text-md text-gray-900 mt-5">
               Quiero saber más sobre los
-              <a href="#" className="text-orange-500 hover:text-yellow-500">
+              <a href="#" className="text-primary hover:text-yellow-500">
                 {' '}
                 términos y condiciones
               </a>

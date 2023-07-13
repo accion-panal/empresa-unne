@@ -63,15 +63,16 @@ const StepsToLease = () => {
       <Fragment>
         <Tab
           data-headlessui-state={isTabActive === 0 ? 'selected' : ''}
-          className={` ${validatePropertyForm() && 'bg-green-500 text-white border '
-            } rounded-tl-[25px]  outline-none w-full py-3 xl:py-4 px-1 text-center border-t-2 font-medium text-lg border-transparent cursor-pointer`}
+          className={` ${
+            validatePropertyForm() && 'bg-green-500 text-white border '
+          } rounded-tl-[25px]  outline-none w-full py-3 xl:py-4 px-1 text-center border-t-2 font-medium text-lg border-transparent cursor-pointer`}
         >
           <span className="flex items-center text-[15px] justify-center w-full">
             {validatePropertyForm() ? (
               <CheckedStep />
             ) : (
               <strong>
-                <span className="bg-orange-500 rounded-full py-[3.5px] px-[11px] mr-1">
+                <span className="bg-primary rounded-full py-[3.5px] px-[11px] mr-1">
                   1
                 </span>{' '}
                 Datos de Propiedad
@@ -82,8 +83,9 @@ const StepsToLease = () => {
         </Tab>
 
         <Tab
-          className={` ${validatePersonalDataForm() && 'bg-green-500 text-white'
-            } outline-none w-full py-3 xl:py-4 px-1 text-center border-t-2 font-medium text-lg border-transparent cursor-pointer`}
+          className={` ${
+            validatePersonalDataForm() && 'bg-green-500 text-white'
+          } outline-none w-full py-3 xl:py-4 px-1 text-center border-t-2 font-medium text-lg border-transparent cursor-pointer`}
           disabled={!validatePropertyForm()}
         >
           <span className="flex items-center text-[15px] justify-center w-full">
@@ -91,7 +93,7 @@ const StepsToLease = () => {
               <CheckedStep />
             ) : (
               <strong>
-                <span className="bg-orange-500 rounded-full py-[3.5px] px-[11px] mr-1">
+                <span className="bg-primary rounded-full py-[3.5px] px-[11px] mr-1">
                   2
                 </span>{' '}
                 Datos Personales
@@ -102,15 +104,16 @@ const StepsToLease = () => {
 
         <Tab
           disabled={!sendCodeStatus}
-          className={`${sendCodeStatusValidation ? 'bg-green-500 text-white' : ''
-            } rounded-tr-[25px] outline-none w-full py-3 xl:py-4 px-1 text-center border-t-2 font-medium text-lg border-transparent cursor-pointer`}
+          className={`${
+            sendCodeStatusValidation ? 'bg-green-500 text-white' : ''
+          } rounded-tr-[25px] outline-none w-full py-3 xl:py-4 px-1 text-center border-t-2 font-medium text-lg border-transparent cursor-pointer`}
         >
           <span className="flex items-center text-[15px] justify-center w-full">
             {sendCodeStatusValidation ? (
               <CheckedStep />
             ) : (
               <strong>
-                <span className="bg-orange-500 rounded-full py-[3.5px] px-[11px] mr-1">
+                <span className="bg-primary rounded-full py-[3.5px] px-[11px] mr-1">
                   3
                 </span>{' '}
                 Validación de email
@@ -152,7 +155,7 @@ const StepsToLease = () => {
     <div className="grid grid-cols-1 xl:grid-cols-2">
       <div className="w-full">
         <div className="flex items-center justify-start">
-          <span className="text-white bg-orange-500 text-center text-xl px-5 py-2.5 rounded-full font-bold mr-2">
+          <span className="text-white bg-primary text-center text-xl px-5 py-2.5 rounded-full font-bold mr-2">
             1
           </span>
           <div className="flex flex-col">
@@ -169,7 +172,7 @@ const StepsToLease = () => {
           </div>
 
           <div
-            className="bg-orange-100 border-l-4 mt-4 border-orange-500 text-orange-700 p-4 mb-4"
+            className="bg-primary-ligth border-l-4 mt-4 border-primary text-primary p-4 mb-4"
             role="alert"
           >
             <p className="font-bold">Advertencia</p>
@@ -179,7 +182,7 @@ const StepsToLease = () => {
           </div>
         </div>
       </div>
-      <div className='mb-10'>
+      <div className="mb-10">
         <TabComponent renderTabs={renderTabs} renderTabPanel={renderTabPanel} />
       </div>
     </div>
