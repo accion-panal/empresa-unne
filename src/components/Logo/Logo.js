@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <Link to="/">
       {UnneLogo && (
-        <img src={UnneLogo} alt="unne-logo" width={115} height={80} />
+        <img src={UnneLogo} alt="unne-logo" width={150} height={100} />
       )}
     </Link>
   );

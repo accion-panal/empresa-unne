@@ -11,15 +11,16 @@ const CircleSection = ({
   ColorNumberBG,
   ColorTextBG,
   ColorText,
+  titleButton,
 }) => {
-  const titleFont = 'text-4xl md:text-5xl';
-  const MarginTitle = 'my-10';
+  const titleFont = 'text-2xl';
+  const MarginTitle = 'mt-10';
 
   const titleFontCircle = 'text-2xl';
 
   return (
-    <div className="grid gap-14 grid-cols-1 xl:grid-cols-2 xl:gap-0">
-      <div className="xl:ml-20 2xl:ml-32 pb-5">
+    <div className="grid gap-14 grid-cols-1 xl:gap-0">
+      {/* <div className="xl:ml-20 2xl:ml-32 pb-5">
         <div className=" xl:max-w-md">
           <h2
             className={`${MarginTitle} text-center ${titleFont} text-gray-800 font-bold`}
@@ -32,10 +33,10 @@ const CircleSection = ({
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="max-md:h-max transition-all ease-in ">
-        <div className="flex  md:max-lg:justify-start justify-center xl:justify-start md:max-lg:pl-5 transition-all ease-in">
+        <div className="flex  md:max-lg:justify-start justify-center xl:justify-center md:max-lg:pl-5 transition-all ease-in">
           <div
             className={`lg:w-[27rem] lg:h-[27rem] 
                                 sm:w-[30rem] md:h-[30rem]
@@ -70,6 +71,17 @@ const CircleSection = ({
           </div>
         </div>
       </div>
+      <div>
+        <h2 className={`${MarginTitle} text-center ${titleFont} text-gray-800 font-bold`}>
+          {titleButton}
+        </h2>
+        <div className="flex justify-center mt-5">
+          <a href="#formulario">
+            <ButtonProps rounded>Comienza aquí</ButtonProps>
+          </a>
+        </div>
+      </div>
+      
     </div>
   );
 };

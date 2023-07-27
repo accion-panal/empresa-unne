@@ -1,16 +1,18 @@
 import React, { Fragment, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Head from '../../components/Head/Head';
-import MainCarousel from '../../components/Carousel/MainCarousel';
+import HeroBanner from '../../components/Carousel/HeroBanner';
 import WhyUnneSection from '../../components/PageSections/Owner/ToLease/whyUnneSection';
+import WhyUnneInfo from '../../components/PageSections/Owner/ToLease/WhyUnneInfo';
 import CircleSection from '../../components/PageSections/Owner/ToLease/CircleSection';
 import { Fade } from 'react-awesome-reveal';
 
 /* Data */
 import {
   CircleVenderData,
-  mainCarouselSellData,
   whyUnneSellData,
+  whyUnneSellNewData,
+  mainCarouselSellingData,
 } from '../../data/index';
 
 const ToSell = () => {
@@ -28,12 +30,13 @@ const ToSell = () => {
     <Fragment>
       <Head title="Quiero vender" />
       <section>
-        <MainCarousel data={mainCarouselSellData} />
+        <HeroBanner data={mainCarouselSellingData} />
       </section>
       <section className={`${margin}`}>
         <Fade delay={300} cascade>
-          {whyUnneSellData?.length > 0 &&
-            whyUnneSellData?.map((e) => <WhyUnneSection key={e.id} data={e} />)}
+          {/* {whyUnneSellData?.length > 0 &&
+            whyUnneSellData?.map((e) => <WhyUnneSection key={e.id} data={e} />)} */}
+            <WhyUnneInfo data={whyUnneSellNewData} title='¿Por qué Vender con Unne?'/>
         </Fade>
       </section>
       <section className={`${margin} bg-gray-50 py-8`}>
@@ -45,6 +48,7 @@ const ToSell = () => {
             ColorNumberBG="bg-primary-400"
             ColorTextBG="bg-primary"
             ColorText="text-black"
+            titleButton='¿Quieres vender tu propiedad?'
           />
         </Fade>
       </section>

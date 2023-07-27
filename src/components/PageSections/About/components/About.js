@@ -28,24 +28,18 @@ const About = () => {
             ¿Quiénes somos?
           </h2>
           <p className="text-lg xl:text-xl text-gray-700 mt-8 ml-0 xl:ml-5 md:text-center xl:text-left">
-            Unne es una plataforma de corretaje, donde los corredores puedan
-            acceder <br />
-            a herramientas digitales que de otro modo seria difícil de acceder.
+            Unne es un acelerador inmobiliario que ofrece una amplia gama de productos y servicios modernos y tecnológicos que impulsaran el mercado inmobiliario.
             <br />
-            Esperamos que estas les permitan atender a los clientes y cumplir
-            sus
             <br />
-            expectativas de manera rápida, en un proceso claro y sencillo.
+            Ofrecemos una propuesta de valor competitiva junto a un equipo de profesionales, que ayudaran a nuestros ejecutivos inmobiliarios a cerrar de manera efectiva sus negocios.
             <br />
-            Creamos Unne con la misión de poder arrendar, vender e Invertir en
             <br />
-            propiedades de manera informada, rápida, y segura.
+            Creamos Unne con la misión de poder arrendar, vender e invertir en propiedades de manera informada, rápida y segura. 
             <br />
-            “Nuestro propósito es democratizar y profesionalizar esta industria
-            a un <br />
-            proceso accesible y fácil, brindando información relevante en la
-            toma de <br />
-            decisiones.”
+            <br />
+            Nuestro propósito es democratizar y profesionalizar esta industria a un proceso accesible y fácil, brindando información relevante en la toma de decisiones.
+            <br />
+            <br />
           </p>
 
           <p className="text-lg xl:text-xl text-gray-700 mt-8 ml-0 xl:ml-5 md:text-center xl:text-left">
@@ -59,13 +53,11 @@ const About = () => {
             <div className="mt-8 ml-8 mr-8 mb-8 hover:scale-110 transition duration-500">
               <div className="w-full xl:w-5/6 h-50 sm:h-auto bg-primary-400 rounded-[50px] overflow-hidden shadow-md">
                 <div className="p-14 pl-10">
-                  <h2 className="text-xl xl:text-2xl text-white font-bold">
+                  <h2 className="text-xl xl:text-2xl text-white font-bold mb-2">
                     ¡Los números nos avalan!
                   </h2>
                   <p className="text-lg xl:text-xl text-white ">
-                    Màs de 2.000.000 millones de visitas a nuestras
-                    publicaciones mensuales + de 300 corredores ya son parte de
-                    Unne Màs de 6.000 propiedades vigentes en cartera
+                  Más de <span className='font-bold'>2.000.000</span> millones de visitas a nuestras publicaciones mensuales.<br></br> Más de <span className='font-bold'>300</span> corredores ya son parte de Unne.<br></br> Cerca de <span className='font-bold'>6.000</span> propiedades vigentes en cartera.<br></br> El Banco de Canje más grande del país.
                   </p>
                 </div>
               </div>

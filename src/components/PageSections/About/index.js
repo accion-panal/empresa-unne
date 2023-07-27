@@ -7,8 +7,9 @@ const AboutComponent = () => {
   return (
     <Fragment>
       <About />
-      <ContactUs />
       <Alliances />
+      <ContactUs />
+      
     </Fragment>
   );
 };

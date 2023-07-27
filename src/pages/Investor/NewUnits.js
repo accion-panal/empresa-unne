@@ -32,9 +32,9 @@ const NewUnits = () => {
         <Banner />
       </section>
 
-      <Section>
+      {/* <Section>
         <PropertiesComponent />
-      </Section>
+      </Section> */}
     </Fragment>
   );
 };

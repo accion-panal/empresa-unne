@@ -7,7 +7,7 @@ import { NewPropertyQualities } from '../../../../data/index';
 
 const NewProperty = () => {
   const titleFont = 'text-4xl lg:text-5xl';
-  const subFont = 'text-sm';
+  const subFont = 'text-base';
   const subTitleFont = '';
 
   return (
@@ -45,19 +45,19 @@ const NewProperty = () => {
 
       <div className="flex gap-12 justify-center flex-wrap">
         <InvestToday
-          title="departamento"
+          title="Departamento"
           href="#departamento"
           operationType="venta"
           typeOfProperty="departamento"
         />
         <InvestToday
-          title="estacionamiento"
+          title="Estacionamiento"
           href="#estacionamientos"
           operationType="venta"
           typeOfProperty="estacionamiento"
         />
         <InvestToday
-          title="bodega"
+          title="Bodega"
           href="#bodega"
           operationType="venta"
           typeOfProperty="bodega"

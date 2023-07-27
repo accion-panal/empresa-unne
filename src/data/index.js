@@ -7,13 +7,51 @@ export const mainCarouselData = [
     id: 1,
     title: 'Asegura tú inversión con Remate seguro',
     desc: 'Garantizamos hasta un 15% de retorno por tu inversión',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689974575/Projects/unne/img/hero/remate3.jpg',
   },
   {
     id: 2,
-    title: 'Invierte con expertos en Unidades Nuevas',
-    desc: 'Contamos con una amplia cartera de propiedades de inversión',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide4_hblbwq.webp',
+    title: '¡Encuentra tu financiamiento ideal!',
+    desc: 'En Alianza con los Bancos más importantes del país',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689975271/Projects/unne/img/hero/financiamiento2.jpg',
+  },
+  {
+    id: 3,
+    title: '¡Simplifica tus trámites legales con nuestros abogados inmobiliarios!',
+    desc: 'Nos encargamos de todo el proceso de la postventa de tu propiedad',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689975597/Projects/unne/img/hero/tramite2.jpg',
+  },
+  {
+    id: 4,
+    title: '¡Deja la venta de tu propiedad en mano de expertos!',
+    desc: 'Somos la corredora más grande del país, con más de 6000 publicaciones activas',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689974937/Projects/unne/img/hero/venta.jpg',
+  },
+];
+export const mainCarouselLeaseData = [
+  {
+    id: 1,
+    title: 'Arrienda tu propiedad sin complicaciones',
+    desc: 'Contamos con mas de 300 corredores de propiedades en todo el territorio nacional',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+  },
+];
+
+export const mainCarouselSellingData = [
+  {
+    id: 1,
+    title: 'Vende fácil y rápido',
+    desc: 'Somos la corredora de propiedades más grande del país',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+  },
+];
+
+export const mainCarouselLegalServicesData = [
+  {
+    id: 1,
+    title: '¡No pierdas una venta por un trámite legal!',
+    desc: 'Nuestros abogados inmobiliarios te acompañan en todo el proceso de venta',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
   },
 ];
 
@@ -24,36 +62,30 @@ export const webServicesTabs = ['venta', 'arriendo ', 'arriendo_temporal'];
 export const BankData = [
   {
     id: 1,
-    title: 'Banco de Chile',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680029041/unne-media/bancos/BancoChile_rseopu.png',
-    href: 'https://portales.bancochile.cl/personas',
+    title: 'Banco Estado',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689962901/Projects/unne/img/alianzas/BancoEstado.webp',
+    href: '',
   },
   {
     id: 2,
-    title: 'Banco Security',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680029041/unne-media/bancos/BANCOSECURITY_hs4t1l.png',
-    href: 'https://personas.bancosecurity.cl/',
+    title: 'Accion Panal',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689962901/Projects/unne/img/alianzas/accionPanal.webp',
+    href: '',
   },
   {
     id: 3,
-    title: 'BCI',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680029041/unne-media/bancos/bci_zefpfw.png',
+    title: 'Info Check',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689963093/Projects/unne/img/alianzas/InfoCheck.webp',
     href: 'https://www.bci.cl/personas',
   },
   {
     id: 4,
-    title: 'Met Life',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680029041/unne-media/bancos/metlife_isrjth.png',
-    href: 'https://w3.metlife.cl/',
+    title: 'Goohaus',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689963276/Projects/unne/img/alianzas/Goohaus.webp',
+    href: '',
   },
   {
     id: 5,
-    title: 'Banco Scotiabank',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680029041/unne-media/bancos/Scotiabank_nrdmel.png',
-    href: 'https://www.scotiabankchile.cl/',
-  },
-  {
-    id: 6,
     title: 'Banco TrueCapital',
     img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680029041/unne-media/bancos/TrueCapital_yuwaip.png',
     href: 'https://www.truecapital.cl/',
@@ -91,6 +123,27 @@ export const whyUnneLeaseData = [
         icon: 'before:content-["5"]',
       },
     ],
+  },
+];
+
+export const whyUnneLeaseNewData = [
+  {
+    id: 1,
+    title: 'Equipo de Profesionales',
+    text: 'Contamos con más de 300 corredores de propiedades especializados en todo el territorio nacional, con la asesoría de abogados inmobiliarios que te ayudaran desde la elaboración de contrato hasta recibir pago del arriendo.',
+    icon:'RiUserSearchFill'
+  },
+  {
+    id: 2,
+    title: 'Vende en tiempo récord',
+    text: 'Utilizamos un sistema inteligente que permite cruzar bases de datos de búsquedas y consultas para optimizar los tiempos de respuesta y conseguir tu arrendatario ideal en poco tiempo.',
+    icon:'BsBarChartFill'
+  },
+  {
+    id: 3,
+    title: 'Mayor Alcance',
+    text: 'Sincronizamos nuestras publicaciones en los 39 portales inmobiliarios más importantes del país, lo que te brindara una mayor visualización de tu propiedad.',
+    icon:'GiMoneyStack'
   },
 ];
 
@@ -216,6 +269,27 @@ export const whyUnneSellData = [
         icon: 'before:content-["5"]',
       },
     ],
+  },
+];
+/** porque unne - vender Data */
+export const whyUnneSellNewData = [
+  {
+    id: 1,
+    title: 'Equipo de Profesionales',
+    text: 'Contamos con más de 250 corredores de propiedades especializados en todo el territorio nacional, con el respaldo de un equipo legal que se encarga de toda la gestión de la postventa para tu seguridad y tranquilidad.',
+    icon:'RiUserSearchFill',
+  },
+  {
+    id: 2,
+    title: 'Vende en tiempo récord',
+    text: 'Utilizamos un sistema inteligente que permite cruzar bases de datos de búsquedas y consultas para optimizar los tiempos de respuesta y conseguir tu cliente ideal en poco tiempo.',
+    icon:'BsBarChartFill',
+  },
+  {
+    id: 3,
+    title: 'Mayor Alcance',
+    text: 'Sincronizamos nuestras publicaciones en los 39 portales inmobiliarios más importantes del país, lo que te brindara una mayor visualización de tu propiedad.',
+    icon:'GiMoneyStack',
   },
 ];
 
@@ -515,11 +589,11 @@ export const MoreServicesData = [
 export const plansCardData = [
   {
     id: 1,
-    title: 'Administración Inteligente',
+    title: 'Plan Inteligente',
     commission: '25%',
     benefits: [
-      '5% del valor del arriendo',
-      'Publicación en 43 portales inmobiliarios',
+      '5% del valor del arriendo mensual',
+      'Publicación en 30 portales inmobiliarios',
       'Ofertas formales con garantía Asesoría legal',
       'Acta de entrega con respaldo fotográfico',
       'Verificación de pago de servicios y GGCC',
@@ -528,11 +602,12 @@ export const plansCardData = [
   },
   {
     id: 2,
-    title: 'Administración con garantía',
+    title: 'Plan con garantía',
     commission: '50%',
     benefits: [
-      '5% del valor del arriendo',
-      'Publicación en 43 portales inmobiliarios',
+      '7,5% del valor del arriendo mensual',
+      '6 meses de arriendo en caso de no pago',
+      'Publicación en 30 portales inmobiliarios',
       'Ofertas formales con garantía Asesoría legal',
       'Acta de entrega con respaldo fotográfico',
       'Verificación de pago de servicios y GGCC',
@@ -546,7 +621,7 @@ export const plansCardData = [
 export const companyQualities = [
   {
     id: 1,
-    title: 'Especialista',
+    title: 'Especialistas',
     desc: 'Te brindamos la mejor atención de la mano de especialistas del corretaje inmobiliario y profesionales del area legal.',
   },
   {
