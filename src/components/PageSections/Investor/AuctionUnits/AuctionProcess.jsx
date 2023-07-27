@@ -41,7 +41,7 @@ const AuctionProcess = () => {
                   Nuestro modelo de Inversión Remate seguro
                 </h2>
                 <p className="text-sm text-gray-600">
-                  Nuestro modelo de Inversión Remate seguro Único en el mercado
+                  Único en el mercado
                   que genera hasta un 15% de rentabilidad por operación.
                 </p>
               </div>

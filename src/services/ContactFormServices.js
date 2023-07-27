@@ -115,6 +115,7 @@ const ContactFormServices = {
     from,
     name,
     userEmail,
+    phone,
     reason,
     message,
     realtorEmail
@@ -125,6 +126,7 @@ const ContactFormServices = {
         Desde: from,
         Nombre: name,
         Correo: userEmail,
+        Telefono: phone,
         Soy: reason,
         Mensaje: message,
       },

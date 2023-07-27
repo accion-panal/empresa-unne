@@ -10,7 +10,6 @@ const InvestmentInfo = () => {
     <Fragment>
       <HeadingSection
         title="Deja tu propiedad de inversión en mano de los expertos"
-        subtitle="En alianza con Aulén"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

@@ -235,7 +235,7 @@ const AuctionObjetives = () => {
         </div>
       </Fade>
 
-      <div className="flex flex-col justify-center items-center min-h-screen  mt-10 bg-[url('https://dummyimage.com/1920x1080/fce58a/fce58a')] ">
+      <div id='formulario' className="flex flex-col justify-center items-center min-h-screen  mt-10 bg-[url('https://dummyimage.com/1920x1080/fce58a/fce58a')] ">
         <h2 className="text-4xl font-bold mb-4 text-center mt-4 text-gray-800">
           Te ayudamos a elegir la mejor opción de inversión para ti
         </h2>

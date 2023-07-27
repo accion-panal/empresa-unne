@@ -1,5 +1,5 @@
 import React, { Fragment, useContext, useEffect } from 'react';
-import MainCarousel from '../../Carousel/MainCarousel';
+import HeroBanner from '../../Carousel/HeroBanner';
 import { ClientsContext } from '../../../context/clients/ClientsContext';
 import WhyServicesUnne from './components/WhyServicesUnne';
 import ProcessTrading from './components/ProcessTrading';
@@ -8,7 +8,7 @@ import { TradingProcessData } from '../../../data';
 import MoreServices from './components/MoreServices';
 import ReactSlickComponent from '../../Carousel/ReactSlickComponent';
 import ClientCard from '../../Card/ClientCard';
-import { mainCarouselData } from '../../../data';
+import { mainCarouselLegalServicesData } from '../../../data';
 
 const LegalServicesComponent = () => {
   const { contextData } = useContext(ClientsContext);
@@ -20,7 +20,7 @@ const LegalServicesComponent = () => {
 
   return (
     <Fragment>
-      <MainCarousel data={mainCarouselData} />
+      <HeroBanner data={mainCarouselLegalServicesData} />
       <WhyServicesUnne />
       <Fade>
         {TradingProcessData?.length > 0 &&

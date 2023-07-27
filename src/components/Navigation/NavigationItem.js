@@ -26,6 +26,7 @@ const NavigationItem = ({ menuItem }) => {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel className="absolute left-1/2 z-10 mt-2 w-56 border-0 rounded-xl max-w-56 -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+            {({ close }) => (
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 w-50">
                 <div className="relative grid gap-1 p-2 px-2 lg:grid-cols-1 bg-white w-auto rounded-xl">
                   {children?.map(({ name, href }) => (
@@ -37,6 +38,7 @@ const NavigationItem = ({ menuItem }) => {
                           ? 'bg-secondary text-white flex items-center rounded-lg transition duration-150 ease-in-out hover:bg-secondary focus:outline-none focus-visible:ring'
                           : 'flex items-center rounded-lg transition duration-150 ease-in-out hover:bg-slate-100 focus:outline-none focus-visible:ring'
                       }`}
+                      onClick={async () => {close()}}
                     >
                       <div className="ml-3">
                         <p className="text-sm py-2 font-normal">{name}</p>
@@ -45,6 +47,7 @@ const NavigationItem = ({ menuItem }) => {
                   ))}
                 </div>
               </div>
+              )}
             </Popover.Panel>
           </Transition>
         </Fragment>

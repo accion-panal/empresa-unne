@@ -25,10 +25,10 @@ const reasons = [
 ];
 
 const Contact = () => {
-  const { FaUserAlt, FiMail } = iconsList;
+  const { FaUserAlt, FiMail, BsFillTelephoneFill } = iconsList;
   const [formData, setFormData] = useState({
     name: '',
-    phone: '...',
+    phone: '',
     email: '',
     termsAndConditions: false,
     companyId: companyForm.id, // ❌ el company si es 15, el server responde con un status 500
@@ -74,6 +74,13 @@ const Contact = () => {
     setFormData({
       ...formData,
       email: email,
+    });
+  };
+  /** Update phone */
+  const handlePhone = (phone) => {
+    setFormData({
+      ...formData,
+      phone: phone,
     });
   };
 
@@ -151,6 +158,7 @@ const Contact = () => {
       [
         formData?.name,
         formData?.email,
+        formData?.phone,
         formData?.action,
         formData?.message,
       ].includes('') ||
@@ -169,6 +177,7 @@ const Contact = () => {
         'Unne',
         formData?.name,
         formData?.email,
+        formData?.phone,
         formData?.action,
         formData?.message,
         realtorData?.email
@@ -211,7 +220,7 @@ const Contact = () => {
     <div className="bg-gray-200 rounded-[50px] p-4 my-10 ">
       <div className="text-center">
         <h2 className="text-3xl font-bold text-gray-700 py-3">
-          Contáctanos para más información
+          Contáctanos<br/> para más información
         </h2>
       </div>
       <form name="FormSubmit" onSubmit={handleSubmit} className="py-10">
@@ -249,6 +258,24 @@ const Contact = () => {
               className=" w-full p-3 rounded-full bg-white text-lg text-gray-900 placeholder:text-gray-500 placeholder:font-bold outline-none"
               value={formData?.email}
               onChange={(ev) => handleEmail(ev.target.value)}
+            />
+          </div>
+        </div>
+        <div className="flex mb-5">
+          <div className="w-1/5 flex justify-start items-center">
+            <i className="p-4 rounded-full bg-white ml-2 xl:ml-8">
+            <BsFillTelephoneFill className="text-xl text-gray-300" />
+            </i>
+          </div>
+          <div className="w-4/6 flex justify-center items-center flex-col">
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="Teléfono"
+              className=" w-full p-3 rounded-full bg-white text-lg text-gray-900 placeholder:text-gray-500 placeholder:font-bold outline-none"
+              value={formData?.phone}
+              onChange={(ev)=> handlePhone(ev.target.value)}
             />
           </div>
         </div>

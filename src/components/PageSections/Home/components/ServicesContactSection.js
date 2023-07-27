@@ -7,7 +7,7 @@ const ServicesContactSection = () => {
     <div className="flex justify-center items-center flex-col bg-gray-50 pb-16">
       <HeadingSection title="Para más información de nuestros servicios" />
       <Button
-        href="/soy-inversionista/unidades-nuevas"
+        href="/soy-inversionista/unidades-en-remate"
         className="p-2 text-xl xl:p-3 text-center xl:text-2xl bg-secondary-400 hover:bg-secondary hover:shadow-md 
         w-48 sm:w-96"
       >

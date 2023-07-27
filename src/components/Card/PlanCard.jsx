@@ -10,7 +10,7 @@ const PlanCard = ({ data }) => {
       </h5>
 
       <div className="flex justify-center items-center py-2 font-bold rounded-full w-5/6 xl:w-5/6 mx-auto bg-white">
-        <span className="text-lg xl:text-xl font-extrabold text-center w-1/2 ml-2 text-primary">
+        <span className="text-lg xl:text-3xl font-extrabold text-center w-1/2 ml-2 text-primary">
           {commission}
         </span>
         <span className="text-sm lg:text-md xl:text-xl text-slate-500">
