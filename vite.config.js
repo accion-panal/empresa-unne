@@ -15,6 +15,8 @@ export default defineConfig({
         // include: /src\/.*\.[tj]sx?$/,
         exclude: [],
     },
+    base: './',
+
     optimizeDeps: {
         esbuildOptions: {
             plugins: [
