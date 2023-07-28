@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
-import ContactFormServices from '../../services/ContactFormServices';
-import ContactApiFormServices from '../../services/ContactApiForm';
-import Button from '../Button/Button';
-import Alert from '../Alert/Alert';
-import ToastifyComponent from '../Toastify/ToastifyComponent';
+import { useState } from 'react';
 import { toast } from 'react-toastify';
-import { realtorData } from '../../constants/consts/realtor';
-import { companyData } from '../../constants/consts/company';
-import { iconsList } from '../Icons';
 import { companyForm } from '../../constants/consts/company';
+import { realtorData } from '../../constants/consts/realtor';
+import ContactApiFormServices from '../../services/ContactApiForm';
+import ContactFormServices from '../../services/ContactFormServices';
+import Alert from '../Alert/Alert';
+import Button from '../Button/Button';
+import { iconsList } from '../Icons';
 
 const ContactForm = ({ title, subtitle }) => {
   const { FaUserAlt, BsFillTelephoneFill, FiMail } = iconsList;
