@@ -415,12 +415,12 @@ export const PortalData = [
     img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680028998/unne-media/portal/yapo_iyqynp.png',
     href: 'https://new.yapo.cl/',
   },
-  {
-    id: 3,
-    title: 'Top Propiedades',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680028998/unne-media/portal/topPropiedades_yu50t1.png',
-    href: 'https://www.toppropiedades.cl/',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Top Propiedades',
+  //   img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680028998/unne-media/portal/topPropiedades_yu50t1.png',
+  //   href: 'https://www.toppropiedades.cl/',
+  // },
   {
     id: 4,
     title: 'Toc toc',
