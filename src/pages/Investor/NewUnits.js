@@ -22,13 +22,13 @@ const NewUnits = () => {
     <Fragment>
       <Head title="Unidades nuevas" />
 
-      <section className={`${margin}`}>
+      <section className={`${margin}  relative z-10`}>
         <Fade delay={300} cascade>
           <NewProperty />
         </Fade>
       </section>
 
-      <section className={`${margin}`}>
+      <section className={`${margin} relative z-0`}>
         <Banner />
       </section>
 
