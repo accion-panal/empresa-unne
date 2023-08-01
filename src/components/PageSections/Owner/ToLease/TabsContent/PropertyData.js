@@ -6,7 +6,7 @@ import {
   propertyTypeData,
 } from '../../../../../constants/consts/forms';
 
-const PropertyData = ({ formData, setFormData, _renderTab2 }) => {
+const PropertyData = ({ formData, setFormData, _renderTab2,onclickButton,disabledButton }) => {
   const [bedrooms, setBedrooms] = useState(bedroomsList);
   const [bathrooms, setBathrooms] = useState(bathroomsList);
 
@@ -181,9 +181,8 @@ const PropertyData = ({ formData, setFormData, _renderTab2 }) => {
               bedrooms.map((bedroom) => (
                 <div
                   key={bedroom.id}
-                  className={`${
-                    bedroom.selected ? 'bg-primary text-white' : 'bg-white'
-                  } w-10 h-10 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-3 cursor-pointer`}
+                  className={`${bedroom.selected ? 'bg-primary text-white' : 'bg-white'
+                    } w-10 h-10 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-3 cursor-pointer`}
                   onClick={() => {
                     handleSelectBedroom(bedroom.id);
                     handleBedrooms(bedroom.id);
@@ -204,9 +203,8 @@ const PropertyData = ({ formData, setFormData, _renderTab2 }) => {
               bathrooms.map((bathroom) => (
                 <div
                   key={bathroom.id}
-                  className={`${
-                    bathroom.selected ? 'bg-primary text-white' : 'bg-white'
-                  } w-10 h-10 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-3 cursor-pointer`}
+                  className={`${bathroom.selected ? 'bg-primary text-white' : 'bg-white'
+                    } w-10 h-10 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-3 cursor-pointer`}
                   onClick={() => {
                     handleSelectBathroom(bathroom.id);
                     handleBathrooms(bathroom.id);
@@ -233,23 +231,6 @@ const PropertyData = ({ formData, setFormData, _renderTab2 }) => {
               name="surfaceM2"
               value={formData?.propertyData?.surfaceM2}
               onChange={(ev) => handleSurfaceM2(ev.target.value)}
-            />
-          </div>
-        </div>
-
-        <div className="w-full my-7">
-          <label className="text-gray-500 font-bold">Gastos Comunes</label>
-          <div className="flex mt-3">
-            <NumericFormat
-              value={formData?.propertyData?.commonExpenses}
-              onChange={handleCommonExpenses}
-              placeholder="$ Ingrese monto"
-              allowNegative={false}
-              decimalSeparator={','}
-              thousandSeparator={'.'}
-              id="commonExpenses"
-              name="commonExpenses"
-              className="w-full p-4 bg-white rounded-full border-gray-300 outline-none focus:outline-none"
             />
           </div>
         </div>
@@ -289,9 +270,38 @@ const PropertyData = ({ formData, setFormData, _renderTab2 }) => {
             </div>
           </div>
         </div>
+        <div className="flex items-center text-[15px] justify-center w-full mt-7">
+          <button 
+            className={disabledButton() ? 'block w-[200px] p-4 my-1 uppercase font-semibold text-md rounded-full hover:shadow-sm transition ease-in-out duration-300 text-white bg-primary-opacity/60':'block w-[200px] p-4 my-1 uppercase font-semibold text-md rounded-full hover:shadow-sm transition ease-in-out duration-300 text-white bg-primary hover:bg-primary-opacity'}
+            onClick={onclickButton}
+            disabled={disabledButton()}
+          >
+            Continuar
+          </button>
+        </div>
       </form>
     </div>
   );
 };
 
 export default PropertyData;
+
+
+/* GASTOS COMUNES */
+
+/* <div className="w-full my-7">
+    <label className="text-gray-500 font-bold">Gastos Comunes</label>
+    <div className="flex mt-3">
+      <NumericFormat
+        value={formData?.propertyData?.commonExpenses}
+        onChange={handleCommonExpenses}
+        placeholder="$ Ingrese monto"
+        allowNegative={false}
+        decimalSeparator={','}
+        thousandSeparator={'.'}
+        id="commonExpenses"
+        name="commonExpenses"
+        className="w-full p-4 bg-white rounded-full border-gray-300 outline-none focus:outline-none"
+      />
+    </div>
+  </div> */
