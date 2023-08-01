@@ -1,5 +1,8 @@
 import React from 'react'
 import { iconsList } from '../../../../components/Icons/index';
+import QvEquipo from '../../../Icons/custom/qvEquipo';
+import QvMayor from '../../../Icons/custom/qvMayor';
+import QvVende from '../../../Icons/custom/qvVende';
 
 const Carding = ({data}) => {
     const {
@@ -17,6 +20,9 @@ const Carding = ({data}) => {
             'RiUserSearchFill':<RiUserSearchFill size="6rem" color="grey" />,
             'BsBarChartFill':<BsBarChartFill size="6rem" color="grey" />,
             'GiMoneyStack':<GiMoneyStack size="6rem" color="grey" />,
+            'customEquipo':<QvEquipo width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>,
+            'customMayor':<QvMayor width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>,
+            'customVende':<QvVende width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>,
         };
         return mapIcon[data.icon];
     };

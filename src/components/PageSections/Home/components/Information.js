@@ -4,6 +4,9 @@ import { iconsList } from '../../../../components/Icons/index';
 import { Fade } from 'react-awesome-reveal';
 import HeadingSection from '../../../HeadingSection/HeadingSection';
 import { Link } from 'react-router-dom';
+import IndexGestion from '../../../Icons/custom/indexGestion';
+import IndexInversion from '../../../Icons/custom/indexInversion';
+import IndexServicios from '../../../Icons/custom/indexServicios';
 
 const Information = () => {
   const {
@@ -27,7 +30,8 @@ const Information = () => {
             <div className="card w-80 min-h-[23.5rem] m-6  bg-gray-200 shadow-xl hover:scale-110 transition duration-500">
               <div>
                 <figure className="px-10 pt-10">
-                  <RiUserSearchFill size="6rem" color="grey" />
+                  {/* <RiUserSearchFill size="6rem" color="grey" /> */}
+                  <IndexInversion width={120} height={120} viewBox="0 0 512 512" className='text-[#808080]'/>
                 </figure>
               </div>
               <div className="card-body items-center text-center">
@@ -49,7 +53,8 @@ const Information = () => {
             <div className="card w-80 min-h-[23.5rem]  m-6 bg-gray-200 shadow-xl hover:scale-110 transition duration-500">
               <div>
                 <figure className="px-10 pt-10">
-                  <BsBarChartFill size="6rem" color="grey" />
+                  {/* <BsBarChartFill size="6rem" color="grey" /> */}
+                  <IndexGestion width={120} height={120} viewBox="50 30 430 430" className='text-[#808080]' />
                 </figure>
               </div>
 
@@ -72,7 +77,8 @@ const Information = () => {
             <div className="card w-80 min-h-[23.5rem] m-6 bg-gray-200 shadow-xl hover:scale-110 transition duration-500">
               <div>
                 <figure className="px-10 pt-10">
-                  <GiMoneyStack size="6rem" color="grey" />
+                  {/* <GiMoneyStack size="6rem" color="grey" /> */}
+                  <IndexServicios width={120} height={120} viewBox="0 0 512 512" className='text-[#808080]'/>
                 </figure>
               </div>
               <div className="card-body items-center text-center">
