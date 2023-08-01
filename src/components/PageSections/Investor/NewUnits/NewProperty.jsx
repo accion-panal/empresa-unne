@@ -49,18 +49,23 @@ const NewProperty = () => {
           href="#departamento"
           operationType="venta"
           typeOfProperty="departamento"
+          img = "bg-img-departamento"
+
         />
         <InvestToday
           title="Estacionamiento"
           href="#estacionamientos"
           operationType="venta"
           typeOfProperty="estacionamiento"
+          img = "bg-img-estacionamiento"
         />
         <InvestToday
           title="Bodega"
           href="#bodega"
           operationType="venta"
           typeOfProperty="bodega"
+          img = "bg-img-bodega"
+
         />
       </div>
     </div>
