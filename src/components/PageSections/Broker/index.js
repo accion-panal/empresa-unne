@@ -8,8 +8,8 @@ const BrokerComponent = () => {
   return (
     <Fragment>
       <MainInformation />
-      <Banner />
       <InfoCardSection />
+      <Banner />
       <OurPartners />
     </Fragment>
   );

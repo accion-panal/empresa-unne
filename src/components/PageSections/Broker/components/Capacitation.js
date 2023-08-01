@@ -25,7 +25,7 @@ const Capacitation = () => {
             <div className="pt-12 pr-10">
               <img
                 className="h-max w-max"
-                src="https://res.cloudinary.com/dvdb33uyj/image/upload/v1684961059/Projects/unne/img/broker/png/broker_yielyh.png"
+                src="https://res.cloudinary.com/dvdb33uyj/image/upload/v1690837671/Projects/unne/img/Acadmenia%20unne/ACADEMIA_UNNE_ssoewa.webp"
                 alt="img-broker"
               />
             </div>

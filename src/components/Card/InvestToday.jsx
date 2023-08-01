@@ -6,7 +6,7 @@ import { company, paginationTopLimit } from '../../constants/consts/company';
 import PropertiesServices from '../../services/PropertiesServices';
 import styles from '../../styles/components/NewProperty.module.css';
 
-const InvestToday = ({ title, href, operationType, typeOfProperty }) => {
+const InvestToday = ({ title, href, operationType, typeOfProperty , img}) => {
   const { contextData } = useContext(PropertiesContext);
   const { contextDataSelects } = useContext(SelectsContext);
   const { setProperties, setIsLoading, setNotFoundMsg } = contextData;
@@ -69,7 +69,7 @@ const InvestToday = ({ title, href, operationType, typeOfProperty }) => {
     >
       <div className={`${styles.blob} bg-[#f0f0f0]`}></div>
       <h2 className={`${styles.titles} text-xl py-4 font-semibold`}>{title}</h2>
-      <span className={styles.img}></span>
+      <span className={`${styles.img} ${img}`}></span>
     </Link>
   );
 };

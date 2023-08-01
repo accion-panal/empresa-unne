@@ -33,7 +33,7 @@ export const mainCarouselLeaseData = [
     id: 1,
     title: 'Arrienda tu propiedad sin complicaciones',
     desc: 'Contamos con mas de 300 corredores de propiedades en todo el territorio nacional',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690907896/Projects/unne/img/Quiero%20arrendar/QUIERO_ARRENDAR__Arrienda_tu_propiedad_sin_complicaciones_ieiurk.webp',
   },
 ];
 
@@ -51,7 +51,7 @@ export const mainCarouselLegalServicesData = [
     id: 1,
     title: '¡No pierdas una venta por un trámite legal!',
     desc: 'Nuestros abogados inmobiliarios te acompañan en todo el proceso de venta',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690837248/Projects/unne/img/Eres%20corredor/ERES_CORREDOR___SERVICIOS_LEGALES_rhfldh.webp',
   },
 ];
 
