@@ -406,26 +406,62 @@ export const PortalData = [
   {
     id: 1,
     title: 'Portal Inmobiliario',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680028999/unne-media/portal/portalinmobiliario_x6nndy.png',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690916855/Projects/unne/img/portales/portal_in_1_alfly5.webp',
     href: 'https://www.portalinmobiliario.com/',
   },
   {
     id: 2,
     title: 'Yapo',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680028998/unne-media/portal/yapo_iyqynp.png',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912561/Projects/unne/img/portales/yapo_t81kzz.png',
     href: 'https://new.yapo.cl/',
   },
-  // {
-  //   id: 3,
-  //   title: 'Top Propiedades',
-  //   img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680028998/unne-media/portal/topPropiedades_yu50t1.png',
-  //   href: 'https://www.toppropiedades.cl/',
-  // },
+  {
+    id: 3,
+    title: 'Enlace Inmobiliario',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/enlace_inmobiliario_io3jab.png',
+    href: 'https://www.enlaceinmobiliario.cl/',
+  },
   {
     id: 4,
     title: 'Toc toc',
-    img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680028998/unne-media/portal/toctoc_ll3lza.png',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912561/Projects/unne/img/portales/toctoc_wjieec.png',
     href: 'https://www.toctoc.com/',
+  },
+  {
+    id: 5,
+    title: 'Zoom Inmobiliario',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/zoom_srnwgd.png',
+    href: 'https://www.zoominmobiliario.com/',
+  },
+  {
+    id: 6,
+    title: 'Portal Terreno',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/portal_terreno_r8qswq.png',
+    href: 'https://www.portalterreno.com/cl/',
+  },
+  {
+    id: 7,
+    title: 'Doomos',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/doomos_rt0slv.png',
+    href: 'https://www.doomos.cl/',
+  },
+  {
+    id: 8,
+    title: 'Propiv',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/propiv_di2vat.png',
+    href: 'https://propiv.com/',
+  },
+  {
+    id: 9,
+    title: 'ICasas',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912561/Projects/unne/img/portales/iCasas_w1okpp.png',
+    href: 'https://www.icasas.cl/',
+  },
+  {
+    id: 10,
+    title: 'Chile Propiedades',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690915721/Projects/unne/img/portales/chilepropiedades_edrxrr.png',
+    href: 'https://chilepropiedades.cl/',
   },
 ];
 
@@ -436,7 +472,7 @@ export const AssociateCardData = [
     title: 'Contrata nuestros servicios legales',
     desc: 'Contamos con abogados especialistas en asesorias inmobiliarias que te guiaran en todo el proceso de la venta o arriendo de tu propiedad.',
     icon: 'AiTwotoneGold',
-    href: 'href',
+    href: '/eres-corredor/servicios-legales',
     children: [
       {
         id: 1,
@@ -457,7 +493,7 @@ export const AssociateCardData = [
     title: 'Academia Unne',
     desc: 'Tenemos un programa dirigido por especialista del área del corretaje, que te brindara los conocimientos necesarios para ser un profesional',
     icon: 'BiBookOpen',
-    href: 'href',
+    href: '/eres-corredor/academia-unne',
     children: [
       {
         id: 1,
@@ -486,7 +522,7 @@ export const AssociateCardData = [
     title: 'Oportunidades de Inversión',
     desc: 'Tus clientes contaran con productos de inversión de remate seguro y unidades nuevas',
     icon: 'BsFillHouseAddFill',
-    href: 'href',
+    href: '/soy-inversionista/unidades-en-remate',
     children: [],
   },
 ];
@@ -655,3 +691,62 @@ export const propertyManagmentData = [
     desc: 'sin falta los primeros 5 dias del mes',
   },
 ];
+
+export const UserExperience = [
+  {
+    id:1,
+    avatar:'',
+    names: 'Anamaria ',
+    last_name:'Espinoza',
+    type:'Asociada Unne ',
+    text:'Estoy muy contenta de pertenecer a este gran equipo, siempre he tenido excelente atención como asociada, mis dudas son respondidas rápidamente y de forma clara. Gracias a mis publicaciones en Unne he tenido muy buena exposición, he vendido y arrendado varias propiedades en los dos años que estoy trabajando junto a ustedes. Les deseo un muy feliz aniversario y que sean muchos más. ',
+  },
+  {
+    id:2,
+    avatar:'',
+    names: 'Ximena ',
+    last_name:'Vargas',
+    type:'Asociada Unne ',
+    text:'Hace aproximadamente un año que contraté UNNE y, además de lo completo del servicio, lo cual no he visto en otro proveedor, sin duda, la atención directa y diligente de los ejecutivos, es lo mejor.',
+  },
+  {
+    id:3,
+    avatar:'',
+    names: 'Anita ',
+    last_name:'Lizárraga',
+    type:'Asociada Unne',
+    text:'Trabajamos con Unne hace más de 4 años muy conformes sobre todo que están siempre dando valor agregado a sus asociados. ',
+  },
+  {
+    id:4,
+    avatar:'',
+    names: 'Luis Ramon',
+    last_name:'Urdaneta Perez',
+    type:'Asociado Unne ',
+    text:'Excelente Gestor Inmobiliario, he visto el crecimiento de mi emprendimiento, vertiginosamente. Espacio donde cuentas además de capacitación constante, solución inmediata a tus solicitudes. Unne es por lejos el mejor gestor inmobiliario de todo Chile. ¡Felicidades!',
+  },
+  {
+    id:5,
+    avatar:'',
+    names: 'Trinidad ',
+    last_name:'Silva Meyer',
+    type:'Asociada Unne ',
+    text:'Excelente servicio y atención de los ejecutivos de UNNE. Estoy con ellos casi desde sus inicios y no me canso de recomendarlo a mis águila y colegas corredores de propiedades!!',
+  },
+  {
+    id:6,
+    avatar:'',
+    names: 'Carmen',
+    last_name:'Valiente',
+    type:'Asociada Unne ',
+    text:'Mi experiencia con la empresa Unne ha sido excelente, comunicación fluida, capacitaciones permanentes, tanto del uso de la plataforma Unne, como del ámbito de corretaje de propiedades., área legal, comercial, etc.. Gracias Unne.',
+  },
+  {
+    id:7,
+    avatar:'',
+    names: 'Jimmy  ',
+    last_name:'Gomez',
+    type:'Asociada Unne ',
+    text:'Desde que empecé con Unne, he notado una notable diferencia en la llegada de clientes. Gracias a su plataforma, he logrado arrendar y vender propiedades de manera más rápida y efectiva. ¡Estoy muy satisfecho con los resultados obtenidos!',
+  }
+]
