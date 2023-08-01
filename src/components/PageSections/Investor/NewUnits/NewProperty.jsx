@@ -1,6 +1,7 @@
 import BasicCard from '../../../Card/BasicCard';
 import InvestToday from '../../../Card/InvestToday';
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 /* Data */
 import { NewPropertyQualities } from '../../../../data/index';
@@ -9,6 +10,20 @@ const NewProperty = () => {
   const titleFont = 'text-4xl lg:text-5xl';
   const subFont = 'text-base';
   const subTitleFont = '';
+
+  /* ToastMessage : Success */
+  const showToastWarningMsg = () => {
+    toast.warn('No se encuentran propiedades para invertir de momento.', {
+      position: 'bottom-center',
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
+  };
 
   return (
     <div className="">
@@ -50,7 +65,7 @@ const NewProperty = () => {
           operationType="venta"
           typeOfProperty="departamento"
           img = "bg-img-departamento"
-
+          onClick={showToastWarningMsg}
         />
         <InvestToday
           title="Estacionamiento"
@@ -58,6 +73,7 @@ const NewProperty = () => {
           operationType="venta"
           typeOfProperty="estacionamiento"
           img = "bg-img-estacionamiento"
+          onClick={showToastWarningMsg}
         />
         <InvestToday
           title="Bodega"
@@ -65,8 +81,9 @@ const NewProperty = () => {
           operationType="venta"
           typeOfProperty="bodega"
           img = "bg-img-bodega"
-
+          onClick={showToastWarningMsg}
         />
+        <ToastContainer/>
       </div>
     </div>
   );

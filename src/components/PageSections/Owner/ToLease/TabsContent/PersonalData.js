@@ -12,11 +12,18 @@ const PersonalData = ({
   setFormData,
   sendCodeStatus,
   setSendCodeStatus,
+  onclickButton,
+  disabledButton
 }) => {
   const { state, dispatch } = useValue();
   const form = useRef();
   const [isDisabled, setIsDisabled] = useState(true);
   const [verificationCode, setVerificationCode] = useState(0);
+  const [isDisabledButton, setIsDisabledButton] = useState(true);
+
+  console.log(disabledButton);
+  console.log(disabledButton());
+
 
   const [errorMsg, setErrorMsg] = useState({
     allFieldRequierd: '',
@@ -116,6 +123,7 @@ const PersonalData = ({
         });
         showToastSuccessMsg('Se enviara un código de validación a su email');
         setSendCodeStatus(true);
+        setIsDisabledButton(false);
         setTimeout(() => {
           setSuccessMsg('');
         }, 4000);
@@ -256,6 +264,16 @@ const PersonalData = ({
             </Button>
           </div>
           {/* <p>{state.verificationCode.code}</p> */}
+        </div>
+
+        <div className="flex items-center text-[15px] justify-center w-full mt-7">
+          <button 
+            className={isDisabledButton ? 'block w-[200px] p-4 my-1 uppercase font-semibold text-md rounded-full hover:shadow-sm transition ease-in-out duration-300 text-white bg-primary-opacity/60':'block w-[200px] p-4 my-1 uppercase font-semibold text-md rounded-full hover:shadow-sm transition ease-in-out duration-300 text-white bg-primary hover:bg-primary-opacity'}
+            onClick={onclickButton}
+            disabled={isDisabledButton}
+          >
+            Continuar
+          </button>
         </div>
       </form>
     </div>

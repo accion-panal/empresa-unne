@@ -6,7 +6,7 @@ import { company, paginationTopLimit } from '../../constants/consts/company';
 import PropertiesServices from '../../services/PropertiesServices';
 import styles from '../../styles/components/NewProperty.module.css';
 
-const InvestToday = ({ title, href, operationType, typeOfProperty , img}) => {
+const InvestToday = ({ title, href, operationType, typeOfProperty , img, onClick}) => {
   const { contextData } = useContext(PropertiesContext);
   const { contextDataSelects } = useContext(SelectsContext);
   const { setProperties, setIsLoading, setNotFoundMsg } = contextData;
@@ -18,7 +18,7 @@ const InvestToday = ({ title, href, operationType, typeOfProperty , img}) => {
       behavior: 'smooth',
     });
   };
-
+  
   const getProperties = async (
     currentPage,
     limit,
@@ -49,7 +49,19 @@ const InvestToday = ({ title, href, operationType, typeOfProperty , img}) => {
   return (
     <Link
       to={`${href}`}
-      onClick={() => {
+      onClick={onClick}
+      className={`${styles.card} hover:shadow-2xl`}
+    >
+      <div className={`${styles.blob} bg-[#f0f0f0]`}></div>
+      <h2 className={`${styles.titles} text-xl py-4 font-semibold`}>{title}</h2>
+      <span className={`${styles.img} ${img}`}></span>
+    </Link>
+  );
+};
+
+export default InvestToday;
+
+/* onClick={() => {
         scrollToDown();
         setSelectedSelects({
           ...selectedSelects,
@@ -64,14 +76,4 @@ const InvestToday = ({ title, href, operationType, typeOfProperty , img}) => {
           operationType,
           typeOfProperty
         );
-      }}
-      className={`${styles.card} hover:shadow-2xl`}
-    >
-      <div className={`${styles.blob} bg-[#f0f0f0]`}></div>
-      <h2 className={`${styles.titles} text-xl py-4 font-semibold`}>{title}</h2>
-      <span className={`${styles.img} ${img}`}></span>
-    </Link>
-  );
-};
-
-export default InvestToday;
+      }} */

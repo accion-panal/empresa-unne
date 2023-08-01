@@ -1,9 +1,9 @@
 import React from 'react';
 import { Tab } from '@headlessui/react';
 
-const TabComponent = ({ renderTabs, renderTabPanel }) => {
+const TabComponent = ({ renderTabs, renderTabPanel,selectedIndex,setSelectedIndex }) => {
   return (
-    <Tab.Group>
+    <Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
       <Tab.List className="grid grid-cols-3 g-0 w-full xl:w-5/6 mx-auto bg-gray-400 text-white rounded-t-[25px]">
         {renderTabs}
       </Tab.List>
