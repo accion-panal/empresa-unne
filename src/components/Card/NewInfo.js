@@ -1,5 +1,6 @@
 import React from 'react';
 import { iconsList } from '../Icons';
+import { Link } from 'react-router-dom';
 
 const NewInfo = ({ data }) => {
   const { title, desc, icon, href, children } = data;
@@ -62,9 +63,9 @@ const NewInfo = ({ data }) => {
         <div>
           {href && (
             <div className="flex justify-center">
-              <button className="py-1 px-7 text-white bg-primary-400 hover:bg-primary border-none rounded-full ">
+              <Link to={href} className="py-1 px-7 text-white bg-primary-400 hover:bg-primary border-none rounded-full ">
                 Mas Informacion
-              </button>
+              </Link>
             </div>
           )}
         </div>

@@ -28,25 +28,22 @@ const About = () => {
             ¿Quiénes somos?
           </h2>
           <p className="text-lg xl:text-xl text-gray-700 mt-8 ml-0 xl:ml-5 md:text-center xl:text-left">
-            Unne es un acelerador inmobiliario que ofrece una amplia gama de productos y servicios modernos y tecnológicos que impulsaran el mercado inmobiliario.
+            Creamos Unne con la misión de poder arrendar, vender e invertir en propiedades de manera informada, segura y rápida. 
             <br />
             <br />
-            Ofrecemos una propuesta de valor competitiva junto a un equipo de profesionales, que ayudaran a nuestros ejecutivos inmobiliarios a cerrar de manera efectiva sus negocios.
+            Nuestro propósito es aportar a la democratización y profesionalización de nuestra industria por la vía de la innovación en tecnología, capacitaciones, alianzas y trabajo colaborativo.  
             <br />
             <br />
-            Creamos Unne con la misión de poder arrendar, vender e invertir en propiedades de manera informada, rápida y segura. 
-            <br />
-            <br />
-            Nuestro propósito es democratizar y profesionalizar esta industria a un proceso accesible y fácil, brindando información relevante en la toma de decisiones.
+            Unne es un acelerador inmobiliario que ofrece una amplia gama de productos y servicios innovadores, esto junto con una gestión comercial proactiva, impulsarán los resultados de nuestros clientes.
             <br />
             <br />
           </p>
 
           <p className="text-lg xl:text-xl text-gray-700 mt-8 ml-0 xl:ml-5 md:text-center xl:text-left">
-            Pablo Ramirez
+            Pablo Ramirez P.
           </p>
           <p className="text-xl xl:text-xl text-gray-700 ml-0 xl:ml-5 md:text-center xl:text-left">
-            Fundador y Gerente General
+            Fundador y Gerente General.
           </p>
 
           <div className="w-full">
