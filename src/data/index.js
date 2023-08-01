@@ -277,19 +277,19 @@ export const whyUnneSellNewData = [
     id: 1,
     title: 'Equipo de Profesionales',
     text: 'Contamos con más de 250 corredores de propiedades especializados en todo el territorio nacional, con el respaldo de un equipo legal que se encarga de toda la gestión de la postventa para tu seguridad y tranquilidad.',
-    icon:'RiUserSearchFill',
+    icon:'customEquipo',
   },
   {
     id: 2,
     title: 'Vende en tiempo récord',
     text: 'Utilizamos un sistema inteligente que permite cruzar bases de datos de búsquedas y consultas para optimizar los tiempos de respuesta y conseguir tu cliente ideal en poco tiempo.',
-    icon:'BsBarChartFill',
+    icon:'customMayor',
   },
   {
     id: 3,
     title: 'Mayor Alcance',
     text: 'Sincronizamos nuestras publicaciones en los 39 portales inmobiliarios más importantes del país, lo que te brindara una mayor visualización de tu propiedad.',
-    icon:'GiMoneyStack',
+    icon:'customVende',
   },
 ];
 

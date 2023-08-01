@@ -2,6 +2,9 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { iconsList } from '../../../../components/Icons/index';
 import { Fade } from 'react-awesome-reveal';
+import UrRentable from '../../../Icons/custom/urRentable';
+import UrSeguro from '../../../Icons/custom/urSeguro';
+import UrTransparente from '../../../Icons/custom/urTransparente';
 
 const AuctionProcess = () => {
   const {
@@ -75,7 +78,8 @@ const AuctionProcess = () => {
             <div className="card w-80 min-h-[23.5rem] m-6  bg-gray-200 shadow-xl hover:scale-110 transition duration-500">
               <div>
                 <figure className="px-10 pt-10">
-                  <RiUserSearchFill size="6rem" color="grey" />
+                  {/* <RiUserSearchFill size="6rem" color="grey" /> */}
+                  <UrTransparente width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>
                 </figure>
               </div>
               <div className="card-body items-center text-center">
@@ -95,7 +99,8 @@ const AuctionProcess = () => {
             <div className="card w-80 min-h-[23.5rem]  m-6 bg-gray-200 shadow-xl hover:scale-110 transition duration-500">
               <div>
                 <figure className="px-10 pt-10">
-                  <BsBarChartFill size="6rem" color="grey" />
+                  {/* <BsBarChartFill size="6rem" color="grey" /> */}
+                  <UrRentable width={100} height={100} viewBox="20 20 465 465" className='text-[#808080]'/>
                 </figure>
               </div>
 
@@ -115,7 +120,8 @@ const AuctionProcess = () => {
             <div className="card w-80 min-h-[23.5rem] m-6 bg-gray-200 shadow-xl hover:scale-110 transition duration-500">
               <div>
                 <figure className="px-10 pt-10">
-                  <GiMoneyStack size="6rem" color="grey" />
+                  {/* <GiMoneyStack size="6rem" color="grey" /> */}
+                  <UrSeguro width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>
                 </figure>
               </div>
               <div className="card-body items-center text-center">
