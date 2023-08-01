@@ -38,4 +38,6 @@ const PartnersCard = ({ item }) => {
   );
 };
 
+
+
 export default PartnersCard;

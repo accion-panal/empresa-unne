@@ -691,3 +691,62 @@ export const propertyManagmentData = [
     desc: 'sin falta los primeros 5 dias del mes',
   },
 ];
+
+export const UserExperience = [
+  {
+    id:1,
+    avatar:'',
+    names: 'Anamaria ',
+    last_name:'Espinoza',
+    type:'Asociada Unne ',
+    text:'Estoy muy contenta de pertenecer a este gran equipo, siempre he tenido excelente atención como asociada, mis dudas son respondidas rápidamente y de forma clara. Gracias a mis publicaciones en Unne he tenido muy buena exposición, he vendido y arrendado varias propiedades en los dos años que estoy trabajando junto a ustedes. Les deseo un muy feliz aniversario y que sean muchos más. ',
+  },
+  {
+    id:2,
+    avatar:'',
+    names: 'Ximena ',
+    last_name:'Vargas',
+    type:'Asociada Unne ',
+    text:'Hace aproximadamente un año que contraté UNNE y, además de lo completo del servicio, lo cual no he visto en otro proveedor, sin duda, la atención directa y diligente de los ejecutivos, es lo mejor.',
+  },
+  {
+    id:3,
+    avatar:'',
+    names: 'Anita ',
+    last_name:'Lizárraga',
+    type:'Asociada Unne',
+    text:'Trabajamos con Unne hace más de 4 años muy conformes sobre todo que están siempre dando valor agregado a sus asociados. ',
+  },
+  {
+    id:4,
+    avatar:'',
+    names: 'Luis Ramon',
+    last_name:'Urdaneta Perez',
+    type:'Asociado Unne ',
+    text:'Excelente Gestor Inmobiliario, he visto el crecimiento de mi emprendimiento, vertiginosamente. Espacio donde cuentas además de capacitación constante, solución inmediata a tus solicitudes. Unne es por lejos el mejor gestor inmobiliario de todo Chile. ¡Felicidades!',
+  },
+  {
+    id:5,
+    avatar:'',
+    names: 'Trinidad ',
+    last_name:'Silva Meyer',
+    type:'Asociada Unne ',
+    text:'Excelente servicio y atención de los ejecutivos de UNNE. Estoy con ellos casi desde sus inicios y no me canso de recomendarlo a mis águila y colegas corredores de propiedades!!',
+  },
+  {
+    id:6,
+    avatar:'',
+    names: 'Carmen',
+    last_name:'Valiente',
+    type:'Asociada Unne ',
+    text:'Mi experiencia con la empresa Unne ha sido excelente, comunicación fluida, capacitaciones permanentes, tanto del uso de la plataforma Unne, como del ámbito de corretaje de propiedades., área legal, comercial, etc.. Gracias Unne.',
+  },
+  {
+    id:7,
+    avatar:'',
+    names: 'Jimmy  ',
+    last_name:'Gomez',
+    type:'Asociada Unne ',
+    text:'Desde que empecé con Unne, he notado una notable diferencia en la llegada de clientes. Gracias a su plataforma, he logrado arrendar y vender propiedades de manera más rápida y efectiva. ¡Estoy muy satisfecho con los resultados obtenidos!',
+  }
+]
