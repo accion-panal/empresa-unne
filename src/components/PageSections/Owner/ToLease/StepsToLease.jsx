@@ -8,6 +8,7 @@ import CheckedStep from './TabsContent/components/CheckedStep';
 import AddLocation from '../../../Maps/AddLocation';
 
 const StepsToLease = () => {
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const [isTabActive, setIsTabActive] = useState(0);
   const [sendCodeStatus, setSendCodeStatus] = useState(false);
   const [sendCodeStatusValidation, setSendCodeStatusValidation] =
@@ -20,7 +21,7 @@ const StepsToLease = () => {
       bedrooms: 0,
       bathrooms: 0,
       surfaceM2: 0,
-      commonExpenses: 0,
+      commonExpenses: 'no',
       parkingLots: 0,
       haveWarehouse: false,
     },
@@ -33,10 +34,18 @@ const StepsToLease = () => {
   });
 
   const validatePropertyForm = () => {
+    const { bedrooms, bathrooms, surfaceM2, parkingLots } = formData.propertyData;
     if (
       Object.values(formData.propertyData).includes('') ||
-      Object.values(formData.propertyData).includes(0)
+      bedrooms === 0 || bathrooms === 0 || surfaceM2 === 0
     ) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+  const validatePropertyFormButton = () => {
+    if ( validatePropertyForm()==true ) {
       return false;
     } else {
       return true;
@@ -53,10 +62,24 @@ const StepsToLease = () => {
     }
   };
 
+  const validatePersonalDataFormButton = () => {
+    if ( validatePersonalDataForm() ) {
+      console.log(formData.personalData);
+      return false;
+    } else {
+      console.log(formData.personalData);
+      return true;
+    }
+  };
+
   useEffect(() => {
     validatePropertyForm();
     validatePersonalDataForm();
   }, [formData.propertyData, formData.personalData]);
+
+  const handleNextTab = () => {
+    setSelectedIndex((prev) => (prev + 1) % 3); // Cambiar el 3 por el número de pestañas que tengas
+  };
 
   const renderTabs = () => {
     return (
@@ -129,7 +152,12 @@ const StepsToLease = () => {
     return (
       <Fragment>
         <Tab.Panel>
-          <PropertyData formData={formData} setFormData={setFormData} />
+          <PropertyData 
+            formData={formData} 
+            setFormData={setFormData} 
+            onclickButton={handleNextTab} 
+            disabledButton={validatePropertyFormButton}
+          />
         </Tab.Panel>
         <Tab.Panel>
           <PersonalData
@@ -137,6 +165,8 @@ const StepsToLease = () => {
             setFormData={setFormData}
             sendCodeStatus={sendCodeStatus}
             setSendCodeStatus={setSendCodeStatus}
+            onclickButton={handleNextTab} 
+            disabledButton={validatePersonalDataFormButton}
           />
         </Tab.Panel>
         <Tab.Panel>
@@ -183,7 +213,7 @@ const StepsToLease = () => {
         </div>
       </div>
       <div className="mb-10">
-        <TabComponent renderTabs={renderTabs} renderTabPanel={renderTabPanel} />
+        <TabComponent renderTabs={renderTabs} renderTabPanel={renderTabPanel} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
       </div>
     </div>
   );
