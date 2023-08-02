@@ -6,8 +6,9 @@ import ReactSlickComponent from '../../../Carousel/ReactSlickComponent';
 
 const OurPartners = () => {
   const { contextData } = useContext(ClientsContext);
-  const [clients, , getClientList] = contextData;
+  const [clients, , getClientList, UserExperience] = contextData;
 
+  console.log(UserExperience)
   useEffect(() => {
     getClientList();
   }, []);
@@ -26,7 +27,7 @@ const OurPartners = () => {
       <div className="px-4">
         <ReactSlickComponent
           RenderComponent={PartnersCard}
-          data={clients}
+          data={UserExperience}
           slidesToShow={3}
           xl={1}
         />
