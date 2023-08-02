@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PartnersCard = ({ item }) => {
-  const { first_name, avatar, last_name, email } = item;
+  const { names, avatar, last_name, type, comment } = item;
 
   return (
     <div
@@ -11,7 +11,7 @@ const PartnersCard = ({ item }) => {
         <div className="flex justify-center items-center mb-12">
           <img
             src={avatar}
-            alt={`avatar-${first_name}`}
+            alt={`avatar-${names}`}
             className="rounded-full"
             width={200}
             height={200}
@@ -20,18 +20,15 @@ const PartnersCard = ({ item }) => {
 
         <div className="text-center w-4/6 mx-auto">
           <p className="text-md font-semibold">
-            "En mi experiencia, encuentro que son ecientes solucionando
-            cualquier problema o duda que uno tenga. cálidos y profesionales en
-            su accionar. Es una Empresa 100% recomendable. Estoy muy contenta
-            con su trabajo"
+           {comment}
           </p>
         </div>
 
         <div className="text-center mt-10 flex justify-center items-center flex-col">
           <h4 className="text-lg font-bold">
-            {first_name} {last_name}
+            {names} {last_name}
           </h4>
-          <p className="text-md text-gray-700">{email}</p>
+          <p className="text-md text-gray-700">{type}</p>
         </div>
       </div>
     </div>

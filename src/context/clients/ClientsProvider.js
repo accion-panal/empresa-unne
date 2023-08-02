@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ClientsContext } from './ClientsContext';
 import ClientsServices from '../../services/ClientsServices';
+import { UserExperience } from '../../data/index';
 
 const ClientsProvider = ({ children }) => {
   const [clients, setClients] = useState([]);
@@ -14,7 +15,7 @@ const ClientsProvider = ({ children }) => {
   return (
     <ClientsContext.Provider
       value={{
-        contextData: [clients, setClients, getClientList],
+        contextData: [clients, setClients, getClientList, UserExperience],
       }}
     >
       {children}
