@@ -13,6 +13,7 @@ const AddLocation = ({ formData, setFormData }) => {
   const { location } = state;
   const mapRef = useRef();
 
+
   useEffect(() => {
     if (!location.lng && !location.lat) {
       fetch('https://ipapi.co/json/')
@@ -47,8 +48,8 @@ const AddLocation = ({ formData, setFormData }) => {
         mapStyle="mapbox://styles/mapbox/streets-v12"
       >
         <Marker
-          longitude={-70.5856444039788}
-          latitude={-33.41615765}
+          longitude={location.lng}
+          latitude={location.lat}
           draggable
           onDragEnd={(ev) =>
             dispatch({

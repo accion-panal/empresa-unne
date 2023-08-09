@@ -7,7 +7,7 @@ const Geocoder = ({ formData, setFormData }) => {
   const { dispatch } = useValue();
   const ctrl = new MapboxGeocoder({
     accessToken: process.env.REACT_APP_MAPBOX_TOKEN,
-    marker: false,
+    marker: true,
     collapsed: false,
   });
 
