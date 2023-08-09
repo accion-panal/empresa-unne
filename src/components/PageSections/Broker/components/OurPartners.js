@@ -8,7 +8,7 @@ const OurPartners = () => {
   const { contextData } = useContext(ClientsContext);
   const [clients, , getClientList, UserExperience] = contextData;
 
-  console.log(UserExperience)
+  // console.log(UserExperience)
   useEffect(() => {
     getClientList();
   }, []);

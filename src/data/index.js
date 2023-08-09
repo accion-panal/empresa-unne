@@ -749,4 +749,34 @@ export const UserExperience = [
     type:'Asociada Unne ',
     comment:'Desde que empecé con Unne, he notado una notable diferencia en la llegada de clientes. Gracias a su plataforma, he logrado arrendar y vender propiedades de manera más rápida y efectiva. ¡Estoy muy satisfecho con los resultados obtenidos!',
   }
-]
+];
+
+export const UserExperServicesLegal = [
+  {
+    id: 1,
+    avatars:'',
+    name: 'Ángel ',
+    last_names:'Bustamante',
+    types: 'Asociado Unne',
+    extra:'',
+    comments: 'Ellos se hicieron cargo y lideraron el proceso que tuvo bastantes obstáculos e imprevistos, sin embargo la operación resultó exitosa para todas las partes. Muy agradecido de Nabi, Felipe y Pablo.'
+  },
+  {
+    id: 2,
+    avatars:'',
+    name: 'Edgar ',
+    last_names:'Nunez',
+    extra:'E2 Gestión Inmobiliaria  ',
+    types: 'Asociado Unne',
+    comments: 'Excelente equipo legal, un plus para quienes trabajamos de manera independiente. Están siempre dispuestos a ayudar y resolver dudas. 100% recomendados!!!'
+  },
+  {
+    id: 3,
+    avatars:'',
+    name: 'Nandy ',
+    last_names:'Salazar',
+    extra:'High City Propiedades',
+    types: 'Asociado Unne',
+    comments: 'Un saludo cordial para todo el equipo Unne, me siento complacida de sus servicios del área legal, logrando exitosas negociaciones y de sus oficinas las cuales facilitan el buen desempeño con nuestros clientes y los procesos de cierre de Negocios. Un abrazo equipo Unne.'
+  }
+];
