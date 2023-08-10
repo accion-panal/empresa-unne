@@ -13,8 +13,8 @@ const PartnersCard = ({ item }) => {
             src={avatar}
             alt={`avatar-${names}`}
             className="rounded-full"
-            width={200}
-            height={200}
+            width={130}
+            height={130}
           />
         </div>
 

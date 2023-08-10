@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ClientCard = ({ item }) => {
-  const { first_name, avatar, last_name, email } = item;
+  const {  avatars, name, last_names, types, extra, comments } = item;
 
   const bgColors = [
     'bg-primary-ligth',
@@ -18,8 +18,8 @@ const ClientCard = ({ item }) => {
       <div className="">
         <div className="flex justify-center items-center mb-12">
           <img
-            src={avatar}
-            alt={`avatar-${first_name}`}
+            src={avatars}
+            alt={`avatar-${name}`}
             className="rounded-full"
             width={130}
             height={130}
@@ -28,18 +28,15 @@ const ClientCard = ({ item }) => {
 
         <div className="text-center w-4/6 mx-auto">
           <p className="text-md font-semibold">
-            "En mi experiencia, encuentro que son ecientes solucionando
-            cualquier problema o duda que uno tenga. cálidos y profesionales en
-            su accionar. Es una Empresa 100% recomendable. Estoy muy contenta
-            con su trabajo"
+            {comments}
           </p>
         </div>
 
         <div className="text-center mt-10 flex justify-center items-center flex-col">
           <h4 className="text-lg font-bold">
-            {first_name} {last_name}
+            {name} {last_names} - {extra}
           </h4>
-          <p className="text-md text-gray-700">{email}</p>
+          <p className="text-md text-gray-700">{types}</p>
         </div>
       </div>
     </div>
