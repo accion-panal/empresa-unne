@@ -695,7 +695,7 @@ export const propertyManagmentData = [
 export const UserExperience = [
   {
     id:1,
-    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690991349/Projects/unne/img/Eres%20corredor/christopher-campbell-rDEOVtE7vOs-unsplash_wddref.webp',
+    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681682/Projects/unne/img/experienciaUsuarios/mujer.png',
     names: 'Anamaria ',
     last_name:'Espinoza',
     type:'Asociada Unne ',
@@ -703,7 +703,7 @@ export const UserExperience = [
   },
   {
     id:2,
-    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690991349/Projects/unne/img/Eres%20corredor/christopher-campbell-rDEOVtE7vOs-unsplash_wddref.webp',
+    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681682/Projects/unne/img/experienciaUsuarios/mujer.png',
     names: 'Ximena ',
     last_name:'Vargas',
     type:'Asociada Unne ',
@@ -711,7 +711,7 @@ export const UserExperience = [
   },
   {
     id:3,
-    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690991349/Projects/unne/img/Eres%20corredor/christopher-campbell-rDEOVtE7vOs-unsplash_wddref.webp',
+    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681682/Projects/unne/img/experienciaUsuarios/mujer.png',
     names: 'Anita ',
     last_name:'Lizárraga',
     type:'Asociada Unne',
@@ -719,7 +719,7 @@ export const UserExperience = [
   },
   {
     id:4,
-    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690991349/Projects/unne/img/Eres%20corredor/jonas-kakaroto-mjRwhvqEC0U-unsplash_hyh1wv.webp',
+    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681678/Projects/unne/img/experienciaUsuarios/hombre.png',
     names: 'Luis Ramon',
     last_name:'Urdaneta Perez',
     type:'Asociado Unne',
@@ -727,7 +727,7 @@ export const UserExperience = [
   },
   {
     id:5,
-    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690991349/Projects/unne/img/Eres%20corredor/christopher-campbell-rDEOVtE7vOs-unsplash_wddref.webp',
+    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681682/Projects/unne/img/experienciaUsuarios/mujer.png',
     names: 'Trinidad ',
     last_name:'Silva Meyer',
     type:'Asociada Unne ',
@@ -735,7 +735,7 @@ export const UserExperience = [
   },
   {
     id:6,
-    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690991349/Projects/unne/img/Eres%20corredor/christopher-campbell-rDEOVtE7vOs-unsplash_wddref.webp',
+    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681682/Projects/unne/img/experienciaUsuarios/mujer.png',
     names: 'Carmen',
     last_name:'Valiente',
     type:'Asociada Unne ',
@@ -743,7 +743,7 @@ export const UserExperience = [
   },
   {
     id:7,
-    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690991349/Projects/unne/img/Eres%20corredor/jonas-kakaroto-mjRwhvqEC0U-unsplash_hyh1wv.webp',
+    avatar:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681678/Projects/unne/img/experienciaUsuarios/hombre.png',
     names: 'Jimmy  ',
     last_name:'Gomez',
     type:'Asociada Unne ',
@@ -754,7 +754,7 @@ export const UserExperience = [
 export const UserExperServicesLegal = [
   {
     id: 1,
-    avatars:'',
+    avatars:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681678/Projects/unne/img/experienciaUsuarios/hombre.png',
     name: 'Ángel ',
     last_names:'Bustamante',
     types: 'Asociado Unne',
@@ -763,7 +763,7 @@ export const UserExperServicesLegal = [
   },
   {
     id: 2,
-    avatars:'',
+    avatars:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681678/Projects/unne/img/experienciaUsuarios/hombre.png',
     name: 'Edgar ',
     last_names:'Nunez',
     extra:'E2 Gestión Inmobiliaria  ',
@@ -772,11 +772,12 @@ export const UserExperServicesLegal = [
   },
   {
     id: 3,
-    avatars:'',
+    avatars:'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681682/Projects/unne/img/experienciaUsuarios/mujer.png',
     name: 'Nandy ',
     last_names:'Salazar',
     extra:'High City Propiedades',
     types: 'Asociado Unne',
     comments: 'Un saludo cordial para todo el equipo Unne, me siento complacida de sus servicios del área legal, logrando exitosas negociaciones y de sus oficinas las cuales facilitan el buen desempeño con nuestros clientes y los procesos de cierre de Negocios. Un abrazo equipo Unne.'
-  }
+  },
+  
 ];

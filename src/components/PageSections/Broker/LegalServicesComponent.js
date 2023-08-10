@@ -12,7 +12,10 @@ import { mainCarouselLegalServicesData } from '../../../data';
 
 const LegalServicesComponent = () => {
   const { contextData } = useContext(ClientsContext);
-  const [clients, , getClientList] = contextData;
+  const [clients, setClients, getClientList, UserExperience, UserExperServicesLegal] = contextData;
+
+
+  console.log(UserExperServicesLegal)
 
   useEffect(() => {
     getClientList();
@@ -33,7 +36,7 @@ const LegalServicesComponent = () => {
         <Fade delay={200} cascade>
           <ReactSlickComponent
             RenderComponent={ClientCard}
-            data={clients}
+            data={UserExperServicesLegal}
             slidesToShow={3}
             xl={1}
           />
