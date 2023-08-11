@@ -21,8 +21,8 @@ const Carding = ({data}) => {
             'BsBarChartFill':<BsBarChartFill size="6rem" color="grey" />,
             'GiMoneyStack':<GiMoneyStack size="6rem" color="grey" />,
             'customEquipo':<QvEquipo width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>,
-            'customMayor':<QvMayor width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>,
-            'customVende':<QvVende width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>,
+            'customMayor':<QvVende width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>,
+            'customVende':<QvMayor width={100} height={100} viewBox="0 0 512 512" className='text-[#808080]'/>,
         };
         return mapIcon[data.icon];
     };

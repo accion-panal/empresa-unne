@@ -174,7 +174,7 @@ const PropertyData = ({ formData, setFormData, _renderTab2,onclickButton,disable
 
         <div className="w-full xl:w-3/6 my-7">
           <label className="text-gray-500 font-bold">
-            Numero de dormitorios
+            Número de dormitorios
           </label>
           <div className="flex mt-3">
             {bedrooms.length > 0 &&
@@ -197,7 +197,7 @@ const PropertyData = ({ formData, setFormData, _renderTab2,onclickButton,disable
         </div>
 
         <div className="w-full xl:w-3/6 my-7">
-          <label className="text-gray-500 font-bold">Numero de baños</label>
+          <label className="text-gray-500 font-bold">Número de baños</label>
           <div className="flex mt-3">
             {bathrooms.length > 0 &&
               bathrooms.map((bathroom) => (
