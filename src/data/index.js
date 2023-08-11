@@ -5,7 +5,7 @@ import Slide4 from '../assets/img/carousel/slide4.jpg';
 export const mainCarouselData = [
   {
     id: 1,
-    title: 'Asegura tú inversión con Remate seguro',
+    title: 'Asegura tu inversión con Remate seguro',
     desc: 'Garantizamos hasta un 15% de retorno por tu inversión',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689974575/Projects/unne/img/hero/remate3.jpg',
   },
@@ -32,7 +32,7 @@ export const mainCarouselLeaseData = [
   {
     id: 1,
     title: 'Arrienda tu propiedad sin complicaciones',
-    desc: 'Contamos con mas de 300 corredores de propiedades en todo el territorio nacional',
+    desc: 'Contamos con más de 300 corredores de propiedades en todo el territorio nacional',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690907896/Projects/unne/img/Quiero%20arrendar/QUIERO_ARRENDAR__Arrienda_tu_propiedad_sin_complicaciones_ieiurk.webp',
   },
 ];
@@ -90,6 +90,12 @@ export const BankData = [
     img: 'https://res.cloudinary.com/dbrhjc4o5/image/upload/v1680029041/unne-media/bancos/TrueCapital_yuwaip.png',
     href: 'https://www.truecapital.cl/',
   },
+  {
+    id: 6,
+    title: 'Asset Plan',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1691791822/Projects/unne/img/alianzas/AssetPlann.png',
+    href: 'https://www.assetplan.cl/',
+  },
 ];
 /** porque unne - Arrendar Data */
 export const whyUnneLeaseData = [
@@ -130,20 +136,20 @@ export const whyUnneLeaseNewData = [
   {
     id: 1,
     title: 'Equipo de Profesionales',
-    text: 'Contamos con más de 300 corredores de propiedades especializados en todo el territorio nacional, con la asesoría de abogados inmobiliarios que te ayudaran desde la elaboración de contrato hasta recibir pago del arriendo.',
-    icon:'RiUserSearchFill'
+    text: 'Contamos con más de 300 corredores de propiedades especializados en todo el territorio nacional, con la asesoría de abogados inmobiliarios que te ayudaran desde la elaboración de contrato hasta recibir el pago del arriendo.',
+    icon:'customEquipo'
   },
   {
     id: 2,
     title: 'Vende en tiempo récord',
     text: 'Utilizamos un sistema inteligente que permite cruzar bases de datos de búsquedas y consultas para optimizar los tiempos de respuesta y conseguir tu arrendatario ideal en poco tiempo.',
-    icon:'BsBarChartFill'
+    icon:'customMayor'
   },
   {
     id: 3,
     title: 'Mayor Alcance',
     text: 'Sincronizamos nuestras publicaciones en los 39 portales inmobiliarios más importantes del país, lo que te brindara una mayor visualización de tu propiedad.',
-    icon:'GiMoneyStack'
+    icon:'customVende'
   },
 ];
 
@@ -156,24 +162,24 @@ export const CircleArrendarData = [
   },
   {
     id: 2,
-    text: 'Te asignamos a tu objetivo',
+    text: 'Te asignamos a tu ejecutivo',
     position: 'lg:right-full md:max-lg:top-10 md:max-lg:left-[24rem]',
   },
   {
     id: 3,
-    text: 'Evaluacion Comercial',
+    text: 'Evaluación Comercial',
     position:
       'lg:right-[19rem] lg:bottom-0 md:max-lg:top-[9rem] md:max-lg:left-[28rem] ',
   },
   {
     id: 4,
-    text: 'Definicion de estrategias',
+    text: 'Definición de estrategias',
     position:
       'lg:bottom-0 lg:left-[19rem] md:max-lg:left-2/4 md:max-lg:-bottom-8 ',
   },
   {
     id: 5,
-    text: 'Gestion Comercial',
+    text: 'Gestión Comercial',
     position: 'lg:left-full md:max-lg:bottom-10 md:max-lg:left-[24rem]',
   },
   {
@@ -204,7 +210,7 @@ export const CircleVenderData = [
   },
   {
     id: 4,
-    text: 'Definicion de estrategias',
+    text: 'Definición de estrategias',
     position:
       'lg:bottom-0 lg:left-[19rem] md:max-lg:left-2/4 md:max-lg:-bottom-8',
   },
@@ -215,7 +221,7 @@ export const CircleVenderData = [
   },
   {
     id: 6,
-    text: 'vende y recibe tu pago!',
+    text: 'Vende y recibe tu pago!',
     position:
       'lg:top-0 lg:left-[19rem] md:max-lg:bottom-[9rem] md:max-lg:left-[28rem]',
   },
@@ -276,7 +282,7 @@ export const whyUnneSellNewData = [
   {
     id: 1,
     title: 'Equipo de Profesionales',
-    text: 'Contamos con más de 250 corredores de propiedades especializados en todo el territorio nacional, con el respaldo de un equipo legal que se encarga de toda la gestión de la postventa para tu seguridad y tranquilidad.',
+    text: 'Contamos con más de 300 corredores de propiedades especializados en todo el territorio nacional, con el respaldo de un equipo legal que se encarga de toda la gestión de la postventa para tu seguridad y tranquilidad.',
     icon:'customEquipo',
   },
   {

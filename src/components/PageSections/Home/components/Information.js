@@ -87,7 +87,7 @@ const Information = () => {
                 </div>
                 <div>
                   <p className="text-gray-600">
-                  Nuestro equipo legal especializado en temas inmobiliarios te brindara soluciones integrales durante todo el proceso, de manera rápida y exitosa. Somos especialistas en resolver conflictos y controversias en inmuebles.
+                  Nuestro equipo legal especializado en temas inmobiliarios te brindará soluciones integrales durante todo el proceso, de manera rápida y exitosa. Somos especialistas en resolver conflictos y controversias en inmuebles.
                   </p>
                 </div>
                 <div className='h-full flex items-end'>
