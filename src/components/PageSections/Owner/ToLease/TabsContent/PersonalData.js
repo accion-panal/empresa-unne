@@ -71,9 +71,9 @@ const PersonalData = ({
   const showToastSuccessMsg = (msg) => {
     toast.success(msg, {
       position: 'bottom-center',
-      autoClose: 2500,
-      hideProgressBar: true,
-      closeOnClick: true,
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: false,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
@@ -85,8 +85,8 @@ const PersonalData = ({
   const showToastErrorMsg = (msg) => {
     toast.error(msg, {
       position: 'bottom-center',
-      autoClose: 1000,
-      hideProgressBar: true,
+      autoClose: 3000,
+      hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
@@ -109,7 +109,7 @@ const PersonalData = ({
 
       if (response.success === 'false') {
         showToastErrorMsg(
-          'Tu correo necesita activación, enviaremos un link de activación de tu email'
+          'Tu correo necesita activación, enviaremos un link de activación a tu email'
         );
         setLoading(false);
         return;
@@ -121,7 +121,7 @@ const PersonalData = ({
           allFieldRequierd: '',
           serverEmailError: '',
         });
-        showToastSuccessMsg('Se enviara un código de validación a su email');
+        showToastSuccessMsg('Se enviará un código de validación a tu email');
         setSendCodeStatus(true);
         setIsDisabledButton(false);
         setTimeout(() => {
@@ -164,7 +164,7 @@ const PersonalData = ({
         className="w-full px-4 xl:px-10"
       >
         <div className="w-full my-7">
-          <label className="text-gray-500 font-bold">Nombre y Apellidos</label>
+          <label className="text-gray-500 font-bold">Nombre y Apellido</label>
           <div className="flex mt-3">
             <input
               className="w-full p-4 bg-white rounded-full border-gray-300 outline-none focus:outline-none"

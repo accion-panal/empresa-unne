@@ -46,11 +46,11 @@ export const navigationData = [
         name: 'Unidades nuevas',
         href: '/soy-inversionista/unidades-nuevas',
       },
-      {
-        id: 3,
-        name: 'Administración de arriendo',
-        href: '/soy-inversionista/administracion-de-arriendo',
-      },
+      // {
+      //   id: 3,
+      //   name: 'Administración de arriendo',
+      //   href: '/soy-inversionista/administracion-de-arriendo',
+      // },
     ],
   },
   // {
@@ -82,6 +82,6 @@ export const navigationData = [
   {
     id: 6,
     name: 'Mi cuenta',
-    href: 'http://190.114.255.247:195/',
+    href: 'https://accion.panal.house/',
   },
 ];
