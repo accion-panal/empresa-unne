@@ -32,9 +32,9 @@ const NewProperty = () => {
           Es momento de invertir en tu nueva propiedad
         </h2>
         <p className={`${subFont} pt-2 font-medium text-gray-600`}>
-          Invierte en Propiedades nuevas en blanco, verde o de entrega
+          Invierte en Propiedades nuevas en blanco, en verde o de entrega
           inmediata, para que tu activo pueda generar ganancias luego de
-          arrendarla y con el tiempo plusvalia
+          arrendarla y con el tiempo plusvalía
         </p>
       </div>
       <div className="grid 2xl:px-48 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mr-4 ml-4">

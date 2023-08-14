@@ -27,7 +27,7 @@ const NewInfo = ({ data }) => {
 
   return (
     <div
-      className="relative h-[400px] w-[250px]
+      className="relative h-[420px] w-[250px]
             bg-white overflow-hidden rounded-xl
             group border-slate-300 border
             shadow-lg"
