@@ -42,9 +42,9 @@ function ValidateUser({
   const showToastSuccessMsg = (msg) => {
     toast.success(msg, {
       position: 'bottom-center',
-      autoClose: 2500,
-      hideProgressBar: true,
-      closeOnClick: true,
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: false,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
@@ -56,8 +56,8 @@ function ValidateUser({
   const showToastErrorMsg = (msg) => {
     toast.error(msg, {
       position: 'bottom-center',
-      autoClose: 1000,
-      hideProgressBar: true,
+      autoClose: 3000,
+      hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
@@ -77,7 +77,7 @@ function ValidateUser({
     ev.preventDefault();
 
     handleVerificationCode()
-      ? showToastSuccessMsg(`Verificacion realizada con exito`)
+      ? showToastSuccessMsg(`Verificación realizada con exito`)
       : showToastErrorMsg('Código no válido');
   };
 
@@ -156,8 +156,8 @@ function ValidateUser({
   return (
     <div className="w-full xl:w-4/6 mx-auto my-14">
       <ToastComponent />
-      <h3 className="text-2xl xl:text-4xl font-bold text-center mb-5">
-        ¡Excelente! Solo falta validar Tu email!
+      <h3 className="text-2xl xl:text-3xl font-bold text-center mb-5">
+        ¡Excelente! Ahora ingresa tu código de verificación!
       </h3>
       <form ref={form} onSubmit={validateVerificationCode}>
         <div className="grid grid-cols-4 g-0">
@@ -208,7 +208,7 @@ function ValidateUser({
             <Button
               type="submit"
               id="submit-button"
-              className="bg-primary hover:bg-primary-opacity text-white w-4/6 text-2xl text-center rounded-full py-1 pb-2 px-4"
+              className="bg-primary hover:bg-primary-opacity text-white w-4/6 text-lg font-semibold text-center rounded-full py-1 pb-2 px-4 uppercase"
             >
               Validar código
             </Button>
