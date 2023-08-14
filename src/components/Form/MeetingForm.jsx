@@ -10,16 +10,16 @@ import { parseRealtorDate } from '../../utils';
 import { realtorData } from '../../constants/consts/realtor';
 import { companyForm } from '../../constants/consts/company';
 
-const MeetingForm = ({ title, subtitle, DataEmail }) => {
+const MeetingForm = ({ title, subtitle, DataEmail, message }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
     termsAndConditions: false,
     companyId: companyForm.id,
-    action: 'Servicios: inversionista Unidades nuevas',
-    message: 'Servicios: inversionista Unidades nuevas',
-    subject: 'Servicios: inversionista Unidades nuevas',
+    action: message,
+    message: message,
+    subject: message,
     lastName: '',
     meetingDate: new Date(),
   });
@@ -286,7 +286,7 @@ const MeetingForm = ({ title, subtitle, DataEmail }) => {
 
           <div className="max-sm:py-2">
             <label htmlFor="phone" className="block text-base font-semibold">
-              Telefono:
+              Teléfono:
             </label>
             <input
               className="block w-full rounded-xl bg-slate-50 py-2 px-2 outline-none"

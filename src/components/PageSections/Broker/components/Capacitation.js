@@ -16,9 +16,8 @@ const Capacitation = () => {
             <p className="pt-4 text-gray-600">
               Para nosotros es esencial que estés preparado para los diferentes
               desafíos que te presenta la industria,
-              <br />
               es por eso que creamos la “Academia Unne”, en donde te brindaremos
-              charlas y cursos gratuitos para <br />
+              charlas y cursos gratuitos para
               que te mantengas actualizado constantemente.
             </p>
 

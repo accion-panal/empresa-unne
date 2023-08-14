@@ -21,16 +21,16 @@ const banner = () => {
           <div className="bg-[url('https://res.cloudinary.com/dvdb33uyj/image/upload/v1690837882/Projects/unne/img/Unidade%20Nuevas/UNIDADES_NUEVAS__TE_AYUDAMOS_CON_EL_FINANCIAMIENTO_PARA_TU_CREDITO_HIP_gkzswv.webp')] max-w-xs w-96 h-full bg-cover"></div>
           <div className="flex flex-col items-center px-5 pt-6 pb-4 text-center max-w-xl">
             <h3 className={` ${titleFont} font-bold text-gray-800`}>
-              Te ayudamos con el financiamiento para tu credito Hipotecario
+              Te ayudamos con el financiamiento para tu crédito Hipotecario
             </h3>
             <p
               className={`${subTitleFont} font-semibold max-w-sm text-gray-600`}
             >
-              Dejanos tus datos y trabajaremos juntos para encontrar la mejor
+              Déjanos tus datos y trabajaremos juntos para encontrar la mejor
               alternativa para ti
             </p>
             <button className="peer bg-primary w-max mt-5 text-white py-2 px-6 rounded-full hover:cursor-pointer hover:bg-primary-300 hover:shadow-xl trasition duration-300 ease-in-out">
-              Agenda un reunion
+              Agenda un reunión
             </button>
           </div>
         </div>
@@ -38,7 +38,8 @@ const banner = () => {
           {/*  {DataEmailJS?.length > 0 && DataEmailJS?.map((e) => (<MeetingForm key={e.ServiceID} title="¿Quieres agendar una reunión con nosotros?" subtitle="Un equipo de expertos se pondra en contacto contigo" DataEmail={e} />))} */}
           <MeetingForm
             title="¿Quieres agendar una reunión con nosotros?"
-            subtitle="Un equipo de expertos se pondra en contacto contigo"
+            subtitle="Un equipo de expertos se pondrá en contacto contigo"
+            message="Servicios: inversionista Unidades nuevas"
           />
         </div>
       </div>

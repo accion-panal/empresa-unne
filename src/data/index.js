@@ -304,7 +304,7 @@ export const ObjetivesAuctionData = [
   {
     id: 1,
     icon: 'A',
-    title: 'Defenición de objetivos y necesidades',
+    title: 'Definición de objetivos y necesidades',
     desc: 'Establecemos el capital que dispones para tu inversión mediante una reunión de trabajo',
   },
   {
@@ -338,7 +338,7 @@ export const NewPropertyQualities = [
   {
     id: 2,
     title: 'Simula',
-    desc: 'Elige el activo inmobiliario que mas te guste y simula tu inversión de manera personalizada para proceder con la reserva de la propiedad.',
+    desc: 'Elige el activo inmobiliario que más te guste y simula tu inversión de manera personalizada para proceder con la reserva de la propiedad.',
   },
   {
     id: 3,
@@ -356,37 +356,37 @@ export const NewPropertyQualities = [
 export const AssociateData = [
   {
     id: 1,
-    title: 'Asóciate a la red lider de corredores en Chile',
+    title: 'Asóciate a la red líder de corredores en Chile',
     children: [
       {
         id: 1,
-        name: 'Mas de 30 cursos mensuales en el área legal y comercial',
+        name: 'Más de 15 cursos mensuales en el área legal y comercial',
         status: '',
       },
       {
         id: 2,
-        name: 'Adelanta tu comisión con nuestro Pronto Pago',
-        status: 'Nuevo',
+        name: 'Sesiones de Coaching comercial',
+        status: '',
       },
       {
         id: 3,
-        name: 'Sesiones de Coaching comercial',
+        name: 'Alianzas con bancos para gestionar el financiamiento de crédito hipotecario',
         status: 'Nuevo',
       },
       {
         id: 4,
-        name: 'Alianzas con bancos y mutuarias',
+        name: 'Desarrollo de Página Web personalizada',
         status: 'Nuevo',
       },
       {
         id: 5,
-        name: 'Alianza con Assetplan, para aumentar tu cartera',
-        status: 'Nuevo',
+        name: 'Servicios Legales',
+        status: '',
       },
       {
         id: 6,
-        name: 'Servicios Legales',
-        status: '',
+        name: 'Alianza con Assetplan, para aumentar tu cartera e ingresos',
+        status: 'Nuevo',
       },
       {
         id: 7,
@@ -395,13 +395,18 @@ export const AssociateData = [
       },
       {
         id: 8,
-        name: 'Sistema de canje inteligente',
-        status: '',
+        name: 'Sistema de Canje Inteligente',
+        status: 'Nuevo',
       },
       {
         id: 9,
         name: 'Conserva el 100% de tu comisión',
         status: '',
+      },
+      {
+        id: 10,
+        name: 'Oportunidades de Inversión para tus clientes',
+        status: 'Nuevo',
       },
     ],
   },
@@ -476,28 +481,28 @@ export const AssociateCardData = [
   {
     id: 1,
     title: 'Contrata nuestros servicios legales',
-    desc: 'Contamos con abogados especialistas en asesorias inmobiliarias que te guiaran en todo el proceso de la venta o arriendo de tu propiedad.',
+    desc: 'Contamos con abogados especialistas en asesorías inmobiliarias que te guiaran en todo el proceso de la venta o arriendo de tu propiedad.',
     icon: 'AiTwotoneGold',
     href: '/eres-corredor/servicios-legales',
     children: [
       {
         id: 1,
-        name: 'Adelanta tu comision con pronto pago',
+        name: 'Alianzas con bancos para gestionar el financiamiento',
       },
       {
         id: 2,
-        name: 'Alianzas con bancos y mutuarias',
+        name: 'Intermediarios en los procesos de Canje',
       },
       {
         id: 3,
-        name: 'Banco de canje avanzado',
+        name: 'Inversión de Remate Seguro',
       },
     ],
   },
   {
     id: 2,
     title: 'Academia Unne',
-    desc: 'Tenemos un programa dirigido por especialista del área del corretaje, que te brindara los conocimientos necesarios para ser un profesional',
+    desc: 'Tenemos un programa dirigido por especialista del área del corretaje, que te brindara los conocimientos necesarios para ser un profesional.',
     icon: 'BiBookOpen',
     href: '/eres-corredor/academia-unne',
     children: [
@@ -517,14 +522,48 @@ export const AssociateCardData = [
   },
   {
     id: 3,
-    title: 'Cuentas con el respaldo de un Vendeid',
-    desc: 'Contacto directo con los clientes interesados en tu propiedad ¡sin intermediarios!. De esta forma podrás minimizar los tiempos de espera',
+    title: 'Desarrollo de Páginas Web',
+    desc: 'Desarrollo y diseño de sitios web para corredores inmobiliarios, con la que podrás sincronizar tus publicaciones con nuestro integrador y hacer crecer tu marca.',
     icon: 'AiOutlineShareAlt',
     href: '',
-    children: [],
+    children: [
+      {
+        id: 1,
+        name: 'Diseño personalizado',
+      },
+      {
+        id: 2,
+        name: 'Sitios web adaptable para varios dispositivos',
+      },
+      {
+        id: 3,
+        name: 'Sincronización de tus publicaciones en un clic',
+      },
+    ],
   },
   {
     id: 4,
+    title: 'Banco de Canje Avanzado',
+    desc: 'Sistema inteligente que te ayudara a conseguir de manera sencilla y eficaz la propiedad con las características adecuadas o al cliente interesado.',
+    icon: 'AiOutlineShareAlt',
+    href: '',
+    children: [
+      {
+        id: 1,
+        name: 'Ampliar la cartera de clientes',
+      },
+      {
+        id: 2,
+        name: 'Aumenta tus ingresos',
+      },
+      {
+        id: 3,
+        name: 'Proceso seguro y transparente',
+      },
+    ],
+  },
+  {
+    id: 5,
     title: 'Oportunidades de Inversión',
     desc: 'Tus clientes contaran con productos de inversión de remate seguro y unidades nuevas',
     icon: 'BsFillHouseAddFill',
@@ -560,7 +599,7 @@ export const LegalServicesData = [
   {
     id: 2,
     title: 'Gestión',
-    desc: 'Nuestro equipo gestionara cada paso del proceso del credito hipotecario hasta el retiro del pago del vale vista.',
+    desc: 'Nuestro equipo gestionará cada paso del proceso del crédito hipotecario hasta el retiro del pago del vale vista.',
     color: 'bg-[#F7B092]',
   },
   {
@@ -581,11 +620,11 @@ export const TradingProcessData = [
     process: [
       'Redacción de promesa e instrucciones notariales.',
       'Coordinación bancaria.',
-      'Revisión de escritura publica de compraventa redactada por banco.',
+      'Revisión de escritura pública de compraventa redactada por banco.',
       'Redacción de instrucciones notariales de compraventa.',
       'Coordinación notarial.',
-      'Monitorieo en CBR respectivo.',
-      'Orientacion legal en horario hábil.',
+      'Monitoreo en CBR respectivo.',
+      'Orientación legal en horario hábil.',
     ],
   },
 ];
@@ -599,16 +638,16 @@ export const MoreServicesData = [
       'Proceso de Compraventa de inmuebles',
       'Proceso de Compraventa de inmuebles al Contado',
       'Redacción de Promesa de compraventa e instrucciones notariales',
-      'Revision de promesa de compraventa',
+      'Revisión de promesa de compraventa',
       'Informe de Estudio de Títulos',
       'Solución de reparos',
       'Redacción de poder especial de venta o compraventa',
       'Redacción escrituras de cancelación, transacción, renuncia de gananciales, etc.',
-      'Redacción escritura publica de Compraventa',
-      'Revisión escritura publica Compraventa redactada por banco',
+      'Redacción escritura pública de Compraventa',
+      'Revisión escritura pública Compraventa redactada por banco',
       'Redacción instrucciones notariales de Compraventa',
       'Redacción contrato de arrendamiento estándar',
-      'Redacción carta de termino de contrato de arrendamiento',
+      'Redacción carta de término de contrato de arrendamiento',
     ],
   },
   {

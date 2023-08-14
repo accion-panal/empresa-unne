@@ -63,7 +63,7 @@ const AuctionProcess = () => {
             <div className="max-w-xl h-50 sm:h-auto bg-white rounded-lg overflow-hidden shadow-md">
               <div className="p-14">
                 <h2 className="text-3xl md:text-2xl font-bold text-gray-800">
-                  Esto es una asociación con True Capital
+                  En asociación con True Capital
                 </h2>
                 <p className="text-sm">
                   Invierte de manera segura, y cuenta con la asesoría de
@@ -111,7 +111,7 @@ const AuctionProcess = () => {
 
                 <div>
                   <p className="text-gray-600">
-                    Rentabilidad del 15% asegurada en escritura publica
+                    Rentabilidad del 15% asegurada en escritura pública
                   </p>
                 </div>
               </div>
