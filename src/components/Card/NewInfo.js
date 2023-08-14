@@ -1,29 +1,8 @@
 import React from 'react';
-import { iconsList } from '../Icons';
 import { Link } from 'react-router-dom';
 
 const NewInfo = ({ data }) => {
   const { title, desc, icon, href, children } = data;
-
-  const { BsFillHouseAddFill, BiBookOpen, AiTwotoneGold, AiOutlineShareAlt } =
-    iconsList;
-
-  const renderIcon = () => {
-    const colorIcon = '#6b7280';
-    const sizeIcon = '5rem';
-    const mapIcon = {
-      BsFillHouseAddFill: (
-        <BsFillHouseAddFill size={sizeIcon} color={colorIcon} />
-      ),
-      BiBookOpen: <BiBookOpen size={sizeIcon} color={colorIcon} />,
-      AiTwotoneGold: <AiTwotoneGold size={sizeIcon} color={colorIcon} />,
-      AiOutlineShareAlt: (
-        <AiOutlineShareAlt size={sizeIcon} color={colorIcon} />
-      ),
-    };
-
-    return mapIcon[data.icon];
-  };
 
   return (
     <div
@@ -33,7 +12,7 @@ const NewInfo = ({ data }) => {
             shadow-lg"
     >
       <div className="overflow-hidden flex justify-center items-center flex-col text-center mt-24">
-        <div className="w-20 h-20 text-white">{renderIcon()}</div>
+        <img className="w-28 h-28 mb-5 opacity-50" src={icon}></img>
         <h2 className="text-2xl text-primary font-bold">{title}</h2>
       </div>
 

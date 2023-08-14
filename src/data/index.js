@@ -482,7 +482,7 @@ export const AssociateCardData = [
     id: 1,
     title: 'Contrata nuestros servicios legales',
     desc: 'Contamos con abogados especialistas en asesorías inmobiliarias que te guiaran en todo el proceso de la venta o arriendo de tu propiedad.',
-    icon: 'AiTwotoneGold',
+    icon: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1692043409/Projects/unne/img/Eres%20corredor/iconos/Asociate-_servicios_legales_hrcmon.png',
     href: '/eres-corredor/servicios-legales',
     children: [
       {
@@ -503,7 +503,7 @@ export const AssociateCardData = [
     id: 2,
     title: 'Academia Unne',
     desc: 'Tenemos un programa dirigido por especialista del área del corretaje, que te brindara los conocimientos necesarios para ser un profesional.',
-    icon: 'BiBookOpen',
+    icon: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1692043408/Projects/unne/img/Eres%20corredor/iconos/Asociate_-_academia_unne_sqbzhl.png',
     href: '/eres-corredor/academia-unne',
     children: [
       {
@@ -524,7 +524,7 @@ export const AssociateCardData = [
     id: 3,
     title: 'Desarrollo de Páginas Web',
     desc: 'Desarrollo y diseño de sitios web para corredores inmobiliarios, con la que podrás sincronizar tus publicaciones con nuestro integrador y hacer crecer tu marca.',
-    icon: 'AiOutlineShareAlt',
+    icon: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1692043409/Projects/unne/img/Eres%20corredor/iconos/Asociate_-_p%C3%A1gina_web_esccix.png',
     href: '',
     children: [
       {
@@ -545,7 +545,7 @@ export const AssociateCardData = [
     id: 4,
     title: 'Banco de Canje Avanzado',
     desc: 'Sistema inteligente que te ayudara a conseguir de manera sencilla y eficaz la propiedad con las características adecuadas o al cliente interesado.',
-    icon: 'AiOutlineShareAlt',
+    icon: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1692043409/Projects/unne/img/Eres%20corredor/iconos/Asociate_-_banco_de_canje_eddif6.png',
     href: '',
     children: [
       {
@@ -566,7 +566,7 @@ export const AssociateCardData = [
     id: 5,
     title: 'Oportunidades de Inversión',
     desc: 'Tus clientes contaran con productos de inversión de remate seguro y unidades nuevas',
-    icon: 'BsFillHouseAddFill',
+    icon: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1692043409/Projects/unne/img/Eres%20corredor/iconos/Asociate_-_inversi%C3%B3n_p3vi2u.png',
     href: '/soy-inversionista/unidades-en-remate',
     children: [],
   },
