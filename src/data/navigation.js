@@ -53,11 +53,11 @@ export const navigationData = [
       // },
     ],
   },
-  // {
-  //   id: 4,
-  //   name: 'Propiedades',
-  //   href: '/propiedades',
-  // },
+  {
+    id: 4,
+    name: 'Propiedades',
+    href: 'https://unnepropiedades.cl/',
+  },
   {
     id: 5,
     name: '¿Eres corredor?',
@@ -82,6 +82,6 @@ export const navigationData = [
   {
     id: 6,
     name: 'Mi cuenta',
-    href: 'https://accion.panal.house/',
+    href: 'https://unne.prop360.cl/',
   },
 ];
