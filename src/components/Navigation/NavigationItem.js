@@ -33,6 +33,7 @@ const NavigationItem = ({ menuItem }) => {
                     <Link
                       key={name}
                       to={href}
+                      target={href === 'https://unnepropiedades.cl/' ? '_blank' : ''}
                       className={`${
                         pathname === href
                           ? 'bg-secondary text-white flex items-center rounded-lg transition duration-150 ease-in-out hover:bg-secondary focus:outline-none focus-visible:ring'

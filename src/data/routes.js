@@ -11,6 +11,7 @@ import ToPartner from '../pages/Broker/ToPartner';
 import LegalServices from '../pages/Broker/LegalServices';
 import UnneAcademy from '../pages/Broker/UnneAcademy';
 import PropertiesInMap from '../pages/PropertiesInMap';
+import PartnersUnne from '../pages/PartnersUnne/PartnersUnne'
 
 export const navigationRoutes = [
   {
@@ -30,6 +31,12 @@ export const navigationRoutes = [
     name: 'Propiedades',
     path: '/propiedades',
     element: <Properties />,
+  },
+  {
+    id: 15,
+    name: 'Socios Unne',
+    path: '/partnersUnne/socios-unne',
+    element: <PartnersUnne />,
   },
   {
     id: 4,
