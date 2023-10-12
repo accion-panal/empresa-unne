@@ -56,7 +56,19 @@ export const navigationData = [
   {
     id: 4,
     name: 'Propiedades',
-    href: 'https://unnepropiedades.cl/',
+    children: [
+      {
+        id:1,
+        name: "Propiedades",
+    
+        href: 'https://unnepropiedades.cl/',
+      },
+      {
+        id: 2,
+        name: 'Socios Unne',
+        href: '/partnersUnne/socios-unne',
+      },
+    ]
   },
   {
     id: 5,
