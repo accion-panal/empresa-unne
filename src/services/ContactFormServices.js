@@ -9,7 +9,7 @@ const ContactFormServices = {
         Telefono: phone,
         Correo: userEmail,
         Codigo: uniqueCode,
-        '_subject': 'De: Unne.cl'
+        '_subject': 'De: Socio Unne/Unne.cl'
 
       },
       {
@@ -52,7 +52,7 @@ const ContactFormServices = {
         Estacionamientos: parkingLots,
         Incluye_bodega: haveWarehouse,
         Direccion: address,
-        '_subject': 'De: Unne.cl'
+        '_subject': 'De: Quiero publicar/Unne.cl'
       },
       {
         headers: {
@@ -72,7 +72,7 @@ const ContactFormServices = {
         Nombre: name,
         Correo: userEmail,
         Telefono: phone,
-        '_subject': 'De: Unne.cl'
+        '_subject': 'De: Remate/Unne.cl'
       },
       {
         headers: {
@@ -103,7 +103,7 @@ const ContactFormServices = {
         Telefono: phone,
         Fecha: date,
         Hora: time,
-        '_subject': 'De: Unne.cl'
+        '_subject': 'De: Unidades nuevas/Unne.cl'
       },
       {
         headers: {
@@ -134,7 +134,7 @@ const ContactFormServices = {
         Telefono: phone,
         Soy: reason,
         Mensaje: message,
-        '_subject': 'De: Unne.cl'
+        '_subject': 'De: Contáctanos/Unne.cl'
       },
       {
         headers: {
