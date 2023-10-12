@@ -36,7 +36,7 @@ const ContactUs = () => {
                 />
                 <ContainerSimple title="Teléfono" desc="+56 264653732" />
                 <ContainerSimple title="WhatsApp" desc="+56 932924867" />
-                <ContainerSimple title="Correo" desc="contacto@unne.cl" />
+                <ContainerSimple title="Correo" desc="info@unne.cl" />
 
                 <div className={`${styles.card} rounded-lg`}>
                   <span className={`${styles.span}`}>Redes</span>

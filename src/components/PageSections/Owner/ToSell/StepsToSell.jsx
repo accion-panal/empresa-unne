@@ -1,10 +1,10 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Tab } from '@headlessui/react';
 import TabComponent from '../../../Tab/TabComponent';
-import PropertyData from './TabsContent/PropertyData';
-import PersonalData from './TabsContent/PersonalData';
-import ValidateUser from './TabsContent/ValidateUser';
-import CheckedStep from './TabsContent/components/CheckedStep';
+import PropertyData from '../ToLease/TabsContent/PropertyData';
+import PersonalData from '../ToLease/TabsContent/PersonalData';
+import ValidateUser from '../ToLease/TabsContent/ValidateUser';
+import CheckedStep from '../ToLease/TabsContent/components/CheckedStep';
 import AddLocation from '../../../Maps/AddLocation';
 
 const StepsToLease = () => {
@@ -16,7 +16,7 @@ const StepsToLease = () => {
 
   const [formData, setFormData] = useState({
     propertyData: {
-      operation:"Arriendo",
+      operation:"Venta",
       address: '',
       propertyType: 'Departamento' ?? '',
       bedrooms: 0,

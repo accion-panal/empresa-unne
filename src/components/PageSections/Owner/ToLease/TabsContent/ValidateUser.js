@@ -91,6 +91,7 @@ function ValidateUser({
         formData?.personalData?.name,
         formData?.personalData?.email,
         formData?.personalData?.phone,
+        formData?.propertyData?.operation,
         formData?.propertyData?.propertyType,
         formData?.propertyData?.bedrooms,
         formData?.propertyData?.bathrooms,

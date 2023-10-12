@@ -5,7 +5,8 @@ import HeroBanner from '../../components/Carousel/HeroBanner';
 import WhyUnneSection from '../../components/PageSections/Owner/ToLease/whyUnneSection';
 import WhyUnneInfo from '../../components/PageSections/Owner/ToLease/WhyUnneInfo';
 import CircleSection from '../../components/PageSections/Owner/ToLease/CircleSection';
-import StepsToLease from '../../components/PageSections/Owner/ToLease/StepsToLease';
+// import StepsToLease from '../../components/PageSections/Owner/ToLease/StepsToLease';
+import StepsToSell from '../../components/PageSections/Owner/ToSell/StepsToSell';
 import { Fade } from 'react-awesome-reveal';
 
 /* Data */
@@ -54,7 +55,8 @@ const ToSell = () => {
         </Fade>
       </section>
       <section className="my-20 xl:my-64 px-4 xl:px-32" id='formulario'>
-        <StepsToLease />
+        {/* <StepsToLease /> */}
+        <StepsToSell />
       </section>
     </Fragment>
   );

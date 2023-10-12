@@ -190,7 +190,7 @@ const Contact = () => {
         setErrorMsg({
           allFieldRequierd: '',
           serverEmailError:
-            'Se necesita activación de email del administrador/a',
+            'Solicitud enviada!, ahora necesita activación de email del administrador/a',
         });
         setLoading(false);
         resetForm();
