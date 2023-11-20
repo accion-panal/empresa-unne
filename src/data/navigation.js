@@ -63,11 +63,11 @@ export const navigationData = [
     
         href: 'https://unnepropiedades.cl/',
       },
-      // {
-      //   id: 2,
-      //   name: 'Socios Unne',
-      //   href: '/partnersUnne/socios-unne',
-      // },
+      {
+        id: 2,
+        name: 'Socios Unne',
+        href: '/partnersUnne/socios-unne',
+      },
     ]
   },
   {
