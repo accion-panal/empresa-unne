@@ -16,11 +16,6 @@ const Partners = ({isGrid, setIsGrid}) => {
             </div>
             <div className="flex flex-wrap flex-row w-full justify-center py-5">
                 <CardUsuario />
-                <CardUsuario />
-                <CardUsuario />
-                <CardUsuario />
-                <CardUsuario />
-                <CardUsuario />
             </div>
                         {/* PROPERTIES PAGINATION */}
             <div className="flex justify-center py-9">
