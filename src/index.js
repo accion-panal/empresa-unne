@@ -24,8 +24,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <BrowserRouter>
-  <HashRouter basename='/'>
+  <BrowserRouter>
+   {/* <HashRouter basename='/'> */}
       <ContextProvider>
       <ClientsProvider>
         <SelectsProvider>
@@ -35,7 +35,7 @@ root.render(
         </SelectsProvider>
       </ClientsProvider>
     </ContextProvider>
-  </HashRouter>
+  {/* </HashRouter> */}
 
-  // </BrowserRouter>
+  </BrowserRouter>
 );
