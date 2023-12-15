@@ -2,46 +2,72 @@ import React, { Fragment } from "react";
 
 import { DataSocios } from "../../../../data/sociosData";
 
+import '../../../../assets/styles/components/CardSocios/CardSocio.css'
+
+import ImgFondoCard from '../../../../assets/img/fondoCard/1j.jpg'
+
 const CardUsuario = () => {
     return (
         <Fragment>
             {DataSocios?.length > 0 ? DataSocios?.map((item) => 
-                <div key={item.id}>
-                    <div  className="card p-2 w-full h-auto lg:w-[90%]  2xl:h-auto overflow-hidden  m-6 bg-white ring-2 ring-primary ring-offset-4 xl:bg-primary hover:bg-white xl:ring xl:ring-primary xl:hover:ring-offset-4 xl:hover:scale-105 transition duration-300 border-primary-400 shadow-2xl xl:hover:shadow-2xl text-black xl:text-white xl:hover:text-black cursor-default">
-                        <div className="card-header">
-                            <div className="flex justify-start">
-                                <span className="p-2 font-medium text-sm">{item.type}</span>
+            <div key={item.id}>
+                <div className="card">
+                    <div className="card__img">
+                        <img src={ImgFondoCard} />
+                    </div> 
+                    <div className="card__avatar">
+                    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="64" cy="64" fill="#ff8475" r="60"></circle>
+                    <circle cx="64" cy="64" fill="#f85565" opacity=".4" r="48"></circle>
+                    <path d="m64 14a32 32 0 0 1 32 32v41a6 6 0 0 1 -6 6h-52a6 6 0 0 1 -6-6v-41a32 32 0 0 1 32-32z" fill="#7f3838"></path>
+                    <path d="m62.73 22h2.54a23.73 23.73 0 0 1 23.73 23.73v42.82a4.45 4.45 0 0 1 -4.45 4.45h-41.1a4.45 4.45 0 0 1 -4.45-4.45v-42.82a23.73 23.73 0 0 1 23.73-23.73z" fill="#393c54" opacity=".4"></path><circle cx="89" cy="65" fill="#fbc0aa" r="7"></circle>
+                    <path d="m64 124a59.67 59.67 0 0 0 34.69-11.06l-3.32-9.3a10 10 0 0 0 -9.37-6.64h-43.95a10 10 0 0 0 -9.42 6.64l-3.32 9.3a59.67 59.67 0 0 0 34.69 11.06z" fill="#4bc190"></path><path d="m45 110 5.55 2.92-2.55 8.92a60.14 60.14 0 0 0 9 1.74v-27.08l-12.38 10.25a2 2 0 0 0 .38 3.25z" fill="#356cb6" opacity=".3"></path><path d="m71 96.5v27.09a60.14 60.14 0 0 0 9-1.74l-2.54-8.93 5.54-2.92a2 2 0 0 0 .41-3.25z" fill="#356cb6" opacity=".3"></path><path d="m57 123.68a58.54 58.54 0 0 0 14 0v-25.68h-14z" fill="#fff"></path><path d="m64 88.75v9.75" fill="none" stroke="#fbc0aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"></path><circle cx="39" cy="65" fill="#fbc0aa" r="7"></circle><path d="m64 91a25 25 0 0 1 -25-25v-16.48a25 25 0 1 1 50 0v16.48a25 25 0 0 1 -25 25z" fill="#ffd8c9"></path><path d="m91.49 51.12v-4.72c0-14.95-11.71-27.61-26.66-28a27.51 27.51 0 0 0 -28.32 27.42v5.33a2 2 0 0 0 2 2h6.81a8 8 0 0 0 6.5-3.33l4.94-6.88a18.45 18.45 0 0 1 1.37 1.63 22.84 22.84 0 0 0 17.87 8.58h13.45a2 2 0 0 0 2.04-2.03z" fill="#bc5b57"></path><path d="m62.76 36.94c4.24 8.74 10.71 10.21 16.09 10.21h5" ></path><path d="m71 35c2.52 5.22 6.39 6.09 9.6 6.09h3" ></path><circle cx="76" cy="62.28" fill="#515570" r="3"></circle><circle cx="52" cy="62.28" fill="#515570" r="3"></circle><ellipse cx="50.42" cy="69.67" fill="#f85565" opacity=".1" rx="4.58" ry="2.98"></ellipse><ellipse cx="77.58" cy="69.67" fill="#f85565" opacity=".1" rx="4.58" ry="2.98"></ellipse><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m64 67v4" stroke="#fbc0aa" stroke-width="4"></path><path d="m55 56h-9.25" opacity=".2" stroke="#515570" stroke-width="2"></path><path d="m82 56h-9.25" opacity=".2" stroke="#515570" stroke-width="2"></path></g><path d="m64 84c5 0 7-3 7-3h-14s2 3 7 3z" fill="#f85565" opacity=".4"></path><path d="m65.07 78.93-.55.55a.73.73 0 0 1 -1 0l-.55-.55c-1.14-1.14-2.93-.93-4.27.47l-1.7 1.6h14l-1.66-1.6c-1.34-1.4-3.13-1.61-4.27-.47z" fill="#f85565"></path></svg></div>
+                    <div className="card__title">{item.type}</div>
+                    <div className="card__subtitle">{item.name}</div>
+                    <p className="card__p">propiedades {item.cant}</p>
+                    <div className="card__wrapper">
+                        <a className="card__btn card__btn-solid" href={item.href} target="_blank" >Página web</a>
+                    </div>
+                </div>
+            </div>
+                
+            ):null }
+
+{/* <div key={item.id}>
+                    <div  classNameName="card p-2 w-full h-auto lg:w-[90%]  2xl:h-auto overflow-hidden  m-6 bg-white ring-2 ring-primary ring-offset-4 xl:bg-primary hover:bg-white xl:ring xl:ring-primary xl:hover:ring-offset-4 xl:hover:scale-105 transition duration-300 border-primary-400 shadow-2xl xl:hover:shadow-2xl text-black xl:text-white xl:hover:text-black cursor-default">
+                        <div classNameName="card-header">
+                            <div classNameName="flex justify-start">
+                                <span classNameName="p-2 font-medium text-sm">{item.type}</span>
                             </div>
                         </div>
-                        <div className="flex justify-center">
-                            <div className="flex  p-5 py-2 mt-2  bg-white rounded-full w-[200px]  hover:backdrop-blur-sm bg-primary-400/30 cursor-pointer">
-                                <img className="w-[170px] h-[170px] p-4  " src="https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681678/Projects/unne/img/experienciaUsuarios/hombre.png"/>
+                        <div classNameName="flex justify-center">
+                            <div classNameName="flex  p-5 py-2 mt-2  bg-white rounded-full w-[200px]  hover:backdrop-blur-sm bg-primary-400/30 cursor-pointer">
+                                <img classNameName="w-[170px] h-[170px] p-4  " src="https://res.cloudinary.com/dvdb33uyj/image/upload/v1691681678/Projects/unne/img/experienciaUsuarios/hombre.png"/>
                             </div>
                         </div>
                     
-                        <div className="card-body items-center text-center">
-                            <ul className="block list-none mb-2">
-                                <li className="font-semibold text-base">{item.name}</li>
-                                <li className="font-normal text-sm">{item.email}</li>
-                                <li className="font-normal text-sm">+56 {item.phone}</li>
+                        <div classNameName="card-body items-center text-center">
+                            <ul classNameName="block list-none mb-2">
+                                <li classNameName="font-semibold text-base">{item.name}</li>
+                                <li classNameName="font-normal text-sm">{item.email}</li>
+                                <li classNameName="font-normal text-sm">+56 {item.phone}</li>
                             </ul>
-                            <ul className="flex list-none justify-between mb-2">
-                                <li className="font-normal text-sm px-3 pr-8">
-                                    <p className="font-semibold text-sm break-words">Publicaciones</p>
-                                    <p className="font-light text-sm">2</p>
+                            <ul classNameName="flex list-none justify-between mb-2">
+                                <li classNameName="font-normal text-sm px-3 pr-8">
+                                    <p classNameName="font-semibold text-sm break-words">Publicaciones</p>
+                                    <p classNameName="font-light text-sm">2</p>
                                 </li>
-                                <li className="font-normal text-sm px-3 pl-5">
-                                    <p className="font-semibold text-sm">Página web</p>
-                                    <p className="font-light text-sm">Si</p>
+                                <li classNameName="font-normal text-sm px-3 pl-5">
+                                    <p classNameName="font-semibold text-sm">Página web</p>
+                                    <p classNameName="font-light text-sm">Si</p>
                                 </li>
                             </ul>
-                            <div className="flex justify-center">
-                                <a href={item.href} target="_blank" className="p-2 w-60 bg-secondary text-white rounded-xl font-medium text-base" type="button" >Ver página web</a>
+                            <div classNameName="flex justify-center">
+                                <a href={item.href} target="_blank" classNameName="p-2 w-60 bg-secondary text-white rounded-xl font-medium text-base" type="button" >Ver página web</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            ):null }
+                </div> */}
         
         </Fragment>
     )

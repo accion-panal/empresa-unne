@@ -1,0 +1,104 @@
+:root {
+    --color-black: '#000';
+    --font-poppins-regular: 'Poppins-regular';
+    --font-poppins-semobold: 'Poppins-semibold';
+    --font-poppins-bold: 'Poppins-bold';
+    --font-inter-regular: 'Inter-regular';
+  }
+
+.card {
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    font-family: var(--font-poppins-regular);
+    position: relative;
+    width: 304px;
+    height: 394px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--bg-color);
+    -webkit-box-shadow: 8px 9px 15px -4px rgba(0,0,0,0.43); 
+    box-shadow: 8px 9px 15px -4px rgba(0,0,0,0.43);
+    transition: all 0.2s ease;
+    margin: 20px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE;
+  }
+  
+  .card__img {
+    height: 192px;
+    width: 100%;
+  }
+  
+  .card__img img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card__avatar {
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(45% - 80px);
+  }
+  
+  .card__avatar img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card__title {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--submain-color);
+  }
+  
+  .card__subtitle {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--main-color);
+    text-align: center;
+  }
+  
+  .card__p {
+    margin-top: 15px;
+    width: 76px;
+    height: 31px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin: 15px;
+    text-align: center;
+  }
+  
+  .card__btn-solid {
+
+    background:#E85512 ;
+    color: var(--bg-color);
+    padding:6px ;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+
+  }
+  
+  
+  .card__btn-solid:hover {
+    background: var(--bg-color);
+    color: #E85512;
+    border: 2px solid #E85512;
+  }
