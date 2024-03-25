@@ -14,7 +14,7 @@ const ImgCarouselCard = ({ item }) => {
               alt={`logo-${title}`}
               className=""
               width={200}
-              height={150}
+              height={160}
             />
           </a>
         </div>

@@ -438,18 +438,18 @@ export const PortalData = [
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912561/Projects/unne/img/portales/toctoc_wjieec.png',
     href: 'https://www.toctoc.com/',
   },
-  {
-    id: 5,
-    title: 'Zoom Inmobiliario',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/zoom_srnwgd.png',
-    href: 'https://www.zoominmobiliario.com/',
-  },
-  {
-    id: 6,
-    title: 'Portal Terreno',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/portal_terreno_r8qswq.png',
-    href: 'https://www.portalterreno.com/cl/',
-  },
+  // {
+  //   id: 5,
+  //   title: 'Zoom Inmobiliario',
+  //   img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/zoom_srnwgd.png',
+  //   href: 'https://www.zoominmobiliario.com/',
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Portal Terreno',
+  //   img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/portal_terreno_r8qswq.png',
+  //   href: 'https://www.portalterreno.com/cl/',
+  // },
   {
     id: 7,
     title: 'Doomos',
@@ -462,17 +462,23 @@ export const PortalData = [
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/propiv_di2vat.png',
     href: 'https://propiv.com/',
   },
-  {
-    id: 9,
-    title: 'ICasas',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912561/Projects/unne/img/portales/iCasas_w1okpp.png',
-    href: 'https://www.icasas.cl/',
-  },
+  // {
+  //   id: 9,
+  //   title: 'ICasas',
+  //   img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912561/Projects/unne/img/portales/iCasas_w1okpp.png',
+  //   href: 'https://www.icasas.cl/',
+  // },
   {
     id: 10,
     title: 'Chile Propiedades',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690915721/Projects/unne/img/portales/chilepropiedades_edrxrr.png',
     href: 'https://chilepropiedades.cl/',
+  },
+  {
+    id: 11,
+    title: 'Go placeit',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1711396456/Projects/unne/img/portales/GoPlaceit_wyfzja.webp',
+    href: 'https://www.goplaceit.com/cl/',
   },
 ];
 
