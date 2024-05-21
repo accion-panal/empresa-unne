@@ -46,6 +46,16 @@ export const mainCarouselSellingData = [
   },
 ];
 
+export const mainCarouselCapitalData = [
+  {
+    id: 1,
+    title:'Junto a',
+    titleTwo:'creamos nuevas oportunidades',
+    desc: 'Ten acceso a los proyectos inmobiliarios con mayor rentabilidad del mercado',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+  },
+];
+
 export const mainCarouselLegalServicesData = [
   {
     id: 1,
@@ -350,6 +360,25 @@ export const NewPropertyQualities = [
     title: 'Gana por tu inversion',
     desc: 'Administramos el arriendo de tu propiedad para que comiences a ganar por tu inversión.',
   },
+];
+
+/** New Property Qualities */
+export const NewCardProperty = [
+  {
+    id: 1,
+    title: 'Evaluación',
+    desc: 'Evaluamos tu perfil financiero y te brindamos las propiedades que sean más rentables y que se adapten a tus necesidades.',
+  },
+  {
+    id: 2,
+    title: 'Elige tu favorita',
+    desc: 'Elige el activo inmobiliario que más te guste y simula tu inversión de manera personalizada para proceder con la reserva de la propiedad.',
+  },
+  {
+    id: 3,
+    title: 'Recibe tu propiedad',
+    desc: 'Te acompañamos en todo el proceso de inversión, desde la gestión del crédito hipotecario hasta la entrega de tu propiedad.',
+  }
 ];
 
 /* Asociate.js Data */

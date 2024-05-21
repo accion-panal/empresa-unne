@@ -86,6 +86,26 @@ const ContactFormServices = {
     return response.data;
   },
 
+  sendCapitalForm: async (from, name, userEmail, phone, realtorEmail) => {
+    const response = await axios.post(
+      `https://formsubmit.co/ajax/${realtorEmail}`,
+      {
+        Desde: from,
+        Nombre: name,
+        Correo: userEmail,
+        Telefono: phone,
+        '_subject': 'De: Capitalizarme/Unne.cl'
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      }
+    );
+    return response.data;
+  },
+
   // Formulario Unidades nuevas
   sendContactUnidad: async (
     name,

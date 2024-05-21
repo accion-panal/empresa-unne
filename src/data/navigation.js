@@ -38,14 +38,19 @@ export const navigationData = [
     children: [
       {
         id: 1,
-        name: 'Unidades de remate',
-        href: '/soy-inversionista/unidades-en-remate',
+        name: 'Capitalizarme',
+        href: '/soy-inversionista/capitalizarme',
       },
       {
         id: 2,
-        name: 'Unidades nuevas',
-        href: '/soy-inversionista/unidades-nuevas',
+        name: 'Unidades en remate',
+        href: '/soy-inversionista/unidades-en-remate',
       },
+      // {
+      //   id: 2,
+      //   name: 'Unidades nuevas',
+      //   href: '/soy-inversionista/unidades-nuevas',
+      // },
       // {
       //   id: 3,
       //   name: 'Administración de arriendo',

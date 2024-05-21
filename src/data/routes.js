@@ -13,6 +13,8 @@ import UnneAcademy from '../pages/Broker/UnneAcademy';
 import PropertiesInMap from '../pages/PropertiesInMap';
 import PartnersUnne from '../pages/PartnersUnne/PartnersUnne'
 
+import Capitalizarme from '../pages/Investor/Capitalizarme'
+
 export const navigationRoutes = [
   {
     id: 1,
@@ -62,12 +64,12 @@ export const navigationRoutes = [
     path: '/soy-inversionista/unidades-en-remate',
     element: <AuctionUnits />,
   },
-  {
-    id: 8,
-    name: 'Unidades Nuevas',
-    path: '/soy-inversionista/unidades-nuevas',
-    element: <NewUnits />,
-  },
+  // {
+  //   id: 8,
+  //   name: 'Unidades Nuevas',
+  //   path: '/soy-inversionista/unidades-nuevas',
+  //   element: <NewUnits />,
+  // },
   {
     id: 9,
     name: 'Administracion de Arriendo',
@@ -97,5 +99,11 @@ export const navigationRoutes = [
     name: 'Propiedades en mapa',
     path: '/propiedades/propiedades-en-mapa',
     element: <PropertiesInMap />,
+  },
+  {
+    id: 15,
+    name: 'Capitalizarme',
+    path: '/soy-inversionista/capitalizarme',
+    element: <Capitalizarme />,
   },
 ];

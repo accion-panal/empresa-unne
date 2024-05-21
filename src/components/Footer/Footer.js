@@ -33,7 +33,7 @@ const Footer = () => (
           <div className="h-56">
             <p className="text-md text-gray-800 mt-5">
               <span className="font-bold text-gray-900">Dirección:</span>{' '}
-              Asturias 171, Of. 101, Las Condes, Santiago
+              Asturias 171, Of. 206, Las Condes, Santiago
             </p>
             <p className="text-md text-gray-800 mt-1">
               <span className="font-bold text-gray-900">Teléfono:</span> +56
@@ -45,7 +45,7 @@ const Footer = () => (
             </p>
             <p className="text-md text-gray-800 mt-1">
               <span className="font-bold text-gray-900">Correo:</span>{' '}
-              contacto@unne.cl
+              info@unne.cl
             </p>
             <div className="d-flex flex-col text-md text-gray-800 mt-1">
               <span className="font-bold uppercase text-gray-900">
