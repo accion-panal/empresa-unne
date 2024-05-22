@@ -1,6 +1,8 @@
 import Slide1 from '../assets/img/carousel/slide1.jpg';
 import Slide4 from '../assets/img/carousel/slide4.jpg';
 
+import CapHero from '../assets/img/carousel/slide3.webp'
+
 /** Main Carousel Data */
 export const mainCarouselData = [
   {
@@ -52,7 +54,8 @@ export const mainCarouselCapitalData = [
     title:'Junto a',
     titleTwo:'creamos nuevas oportunidades',
     desc: 'Ten acceso a los proyectos inmobiliarios con mayor rentabilidad del mercado',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+    // img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+    img: CapHero,
   },
 ];
 
