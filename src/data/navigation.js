@@ -65,8 +65,7 @@ export const navigationData = [
       {
         id:1,
         name: "Propiedades",
-    
-        href: 'https://unnepropiedades.cl/',
+        href: 'https://unnecorredores.cl/',
       },
       // {
       //   id: 2,
@@ -99,6 +98,6 @@ export const navigationData = [
   {
     id: 6,
     name: 'Mi cuenta',
-    href: 'https://unne.prop360.cl/',
+    href: 'https://unnecorredores.cl/intranet.asp',
   },
 ];
