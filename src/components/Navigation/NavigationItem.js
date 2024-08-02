@@ -57,7 +57,7 @@ const NavigationItem = ({ menuItem }) => {
   ) : (
     <Link
       to={href}
-      target={href === 'https://unne.prop360.cl/' ? '_blank' : ''}
+      target={href === 'https://unnecorredores.cl/intranet.asp' ? '_blank' : ''}
       className={`${
         pathname === href
           ? 'bg-secondary text-white inline-flex items-center text-sm xl:text-base font-normal py-2 px-4 xl:px-5 rounded-full'
