@@ -34,7 +34,7 @@ export const navigationData = [
   },
   {
     id: 3,
-    name: 'Soy Inversionista',
+    name: 'Servicios',
     children: [
       {
         id: 1,
@@ -58,22 +58,22 @@ export const navigationData = [
       // },
     ],
   },
-  {
-    id: 4,
-    name: 'Propiedades',
-    children: [
-      {
-        id:1,
-        name: "Propiedades",
-        href: 'https://unnecorredores.cl/',
-      },
-      // {
-      //   id: 2,
-      //   name: 'Socios Unne',
-      //   href: '/partnersUnne/socios-unne',
-      // },
-    ]
-  },
+  // {
+  //   id: 4,
+  //   name: 'Propiedades',
+  //   children: [
+  //     {
+  //       id:1,
+  //       name: "Propiedades",
+  //       href: 'https://unnecorredores.cl/',
+  //     },
+  //     // {
+  //     //   id: 2,
+  //     //   name: 'Socios Unne',
+  //     //   href: '/partnersUnne/socios-unne',
+  //     // },
+  //   ]
+  // },
   {
     id: 5,
     name: '¿Eres corredor?',
@@ -83,11 +83,11 @@ export const navigationData = [
         name: 'Asociate',
         href: '/eres-corredor/asociate',
       },
-      {
-        id: 2,
-        name: 'Servicios legales',
-        href: '/eres-corredor/servicios-legales',
-      },
+      // {
+      //   id: 2,
+      //   name: 'Servicios legales',
+      //   href: '/eres-corredor/servicios-legales',
+      // },
       {
         id: 3,
         name: 'Academia Unne',

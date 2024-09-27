@@ -28,17 +28,20 @@ const About = () => {
             ¿Quiénes somos?
           </h2>
           <p className="text-lg xl:text-xl text-gray-700 mt-8 ml-0 xl:ml-5 md:text-center xl:text-left">
-            Creamos Unne con la misión de poder arrendar, vender e invertir en propiedades de manera informada, segura y rápida. 
+            Unne es una plataforma de corretaje, donde los corredores
+            puedan acceder a herramientas digitales que de otro modo seria
+            difícil de acceder. Esperamos que estas les permitan atender a
+            los clientes y cumplir sus expectativas de manera rápida, en un
+            proceso claro y sencillo.
             <br />
             <br />
-            Nuestro propósito es aportar a la democratización y profesionalización de nuestra industria por la vía de la innovación en tecnología, capacitaciones, alianzas y trabajo colaborativo.  
-            <br />
-            <br />
-            Unne es un acelerador inmobiliario que ofrece una amplia gama de productos y servicios innovadores, esto junto con una gestión comercial proactiva, impulsarán los resultados de nuestros clientes.
-            <br />
+            Creamos Unne con la misión de poder arrendar, vender e Invertir
+            en propiedades de manera informada, rápida, y segura.
+            “Nuestro propósito es democratizar y profesionalizar esta
+            industria a un proceso accesible y fácil, brindando información
+            relevante en la toma de decisiones.”
             <br />
           </p>
-
           <p className="text-lg xl:text-xl text-gray-700 mt-8 ml-0 xl:ml-5 md:text-center xl:text-left">
             Pablo Ramirez P.
           </p>
@@ -54,7 +57,8 @@ const About = () => {
                     ¡Los números nos avalan!
                   </h2>
                   <p className="text-lg xl:text-xl text-white ">
-                  Más de <span className='font-bold'>2.000.000</span> millones de visitas a nuestras publicaciones mensuales.<br></br> Más de <span className='font-bold'>300</span> corredores ya son parte de Unne.<br></br> Cerca de <span className='font-bold'>6.000</span> propiedades vigentes en cartera.<br></br> El Banco de Canje más grande del país.
+                  Más de <span className='font-bold'>2.000.000</span> millones de visitas a nuestras publicaciones mensuales.<br></br> Más de <span className='font-bold'>250</span> corredores ya son parte de Unne.<br></br> Cerca de <span className='font-bold'>5.000</span> propiedades vigentes en cartera.
+                  {/* <br></br> El Banco de Canje más grande del país. */}
                   </p>
                 </div>
               </div>

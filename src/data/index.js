@@ -2,39 +2,73 @@ import Slide1 from '../assets/img/carousel/slide1.jpg';
 import Slide4 from '../assets/img/carousel/slide4.jpg';
 
 import CapHero from '../assets/img/carousel/slide3.webp'
-
+import { MdPaid } from "react-icons/md";
+import { BsBuildingFillGear } from "react-icons/bs";
+import {  TbHomeDollar, TbHomeHeart  } from "react-icons/tb";
 /** Main Carousel Data */
 export const mainCarouselData = [
   {
     id: 1,
-    title: 'Asegura tu inversión con Remate seguro',
-    desc: 'Garantizamos hasta un 15% de retorno por tu inversión',
+    title: '¿Estas a punto de perder tu hogar?',
+    desc: 'Te ayudamos a evitar el remate y recuperar tu estabilidad financiera',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689974575/Projects/unne/img/hero/remate3.jpg',
   },
   {
     id: 2,
-    title: '¡Encuentra tu financiamiento ideal!',
-    desc: 'En Alianza con los Bancos más importantes del país',
+    title: 'Incrementa el valor de tu propiedad',
+    desc: 'con Renovación Total, gestionamos y financiamos la remodelación para vender o arrendar mas rápido',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689975271/Projects/unne/img/hero/financiamiento2.jpg',
   },
   {
     id: 3,
-    title: '¡Simplifica tus trámites legales con nuestros abogados inmobiliarios!',
-    desc: 'Nos encargamos de todo el proceso de la postventa de tu propiedad',
+    title: 'Invierte como un experto en Unidades Nuevas',
+    desc: 'Tenemos mas de 80 proyecto inmobiliarios rentables, en blanco, verde o entrega inmediata.',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689975597/Projects/unne/img/hero/tramite2.jpg',
   },
   {
     id: 4,
-    title: '¡Deja la venta de tu propiedad en mano de expertos!',
-    desc: 'Somos la corredora más grande del país, con más de 6000 publicaciones activas',
+    title: '¿Necesitas liquidez?',
+    desc: 'Nuestro producto de compra instantánea de propiedades te ofrece la solución ideal.',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689974937/Projects/unne/img/hero/venta.jpg',
   },
 ];
+
+export const cardSolutionsData = [
+  {
+    id: 1,
+    img: <MdPaid/>,
+    title: 'Compra instantanea',
+    desc: 'Te ofrecemos liquidez inmediata, por tu propiedad. Al venderla y arrendarla simultáneamente, obtienes el capital que necesitas teniendo la opción de recompra al finalizar el tiempo establecido en el contrato.',
+    href: ''
+  },
+  {
+    id: 2,
+    img: <BsBuildingFillGear />,
+    title: 'Renovación total',
+    desc: 'Financiamos y gestionamos los arreglos o remodelación de tu propiedad, para hacerla mas atractiva, asegurando una venta o arriendo más rápido y rentable',
+    href: ''
+  },
+  {
+    id: 3,
+    img: <TbHomeHeart  />,
+    title: 'Salva mi casa',
+    desc: 'Evita el remate y protege tu patrimonio con nuestras soluciones financieras. Tendrás la asesoría personalizada de expertos para negociar con acreedores, evitar el remate y proteger tus derechos como deudor.',
+    href: ''
+  },
+  {
+    id: 4,
+    img: <TbHomeDollar/>,
+    title: 'Inversión en unidades nuevas',
+    desc: 'nvierte de manera segura, con proyectos inmobiliarios en blanco, verde o de entrega inmediata, con la mayor rentabilidad del mercado y de la mano de ejecutivos expertos que te guiaran en cada paso.',
+    href: ''
+  }
+]
+
 export const mainCarouselLeaseData = [
   {
     id: 1,
     title: 'Arrienda tu propiedad sin complicaciones',
-    desc: 'Contamos con más de 300 corredores de propiedades en todo el territorio nacional',
+    desc: 'Contamos con más de 250 corredores de propiedades en todo el territorio nacional',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690907896/Projects/unne/img/Quiero%20arrendar/QUIERO_ARRENDAR__Arrienda_tu_propiedad_sin_complicaciones_ieiurk.webp',
   },
 ];
@@ -149,7 +183,7 @@ export const whyUnneLeaseNewData = [
   {
     id: 1,
     title: 'Equipo de Profesionales',
-    text: 'Contamos con más de 300 corredores de propiedades especializados en todo el territorio nacional, con la asesoría de abogados inmobiliarios que te ayudaran desde la elaboración de contrato hasta recibir el pago del arriendo.',
+    text: 'Contamos con más de 250 corredores de propiedades especializados en todo el territorio nacional, con la asesoría de abogados inmobiliarios que te ayudaran desde la elaboración de contrato hasta recibir el pago del arriendo.',
     icon:'customEquipo'
   },
   {
@@ -161,7 +195,7 @@ export const whyUnneLeaseNewData = [
   {
     id: 3,
     title: 'Mayor Alcance',
-    text: 'Sincronizamos nuestras publicaciones en los 39 portales inmobiliarios más importantes del país, lo que te brindara una mayor visualización de tu propiedad.',
+    text: 'Sincronizamos nuestras publicaciones en los 28 portales inmobiliarios más importantes del país, lo que te brindara una mayor visualización de tu propiedad.',
     icon:'customVende'
   },
 ];
@@ -295,7 +329,7 @@ export const whyUnneSellNewData = [
   {
     id: 1,
     title: 'Equipo de Profesionales',
-    text: 'Contamos con más de 300 corredores de propiedades especializados en todo el territorio nacional, con el respaldo de un equipo legal que se encarga de toda la gestión de la postventa para tu seguridad y tranquilidad.',
+    text: 'Contamos con más de 250 corredores de propiedades especializados en todo el territorio nacional.',
     icon:'customEquipo',
   },
   {
@@ -307,7 +341,7 @@ export const whyUnneSellNewData = [
   {
     id: 3,
     title: 'Mayor Alcance',
-    text: 'Sincronizamos nuestras publicaciones en los 39 portales inmobiliarios más importantes del país, lo que te brindara una mayor visualización de tu propiedad.',
+    text: 'Sincronizamos nuestras publicaciones en los 28 portales inmobiliarios más importantes del país, lo que te brindara una mayor visualización de tu propiedad.',
     icon:'customVende',
   },
 ];
@@ -488,12 +522,12 @@ export const PortalData = [
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/doomos_rt0slv.png',
     href: 'https://www.doomos.cl/',
   },
-  {
-    id: 8,
-    title: 'Propiv',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/propiv_di2vat.png',
-    href: 'https://propiv.com/',
-  },
+  // {
+  //   id: 8,
+  //   title: 'Propiv',
+  //   img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1690912562/Projects/unne/img/portales/propiv_di2vat.png',
+  //   href: 'https://propiv.com/',
+  // },
   // {
   //   id: 9,
   //   title: 'ICasas',
@@ -516,27 +550,27 @@ export const PortalData = [
 
 /* Asociate.js Data */
 export const AssociateCardData = [
-  {
-    id: 1,
-    title: 'Contrata nuestros servicios legales',
-    desc: 'Contamos con abogados especialistas en asesorías inmobiliarias que te guiaran en todo el proceso de la venta o arriendo de tu propiedad.',
-    icon: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1692043409/Projects/unne/img/Eres%20corredor/iconos/Asociate-_servicios_legales_hrcmon.png',
-    href: '/eres-corredor/servicios-legales',
-    children: [
-      {
-        id: 1,
-        name: 'Alianzas con bancos para gestionar el financiamiento',
-      },
-      {
-        id: 2,
-        name: 'Intermediarios en los procesos de Canje',
-      },
-      {
-        id: 3,
-        name: 'Inversión de Remate Seguro',
-      },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   title: 'Contrata nuestros servicios legales',
+  //   desc: 'Contamos con abogados especialistas en asesorías inmobiliarias que te guiaran en todo el proceso de la venta o arriendo de tu propiedad.',
+  //   icon: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1692043409/Projects/unne/img/Eres%20corredor/iconos/Asociate-_servicios_legales_hrcmon.png',
+  //   href: '/eres-corredor/servicios-legales',
+  //   children: [
+  //     {
+  //       id: 1,
+  //       name: 'Alianzas con bancos para gestionar el financiamiento',
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'Intermediarios en los procesos de Canje',
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'Inversión de Remate Seguro',
+  //     },
+  //   ],
+  // },
   {
     id: 2,
     title: 'Academia Unne',

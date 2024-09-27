@@ -49,7 +49,7 @@ const ToSell = () => {
             ColorBg="bg-[#FBB916]"
             ColorNumberBG="bg-primary-400"
             ColorTextBG="bg-primary"
-            ColorText="text-black"
+            ColorText="text-gray-50"
             titleButton='¿Quieres vender tu propiedad?'
           />
         </Fade>

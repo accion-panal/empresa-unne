@@ -32,10 +32,10 @@ const ContactUs = () => {
                 />
                 <ContainerSimple
                   title="Dirección:"
-                  desc="Asturias 171, Of. 101, Las Condes, Santiago."
+                  desc="Asturias 171, Of. 206, Las Condes, Santiago."
                 />
-                <ContainerSimple title="Teléfono" desc="+56 264653732" />
-                <ContainerSimple title="WhatsApp" desc="+56 932924867" />
+                {/* <ContainerSimple title="Teléfono" desc="+56 264653732" /> */}
+                <ContainerSimple title="WhatsApp" desc="+56 9 3789 7201" />
                 <ContainerSimple title="Correo" desc="info@unne.cl" />
 
                 <div className={`${styles.card} rounded-lg`}>

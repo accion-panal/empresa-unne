@@ -41,7 +41,7 @@ const Footer = () => (
             </p>
             <p className="text-md text-gray-800 mt-1">
               <span className="font-bold text-gray-900">WhatsApp:</span> +56
-              932924867
+              9 3789 7201
             </p>
             <p className="text-md text-gray-800 mt-1">
               <span className="font-bold text-gray-900">Correo:</span>{' '}
