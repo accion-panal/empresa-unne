@@ -229,7 +229,7 @@ const MeetingForm = ({ title, subtitle, DataEmail, message }) => {
   };
 
   return (
-    <div className="bg-gray-200 rounded-[25px] p-4 my-10 xl:py-5 xl:px-10 xl:m-0 w-full ">
+    <div className="bg-gray-200 rounded-[25px] p-4 my-10 xl:py-4 xl:px-10 xl:m-0 w-full ">
       {/* xl:w-3/5 */}
       <div className="text-center">
         <h2 className="text-4xl font-bold py-2 text-gray-800">{title}</h2>
@@ -237,7 +237,7 @@ const MeetingForm = ({ title, subtitle, DataEmail, message }) => {
           <p className="text-xl font-semibold text-gray-600">{subtitle}</p>
         )}
       </div>
-      <form name="FormsData" onSubmit={onFormSubmit} className="py-6 px-4">
+      <form name="FormsData" onSubmit={onFormSubmit} className="pb-4 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-3 py-5 max-sm:divide-y-2 max-sm:divide-[#d8d8da]">
           <div className="max-sm:py-2">
             <label htmlFor="name" className="block text-base font-semibold">
@@ -336,7 +336,7 @@ const MeetingForm = ({ title, subtitle, DataEmail, message }) => {
           </div>
         </div>
 
-        <div className="w-5/6 mx-auto my-14 mb-10 flex items-center justify-center">
+        <div className="w-5/6 mx-auto my-4 mb-6 flex items-center justify-center">
           <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
             <input
               className="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#ca6f3b] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary"
@@ -379,7 +379,7 @@ const MeetingForm = ({ title, subtitle, DataEmail, message }) => {
             type="submit"
             className="bg-primary rounded-full text-white px-4 py-1 hover:bg-primary-opacity"
           >
-            <div className="text-lg font-medium capitalize mx-auto">
+            <div className="text-lg font-medium  mx-auto">
               <span className="max-h-10">
                 {loading ? (
                   <div role="status">
@@ -402,7 +402,7 @@ const MeetingForm = ({ title, subtitle, DataEmail, message }) => {
                     <span className="sr-only">Cargando...</span>
                   </div>
                 ) : (
-                  'Enviar'
+                  'Agenda una reunión'
                 )}
               </span>
             </div>

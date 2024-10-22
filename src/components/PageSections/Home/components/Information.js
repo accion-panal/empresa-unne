@@ -26,12 +26,12 @@ const Information = () => {
         title="¡Tenemos la solución perfecta diseñada para ti!"
       />
       <div className="">
-        <div className="flex flex-wrap flex-row items-center justify-center  w-full">
-          <div className="flex flex-wrap justify-center px-10 pb-10 m-2  text-center items-stretch">
+        <div className="flex flex-wrap flex-row items-center 2xl:justify-center w-full">
+          <div className="flex flex-wrap justify-center md:px-14 2xl:px-10 pb-10 m-1 sm:m-2  text-center items-stretch">
             { cardSolutionsData.length > 0 ? cardSolutionsData.map(data => (
-              <div className="card w-80 min-h-[23.5rem] m-6 group  bg-gray-200 shadow-xl hover:scale-110 transition duration-500">
+              <div className="card w-72 sm:w-72 2xl:w-80 min-h-[23.5rem] m-6 sm:m-2 group  bg-gray-200 shadow-xl hover:scale-110 transition duration-500">
               <div>
-                <figure className="px-8 pt-8 group-hover:text-orange-400 duration-300">
+                <figure className="px-8 sm:px-4 2xl:px-7 pt-8 group-hover:text-orange-400 duration-300">
                   <p className='text-[160px]'>{data.img}</p>
                   {/* <RiUserSearchFill size="6rem" color="grey" /> */}
                   {/* <IndexInversion width={120} height={120} viewBox="0 0 512 512" className='text-[#808080]'/> */}
@@ -48,7 +48,7 @@ const Information = () => {
                     </p>
                   </div>
                   <div className='h-full flex items-end'>
-                      <Link to={data.href} className='text-gray-50 p-3 px-4 rounded-xl bg-orange-500 hover:bg-orange-600 duration-150'>Más Información</Link>
+                      <Link to={data.href} className='text-gray-50 p-3 px-4 sm:p-2 sm:px-2 2xl:px-4 rounded-xl bg-orange-500 hover:bg-orange-600 duration-150'>Más Información</Link>
                   </div>
                 </div>
               </div> 
