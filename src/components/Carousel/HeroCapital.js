@@ -26,7 +26,7 @@ const HeroCapitalizarme = ({ data }) => {
                   <div className='mt-24 my-4 md:mt-32 w-3/3 md:w-[60%] 2xl:w-2/3'>
                     <h2 className="text-2xl font-semibold xl:text-4xl pb-2 text-white drop-shadow-lg mb-2 md:mr-32 2xl:mr-40">
                       {slide.title}{' '}
-                      <a className='font-normal' href='https://capitalizarme.com/'>Capitalizarme.com</a>{' '}{slide.titleTwo}
+                      {slide.titleTwo}
                     </h2>
                     <hr className='w-72'/>
                     <p className="text-md xl:text-xl text-white mt-2 md:mr-72  2xl:pr-32 mr-2">{slide.desc}</p>

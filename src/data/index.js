@@ -39,28 +39,28 @@ export const cardSolutionsData = [
     img: <MdPaid/>,
     title: 'Compra instantanea',
     desc: 'Te ofrecemos liquidez inmediata, por tu propiedad. Al venderla y arrendarla simultáneamente, obtienes el capital que necesitas teniendo la opción de recompra al finalizar el tiempo establecido en el contrato.',
-    href: ''
+    href: '/servicios/compra-instantanea'
   },
   {
     id: 2,
     img: <BsBuildingFillGear />,
     title: 'Renovación total',
     desc: 'Financiamos y gestionamos los arreglos o remodelación de tu propiedad, para hacerla mas atractiva, asegurando una venta o arriendo más rápido y rentable',
-    href: ''
+    href: '/servicios/renovacion-total'
   },
   {
     id: 3,
     img: <TbHomeHeart  />,
     title: 'Salva mi casa',
     desc: 'Evita el remate y protege tu patrimonio con nuestras soluciones financieras. Tendrás la asesoría personalizada de expertos para negociar con acreedores, evitar el remate y proteger tus derechos como deudor.',
-    href: ''
+    href: '/servicios/capitalizarme'
   },
   {
     id: 4,
     img: <TbHomeDollar/>,
     title: 'Inversión en unidades nuevas',
     desc: 'nvierte de manera segura, con proyectos inmobiliarios en blanco, verde o de entrega inmediata, con la mayor rentabilidad del mercado y de la mano de ejecutivos expertos que te guiaran en cada paso.',
-    href: ''
+    href: '/servicios/unidades-en-remate'
   }
 ]
 
@@ -88,6 +88,17 @@ export const mainCarouselCapitalData = [
     title:'Junto a',
     titleTwo:'creamos nuevas oportunidades',
     desc: 'Ten acceso a los proyectos inmobiliarios con mayor rentabilidad del mercado',
+    // img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+    img: CapHero,
+  },
+];
+
+export const mainCarouselInstantData = [
+  {
+    id: 1,
+    title:'¿Necesitas liquidez',
+    titleTwo:'inmediata por tu propiedad?',
+    desc: 'Nuestro producto de compra instantanea te ofrece la solución ideal.',
     // img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
     img: CapHero,
   },

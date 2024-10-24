@@ -6,25 +6,25 @@ import NewCard from '../../components/Card/NewCard';
 import HeroCapitalizarme from "../../components/Carousel/HeroCapital";
 import { NewCardProperty, mainCarouselCapitalData } from '../../data/index';
 
-const Capitalizarme = () => {
+const TotalRevenew = () => {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname === '/servicios/capitalizarme') {
+        if (location.pathname === '/servicios/renovacion-total') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
     }, [location.pathname])
 
     return(
         <Fragment>
-            <Head title="Capitalizarme" />
+            <Head title="Renovación total" />
             <section className="">
                 <HeroCapitalizarme data={mainCarouselCapitalData} />
             </section>
             <section className="my-24">
                 <div className="text-center pb-10">
                     <h2 className={`text-4xl lg:text-5xl font-bold text-gray-800`}>
-                    Es momento de invertir en tu nueva propiedad
+                    Es momento tu renovación total
                     </h2>
                     <p className={`text-base px-2 pt-2 font-medium text-gray-600`}>
                     Proyectos inmobiliarios en blanco, verde o de entrega inmediata.
@@ -53,4 +53,4 @@ const Capitalizarme = () => {
 }
 
 
-export default Capitalizarme;
+export default TotalRevenew;

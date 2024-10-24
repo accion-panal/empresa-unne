@@ -6,25 +6,25 @@ import NewCard from '../../components/Card/NewCard';
 import HeroCapitalizarme from "../../components/Carousel/HeroCapital";
 import { NewCardProperty, mainCarouselCapitalData } from '../../data/index';
 
-const Capitalizarme = () => {
+const SaveMyHouse = () => {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname === '/servicios/capitalizarme') {
+        if (location.pathname === '/servicios/salva-mi-casa') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
     }, [location.pathname])
 
     return(
         <Fragment>
-            <Head title="Capitalizarme" />
+            <Head title="Salva mi casa" />
             <section className="">
                 <HeroCapitalizarme data={mainCarouselCapitalData} />
             </section>
             <section className="my-24">
                 <div className="text-center pb-10">
                     <h2 className={`text-4xl lg:text-5xl font-bold text-gray-800`}>
-                    Es momento de invertir en tu nueva propiedad
+                    Es momento salva tu casa
                     </h2>
                     <p className={`text-base px-2 pt-2 font-medium text-gray-600`}>
                     Proyectos inmobiliarios en blanco, verde o de entrega inmediata.
@@ -33,7 +33,7 @@ const Capitalizarme = () => {
                 <div className="mx-4 text-center">
                     <h3 className={`text-xl md:text-2xl text-gray-800`}>
                         {''}
-                        Invierte en simples pasos
+                           
                     </h3>
                 </div>
                 <div className="grid 2xl:px-48 mx-7 md:mx-40 2xl:mx-44 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 xl:gap-14 ">
@@ -53,4 +53,4 @@ const Capitalizarme = () => {
 }
 
 
-export default Capitalizarme;
+export default SaveMyHouse;

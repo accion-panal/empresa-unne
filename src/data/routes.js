@@ -14,6 +14,7 @@ import PropertiesInMap from '../pages/PropertiesInMap';
 import PartnersUnne from '../pages/PartnersUnne/PartnersUnne'
 
 import Capitalizarme from '../pages/Investor/Capitalizarme'
+import TotalRevenew from '../pages/newServices/TotalRevenew';
 
 export const navigationRoutes = [
   {
@@ -61,7 +62,7 @@ export const navigationRoutes = [
   {
     id: 7,
     name: 'Unidades en Remate',
-    path: '/soy-inversionista/unidades-en-remate',
+    path: '/servicios/unidades-en-remate',
     element: <AuctionUnits />,
   },
   // {
@@ -82,12 +83,12 @@ export const navigationRoutes = [
     path: '/eres-corredor/asociate',
     element: <ToPartner />,
   },
-  {
-    id: 11,
-    name: 'Servicios Legales',
-    path: '/eres-corredor/servicios-legales',
-    element: <LegalServices />,
-  },
+  // {
+  //   id: 11,
+  //   name: 'Servicios Legales',
+  //   path: '/eres-corredor/servicios-legales',
+  //   element: <LegalServices />,
+  // },
   {
     id: 12,
     name: 'Academia Unne',
@@ -103,7 +104,25 @@ export const navigationRoutes = [
   {
     id: 15,
     name: 'Capitalizarme',
-    path: '/soy-inversionista/capitalizarme',
+    path: '/servicios/capitalizarme',
+    element: <Capitalizarme />,
+  },
+  {
+    id: 16,
+    name: 'Renovación total',
+    path: '/servicios/renovacion-total',
+    element: <TotalRevenew />,
+  },
+  {
+    id: 17,
+    name: 'Compra instantanea',
+    path: '/servicios/compra-instantanea',
+    element: <Capitalizarme />,
+  },
+  {
+    id: 18,
+    name: 'Salva mi casa',
+    path: '/servicios/salva-mi-casa',
     element: <Capitalizarme />,
   },
 ];

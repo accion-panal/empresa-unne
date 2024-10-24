@@ -38,42 +38,26 @@ export const navigationData = [
     children: [
       {
         id: 1,
-        name: 'Capitalizarme',
-        href: '/soy-inversionista/capitalizarme',
+        name: 'Compra instantanea',
+        href: '/servicios/compra-instantanea',
       },
       {
         id: 2,
-        name: 'Unidades en remate',
-        href: '/soy-inversionista/unidades-en-remate',
+        name: 'Renovación total',
+        href: '/servicios/renovacion-total',
       },
-      // {
-      //   id: 2,
-      //   name: 'Unidades nuevas',
-      //   href: '/soy-inversionista/unidades-nuevas',
-      // },
-      // {
-      //   id: 3,
-      //   name: 'Administración de arriendo',
-      //   href: '/soy-inversionista/administracion-de-arriendo',
-      // },
+      {
+        id: 3,
+        name: 'Capitalizarme',
+        href: '/servicios/capitalizarme',
+      },
+      {
+        id: 4,
+        name: 'Unidades en remate',
+        href: '/servicios/unidades-en-remate',
+      },
     ],
   },
-  // {
-  //   id: 4,
-  //   name: 'Propiedades',
-  //   children: [
-  //     {
-  //       id:1,
-  //       name: "Propiedades",
-  //       href: 'https://unnecorredores.cl/',
-  //     },
-  //     // {
-  //     //   id: 2,
-  //     //   name: 'Socios Unne',
-  //     //   href: '/partnersUnne/socios-unne',
-  //     // },
-  //   ]
-  // },
   {
     id: 5,
     name: '¿Eres corredor?',
