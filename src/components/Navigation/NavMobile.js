@@ -8,6 +8,14 @@ import { iconsList } from '../Icons';
 
 const NavMobile = ({ data = navigationData, onClickClose }) => {
   const { MdOutlineArrowDropDown } = iconsList;
+
+  const handleExternalLink = (href, event) => {
+    if (href === 'https://unnecorredores.cl/intranet.asp') {
+      event.preventDefault(); // Evita que el Link navegue
+      window.open(href, '_blank', 'noopener,noreferrer'); // Abre en una nueva pestaña
+    }
+  };
+
   const _renderMenuChild = (item) => {
     return (
       <ul className="nav-mobile-sub-menu pl-6 pb-1 text-base">
@@ -15,6 +23,7 @@ const NavMobile = ({ data = navigationData, onClickClose }) => {
           <Disclosure key={i.href + index} as="li">
             <Link
               to={i.href || '/'}
+              onClick={(e) => handleExternalLink(i.href, e)}
               className="flex px-4 py-2.5 text-black text-sm font-medium rounded-lg hover:bg-[#e5e7eb] mt-[2px]"
             >
               <span
@@ -23,17 +32,6 @@ const NavMobile = ({ data = navigationData, onClickClose }) => {
               >
                 {i.name}
               </span>
-              {i.children && (
-                <span
-                  className="block flex-grow"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <Disclosure.Button
-                    as="span"
-                    className="flex justify-end flex-grow"
-                  ></Disclosure.Button>
-                </span>
-              )}
             </Link>
             {i.children && (
               <Disclosure.Panel>{_renderMenuChild(i)}</Disclosure.Panel>
@@ -48,10 +46,9 @@ const NavMobile = ({ data = navigationData, onClickClose }) => {
     return (
       <Disclosure key={item.id} as="li" className="text-gray-900">
         <Link
+          to={item.href || '/'}
+          onClick={(e) => handleExternalLink(item.href, e)}
           className="flex w-full items-center py-2.5 px-4 font-medium uppercase tracking-wide text-sm hover:bg-[#e5e7eb] rounded-lg"
-          to={{
-            pathname: item.href || undefined,
-          }}
         >
           <span
             className={!item.children ? 'block w-full' : ''}
@@ -59,19 +56,6 @@ const NavMobile = ({ data = navigationData, onClickClose }) => {
           >
             {item.name}
           </span>
-          {item.children && (
-            <span
-              className="block flex-grow"
-              onClick={(e) => e.preventDefault()}
-            >
-              <Disclosure.Button
-                as="span"
-                className="flex justify-end flex-grow"
-              >
-                <MdOutlineArrowDropDown className="text-2xl" />
-              </Disclosure.Button>
-            </span>
-          )}
         </Link>
         {item.children && (
           <Disclosure.Panel>{_renderMenuChild(item)}</Disclosure.Panel>
@@ -81,7 +65,7 @@ const NavMobile = ({ data = navigationData, onClickClose }) => {
   };
 
   return (
-    <div className="overflow-y-auto w-full max-w-sm h-screen py-2 transition transform shadow-lg bg-white  divide-y-2 divide-[#d5d7db]">
+    <div className="overflow-y-auto w-full max-w-sm h-screen py-2 transition transform shadow-lg bg-white divide-y-2 divide-[#d5d7db]">
       <div className="py-6 px-5">
         <Logo />
         <div className="flex flex-col mt-5 text-gray-700 text-sm">
