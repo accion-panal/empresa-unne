@@ -4,7 +4,9 @@ import Head from "../../components/Head/Head";
 import Banner from "../../components/PageSections/Investor/NewUnits/Banner";
 import NewCard from '../../components/Card/NewCard';
 import HeroCapitalizarme from "../../components/Carousel/HeroCapital";
-import { NewCardProperty, mainCarouselCapitalData } from '../../data/index';
+import { StepReventions, mainCarouselRevenewData } from '../../data/index';
+import ReventionsSale from "../../components/Reventions/ReventionsSale";
+import Reventions from "../../components/Reventions/Reventions";
 
 const TotalRevenew = () => {
     const location = useLocation();
@@ -19,33 +21,32 @@ const TotalRevenew = () => {
         <Fragment>
             <Head title="Renovación total" />
             <section className="">
-                <HeroCapitalizarme data={mainCarouselCapitalData} />
+                <HeroCapitalizarme data={mainCarouselRevenewData} />
             </section>
-            <section className="my-24">
+            <section className="my-16">
                 <div className="text-center pb-10">
                     <h2 className={`text-4xl lg:text-5xl font-bold text-gray-800`}>
-                    Es momento tu renovación total
+                    ¿Cómo te ayudamos?
                     </h2>
-                    <p className={`text-base px-2 pt-2 font-medium text-gray-600`}>
-                    Proyectos inmobiliarios en blanco, verde o de entrega inmediata.
-                    </p>
                 </div>
-                <div className="mx-4 text-center">
-                    <h3 className={`text-xl md:text-2xl text-gray-800`}>
-                        {''}
-                        Invierte en simples pasos
-                    </h3>
-                </div>
-                <div className="grid 2xl:px-48 mx-7 md:mx-40 2xl:mx-44 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 xl:gap-14 ">
-                    {/* Section map*/}
-                    {NewCardProperty.length > 0
-                    ? NewCardProperty.map((e) => (
-                        <NewCard key={e.id} backgroundColor="bg-[#f4f4f4]" data={e} />
-                        ))
-                    : null}
+                <div className="bg-gray-200 w-full h-full sm:h-48">
+                    <ul className="flex flex-col sm:flex-row gap-3 justify-center p-2 px-12">
+                        {StepReventions.length > 0 ? StepReventions.map(item => (
+                            <li key={item.id} className="w-64 h-32 sm:my-8 flex flex-row gap-3 items-center text-black">
+                                <h4 className="text-4xl font-bold">{item.number}</h4>
+                                <p className="sm:mr-10 text-xl sm:text-lg">{item.desc}</p>
+                            </li>
+                        )):''}
+                    </ul>
                 </div>
             </section>
-            <section className="mt-20">
+            <section>
+                <Reventions/>
+            </section>
+            <section>
+                <ReventionsSale/>
+            </section>
+            <section className="mt-10">
                 <Banner />
             </section>
         </Fragment>

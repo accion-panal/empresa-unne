@@ -2,6 +2,8 @@ import Slide1 from '../assets/img/carousel/slide1.jpg';
 import Slide4 from '../assets/img/carousel/slide4.jpg';
 
 import CapHero from '../assets/img/carousel/slide3.webp'
+import CapHeroRev from '../assets/img/carousel/slide5.webp'
+
 import { MdPaid } from "react-icons/md";
 import { BsBuildingFillGear } from "react-icons/bs";
 import {  TbHomeDollar, TbHomeHeart  } from "react-icons/tb";
@@ -21,16 +23,17 @@ export const mainCarouselData = [
   },
   {
     id: 3,
-    title: 'Invierte como un experto en Unidades Nuevas',
-    desc: 'Tenemos mas de 80 proyecto inmobiliarios rentables, en blanco, verde o entrega inmediata.',
-    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689975597/Projects/unne/img/hero/tramite2.jpg',
-  },
-  {
-    id: 4,
     title: '¿Necesitas liquidez?',
     desc: 'Nuestro producto de compra instantánea de propiedades te ofrece la solución ideal.',
     img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689974937/Projects/unne/img/hero/venta.jpg',
   },
+  {
+    id: 4,
+    title: '¿Quieres ser un corredor exitoso?',
+    desc: 'Unete a la red mas importante de corredores, cuenta con mas herramientas para consolidar mejores resultados en tus ventas y arriendos.',
+    img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1689975597/Projects/unne/img/hero/tramite2.jpg',
+  },
+
 ];
 
 export const cardSolutionsData = [
@@ -101,6 +104,17 @@ export const mainCarouselInstantData = [
     desc: 'Nuestro producto de compra instantanea te ofrece la solución ideal.',
     // img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
     img: CapHero,
+  },
+];
+
+export const mainCarouselRevenewData = [
+  {
+    id: 1,
+    title:'¿Tu propiedad no se vende',
+    titleTwo:'por estar en mal estado?',
+    desc: 'Nos ocupamos de los trabajos y financiación, asegurando una venta o arriendo más rápido y rentable',
+    // img: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1684191353/Projects/unne/img/hero/webp/slide1_rln2k2.webp',
+    img: CapHeroRev,
   },
 ];
 
@@ -407,6 +421,84 @@ export const NewPropertyQualities = [
     id: 4,
     title: 'Gana por tu inversion',
     desc: 'Administramos el arriendo de tu propiedad para que comiences a ganar por tu inversión.',
+  },
+];
+
+export const StepReventions = [
+  {
+    id: 1,
+    number:'1',
+    desc: 'Estudiamos la factibilidad técnica de la remodelación',
+  },
+  {
+    id: 2,
+    number:'2',
+    desc: 'Cotizamos los arreglos',
+  },
+  {
+    id: 3,
+    number:'3',
+    desc: 'Analizamos la factibilidad económica',
+  },
+  {
+    id: 4,
+    number:'4',
+    desc: 'Acuerdo con el propietario e inicio de remodelación',
+  },
+];
+
+export const StepReventionsHow = [
+  {
+    id: 1,
+    number:'1',
+    desc: 'Se firma un contrato de prestación de servicios',
+  },
+  {
+    id: 2,
+    number:'2',
+    desc: 'Se documenta la devolución de los fondos aprobados',
+  },
+  {
+    id: 3,
+    number:'3. A',
+    desc: 'Firma de Recepción de trabajos.',
+  },
+  {
+    id: 4,
+    number:'3. B',
+    desc: 'Se firma un mandato de administración de Arriendo',
+  },
+  {
+    id: 5,
+    number:'4',
+    desc: ' Se publica el aviso en forma exclusiva para nuestro corredor Unne',
+  },
+];
+export const StepReventionsHowSales = [
+  {
+    id: 1,
+    number:'1',
+    desc: 'Se firma un contrato de prestación de servicios',
+  },
+  {
+    id: 2,
+    number:'2',
+    desc: 'Se documenta la devolución de los fondos (se deja una prenda)',
+  },
+  {
+    id: 3,
+    number:'3',
+    desc: 'Firma de Recepción de trabajos.',
+  },
+  {
+    id: 4,
+    number:'4',
+    desc: ' Se inicia el proceso de venta',
+  },
+  {
+    id: 5,
+    number:'5',
+    desc: ' Una vez que se vende. Se descuenta el préstamo, y se reparte la plusvalía 50% y 50%. ',
   },
 ];
 
