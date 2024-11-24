@@ -183,7 +183,7 @@ export const whyUnneLeaseNewData = [
   {
     id: 1,
     title: 'Equipo de Profesionales',
-    text: 'Contamos con más de 250 corredores de propiedades especializados en todo el territorio nacional, con la asesoría de abogados inmobiliarios que te ayudaran desde la elaboración de contrato hasta recibir el pago del arriendo.',
+    text: 'Contamos con más de 250 corredores de propiedades especializados en todo el territorio nacional.',
     icon:'customEquipo'
   },
   {

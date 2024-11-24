@@ -41,11 +41,11 @@ export const navigationData = [
         name: 'Capitalizarme',
         href: '/soy-inversionista/capitalizarme',
       },
-      {
-        id: 2,
-        name: 'Unidades en remate',
-        href: '/soy-inversionista/unidades-en-remate',
-      },
+      // {
+      //   id: 2,
+      //   name: 'Unidades en remate',
+      //   href: '/soy-inversionista/unidades-en-remate',
+      // },
       // {
       //   id: 2,
       //   name: 'Unidades nuevas',
